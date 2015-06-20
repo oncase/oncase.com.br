@@ -44,9 +44,14 @@ body,html{
 	background-color:#f06324;
 }
 
+.oncase-header md-ink-bar{
+	height:4px;
+}
+
 .oncase-header md-tabs.md-default-theme .md-tab {
 	text-transform:initial;
 	padding-top:2px;
+	padding-bottom: 22px;
 }
 
 .oncase-header md-tabs.md-default-theme .md-tab.md-active, md-tabs.md-default-theme .md-tab.md-focused{
