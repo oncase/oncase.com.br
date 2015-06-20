@@ -1,0 +1,207 @@
+
+
+body,html{
+	background-color:#eee;
+}
+
+.oncase-logo {
+	background-image:url(../img/oncase-logo-sec-noslogan.svg);
+	background-repeat:no-repeat;
+	background-position:center-center;
+	background-size:contain;
+	margin: 0 auto auto 0;
+
+}
+
+
+/* ==============================================
+	Header
+   ============================================== */
+
+.oncase-header{
+	position: fixed;
+	border: none;
+	outline:none;
+	background-color: #2b4c7f;
+	top:0;
+	right:0;
+	left:0;
+	height:248px;
+}
+
+
+/*	Navigation customization
+ */
+
+.oncase-header md-tabs{
+	top:0;
+}
+.oncase-header md-pagination-wrapper.md-center-tabs{
+	width:auto;
+}
+.oncase-header md-tabs.md-default-theme md-ink-bar{
+	color:#f06324;
+	background-color:#f06324;
+}
+
+.oncase-header md-tabs.md-default-theme .md-tab {
+	text-transform:initial;
+	padding-top:2px;
+}
+
+.oncase-header md-tabs.md-default-theme .md-tab.md-active, md-tabs.md-default-theme .md-tab.md-focused{
+	color:#fff;
+	opacity: 1;
+	background:transparent;
+}
+
+.oncase-header md-tabs.md-default-theme .md-tab{
+	color:#fff;
+	opacity: 0.6;
+}
+
+.oncase-header md-pagination-wrapper.md-center-tabs{
+	margin: 0 0 0 auto;
+	position:absolute;
+	float:right;
+	right:0;
+	margin-left:auto;
+	left:auto;
+	margin-right:40px;
+}
+
+
+
+/*	Custom ripple effect
+ */
+
+.ripple{
+	overflow:hidden;
+}
+
+.ripple-effect { 
+	position: absolute;
+
+	transform: scale(30) ;
+
+	outline: 1px solid transparent;
+	-webkit-backface-visibility: hidden;
+	-webkit-perspective: 1000;
+
+	animation: ripple-animation 600ms;
+	-ms-animation: ripple-animation 600ms;
+	-webkit-animation: ripple-animation 600ms;
+}
+
+/*	ripple animation */
+@keyframes ripple-animation {
+	from {
+		transform: scale(1) ;
+		-ms-transform: scale(1) ;
+		-webkit-transform: scale(1) ;
+		opacity: 0.2;
+		outline: 1px solid transparent;
+		-webkit-backface-visibility: hidden;
+		-webkit-perspective: 1000;
+	}
+	to {
+		transform: scale(30) ;
+		-ms-transform: scale(30) ;
+		-webkit-transform: scale(30) ;
+		opacity: 0;
+		outline: 1px solid transparent;
+		-webkit-backface-visibility: hidden;
+		-webkit-perspective: 1000;
+	}
+}
+
+@-webkit-keyframes ripple-animation {
+	from {
+		transform: scale(1) ;
+		-ms-transform: scale(1) ;
+		-webkit-transform: scale(1) ;
+		opacity: 0.2;
+	}
+	to {
+		transform: scale(30) ;
+		-ms-transform: scale(30) ;
+		-webkit-transform: scale(30) ;
+		opacity: 0;
+	}
+}
+
+/*	Logo
+ */
+
+.oncase-header .oncase-logo {
+	background-position: left center;
+	height: 70px;
+	width: 226px;
+	position: absolute;
+	top: 179px;
+	margin-left:30px;
+}
+
+
+/*	Header small styles
+ */
+
+.oncase-header.oncase-small-header .oncase-logo{
+	top:0px;
+}
+.oncase-header.oncase-small-header {
+	height:68px;
+}
+.oncase-header.oncase-small-header md-tabs{
+	top:-180px;
+}
+
+/* Header animations
+ */
+
+.oncase-header .oncase-logo,
+.oncase-header md-tabs,
+.oncase-header {
+	    -webkit-transition: all ease-in 300ms;
+    -moz-transition: all ease-in 300ms;
+    -o-transition: all ease-in 300ms;
+    transition: all ease-in 300ms;
+}
+
+/* ==============================================
+	Main content waypoint style
+   ============================================== */
+
+.oncase-waypoint-wrapper{
+	height: 194px;
+}
+
+.oncase-waypoint{
+	height: 20px;
+	margin-top: 20px;
+}
+
+/* ==============================================
+	Jumbotron
+   ============================================== */
+
+
+.oncase-home-jumbotron{
+	height:450px;
+}
+
+
+/* ==============================================
+	Main content
+   ============================================== */
+
+.oncase-content-paper{
+	min-height:100vh;
+	background-color:white;
+}
+
+.oncase-content-margin{
+	margin:0px 40px
+}
+
+
