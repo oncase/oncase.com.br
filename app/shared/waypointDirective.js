@@ -17,8 +17,14 @@
 			var waypointScroll = new Waypoint({
 			  element: $(elm),
 			  handler: function(direction) {
-			  	if($window.scrollY==0)
+			  	if($window.scrollY==0){
+					if(conf.addUp)
+			      		$(conf.target).addClass(conf.addUp);
+			      	if(conf.remUp)
+			      		$(conf.target).removeClass(conf.remUp);
 			  		return;
+			  	}
+			  		
 			    if(direction==="down"){
 			    	if(conf.addDown)
 			      		$(conf.target).addClass(conf.addDown);

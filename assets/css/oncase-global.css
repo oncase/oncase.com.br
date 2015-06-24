@@ -2,6 +2,7 @@
 
 body,html{
 	background-color:#eee;
+	background-image:url(../img/bg-texture.png);
 }
 
 .oncase-logo {
