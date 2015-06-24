@@ -7,7 +7,7 @@
   	 the attribute waypoint-config attribute
   	 of an element.
    */
-  .directive('waypointConfig',function(){
+  .directive('waypointConfig',['$window',function($window){
   	return {
   		restrict : 'A',
   		link : function(scope, elm, attrs){
@@ -17,6 +17,8 @@
 			var waypointScroll = new Waypoint({
 			  element: $(elm),
 			  handler: function(direction) {
+			  	if($window.scrollY==0)
+			  		return;
 			    if(direction==="down"){
 			    	if(conf.addDown)
 			      		$(conf.target).addClass(conf.addDown);
@@ -33,6 +35,6 @@
 
   		}
   	};
-  });
+  }]);
 
 })();

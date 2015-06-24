@@ -16,11 +16,10 @@
 
     $scope.selectedIndex = menuService.getIndexForRoute($location.url());
 
-    console.log();
     this.tabClicked = function(idx){
       menuService.navigateToIndex(idx);
-    }
-
+    };
+    
   }]);
 
 })();

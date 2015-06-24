@@ -21,11 +21,12 @@
 		};
 
 		var _scrollTop = function(callback){
-			$("html, body").animate({ scrollTop: 0 }, 300,callback);
+			$("html, body").animate({ scrollTop: 0 }, 200,callback);
 		};
 
 		var _triggerLocation = function(url){
 			$location.url(url);
+			_resetHeader();
 		};
 
 		var _navigateToIndex = function(idx){
@@ -35,6 +36,10 @@
 		var _getIndexForRoute = function(route){
 			return _indexMap[route] === undefined ? 0 : _indexMap[route];
 		}
+
+		var _resetHeader = function(){
+			$(".oncase-header").removeClass("oncase-small-header")
+		};
 
 		return {
 			getRouteForIndex : _getRouteForIndex,
