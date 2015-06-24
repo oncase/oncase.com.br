@@ -27,6 +27,7 @@ body,html{
 	right:0;
 	left:0;
 	height:248px;
+	z-index:100;
 }
 
 
@@ -35,6 +36,7 @@ body,html{
 
 .oncase-header md-tabs{
 	top:0;
+	height:248px;
 }
 .oncase-header md-pagination-wrapper.md-center-tabs{
 	width:auto;
@@ -80,7 +82,7 @@ body,html{
 /*	Custom ripple effect
  */
 
-.ripple{
+.ripple-wrapper{
 	overflow:hidden;
 }
 
@@ -192,7 +194,7 @@ body,html{
 
 
 .oncase-home-jumbotron{
-	height:450px;
+	height:50vh;
 }
 
 
@@ -210,3 +212,37 @@ body,html{
 }
 
 
+/* ==============================================
+	Animations between pages
+   ============================================== */
+
+  .ng-enter { 
+  	animation: page-in 0.5s both ease-in 0.3s; 
+  	-ms-animation: page-in 0.5s both ease-in 0.3s; 
+  	-webkit-animation: page-in 0.5s both ease-in 0.3s;  
+  }
+  .ng-leave { 
+  	animation: page-out 0.3s both ease-in ;  
+  	-ms-animation: page-out 0.3s both ease-in ;  
+  	-webkit-animation: page-out 0.3s both ease-in ;  
+  }
+
+
+/* animation */
+@keyframes page-in {
+    from    { transform:translateY(30px);opacity:0; }
+    to      { transform: translateY(0);opacity: 1; }
+}
+@keyframes page-out {
+    from    { transform: translateY(0);opacity:1; }
+    to      { transform: translateY(30px);opacity:0; }
+}
+
+@-webkit-keyframes page-in {
+    from    { -webkit-transform:translateY(30px);opacity:0; }
+    to      { -webkit-transform: translateY(0);opacity: 1; }
+}
+@-webkit-keyframes page-out {
+    from    { -webkit-transform: translateY(0);opacity:1; }
+    to      { -webkit-transform: translateY(30px);opacity:0; }
+}
