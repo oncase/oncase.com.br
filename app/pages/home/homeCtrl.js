@@ -12,8 +12,8 @@
   			bigText : "Intelligence"
   		},
   		{
-  			smallText : "Nosso neg&oacute;cio &oacute;",
-  			bigText : "Intelig&ecirc;ncia"
+  			smallText : "Nosso negócio é", 
+  			bigText : "Inteligência"
   		}
   	];
     
