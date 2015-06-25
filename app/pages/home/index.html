@@ -83,8 +83,8 @@
 				<div ng-include="'assets/img/analytics.svg'" class="jumbo-absolute-center" />
 			</div>
 			<div class="jumbo-text jumbo-centered jumbo-absolute-center">
-			  	<div class="jumbo-text-small">{{ slide.smallText }}</div>
-			  	<div class="jumbo-text-jumbo">{{ slide.bigText }}</div>
+			  	<div class="jumbo-text-small" ng-bind-html="slide.smallText"></div>
+			  	<div class="jumbo-text-jumbo" ng-bind-html="slide.bigText"></div>
 			</div>
 
 		</slide>
