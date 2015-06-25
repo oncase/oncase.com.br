@@ -10,8 +10,12 @@
     <link href='http://fonts.googleapis.com/css?family=Roboto:400,300' rel='stylesheet' type='text/css' />
 
     <link rel="stylesheet" href="https://ajax.googleapis.com/ajax/libs/angular_material/0.9.4/angular-material.min.css" />
-    <link rel="stylesheet" href="assets/css/oncase-global.css" />
+    
+    <!-- Carousel -->
+    <link rel="stylesheet" href="assets/css/ui-bootstrap-custom-0.13.0-csp.css" />
 
+    <link rel="stylesheet" href="assets/css/oncase-global.css" />
+    
     <base href="/">
 
 
@@ -20,11 +24,13 @@
   <body>
 
     <oncase-header></oncase-header>
-
+    <div class="oncase-waypoint-wrapper">
+      <div class="oncase-waypoint" id="oncase-waypoint" waypoint-config="{'target' :'.oncase-header','addDown' : 'oncase-small-header', 'remUp' : 'oncase-small-header'}"></div>
+    </div>
     <!-- Main content and injected views -->
     <div id="main">
 
-        <div ng-view></div>
+        <div ng-view class="oncase-main-view"></div>
 
     </div>
 
@@ -34,6 +40,10 @@
     <script src="assets/js/angular.min.js"></script>
     <script src="assets/js/angular-route.min.js"></script>
     <script src="assets/js/angular-animate.min.js"></script>
+
+    <!-- Carousel -->
+    <script src="assets/js/ui-bootstrap-custom-0.13.0.min.js"></script>
+    <script src="assets/js/ui-bootstrap-custom-tpls-0.13.0.min.js"></script>
 
     <!-- JQuery -->
     <script src="assets/js/jquery-1.11.3.min.js"></script>
