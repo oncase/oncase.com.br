@@ -1,46 +1,52 @@
-<!--<link href="//netdna.bootstrapcdn.com/bootstrap/3.1.1/css/bootstrap.min.css" rel="stylesheet"/>-->
 <style type="text/css">
-	/* Carousel specific */
-	.carousel{position:relative}.carousel-inner{position:relative;overflow:hidden;width:100%}.carousel-inner>.item{display:none;position:relative;-webkit-transition:.6s ease-in-out left;transition:.6s ease-in-out left}.carousel-inner>.item>a>img,.carousel-inner>.item>img{line-height:1}.carousel-inner>.active,.carousel-inner>.next,.carousel-inner>.prev{display:block}.carousel-inner>.active{left:0}.carousel-inner>.next,.carousel-inner>.prev{position:absolute;top:0;width:100%}.carousel-inner>.next{left:100%}.carousel-inner>.prev{left:-100%}.carousel-inner>.next.left,.carousel-inner>.prev.right{left:0}.carousel-inner>.active.left{left:-100%}.carousel-inner>.active.right{left:100%}.carousel-control{position:absolute;top:0;left:0;bottom:0;width:15%;opacity:.5;filter:alpha(opacity=50);font-size:20px;color:#fff;text-align:center;text-shadow:0 1px 2px rgba(0,0,0,.6)}.carousel-control.left{background-image:-webkit-linear-gradient(left,color-stop(rgba(0,0,0,.5)0),color-stop(rgba(0,0,0,.0001)100%));background-image:linear-gradient(to right,rgba(0,0,0,.5)0,rgba(0,0,0,.0001)100%);background-repeat:repeat-x;filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#80000000', endColorstr='#00000000', GradientType=1)}.carousel-control.right{left:auto;right:0;background-image:-webkit-linear-gradient(left,color-stop(rgba(0,0,0,.0001)0),color-stop(rgba(0,0,0,.5)100%));background-image:linear-gradient(to right,rgba(0,0,0,.0001)0,rgba(0,0,0,.5)100%);background-repeat:repeat-x;filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#00000000', endColorstr='#80000000', GradientType=1)}.carousel-control:focus,.carousel-control:hover{outline:0;color:#fff;text-decoration:none;opacity:.9;filter:alpha(opacity=90)}.carousel-control .glyphicon-chevron-left,.carousel-control .glyphicon-chevron-right,.carousel-control .icon-next,.carousel-control .icon-prev{position:absolute;top:50%;z-index:5;display:inline-block}.carousel-control .glyphicon-chevron-left,.carousel-control .icon-prev{left:50%}.carousel-control .glyphicon-chevron-right,.carousel-control .icon-next{right:50%}.carousel-control .icon-next,.carousel-control .icon-prev{width:20px;height:20px;margin-top:-10px;margin-left:-10px;font-family:serif}.carousel-control .icon-prev:before{content:'\2039'}.carousel-control .icon-next:before{content:'\203a'}.carousel-indicators{position:absolute;bottom:10px;left:50%;z-index:15;width:60%;margin-left:-30%;padding-left:0;list-style:none;text-align:center}.carousel-indicators li{display:inline-block;width:10px;height:10px;margin:1px;text-indent:-999px;border:1px solid #fff;border-radius:10px;cursor:pointer;background-color:#000 \9;background-color:rgba(0,0,0,0)}.carousel-indicators .active{margin:0;width:12px;height:12px;background-color:#fff}.carousel-caption{position:absolute;left:15%;right:15%;bottom:20px;z-index:10;padding-top:20px;padding-bottom:20px;color:#fff;text-align:center;text-shadow:0 1px 2px rgba(0,0,0,.6)}.carousel-caption .btn{text-shadow:none}@media screen and (min-width:768px){.carousel-control .glyphicon-chevron-left,.carousel-control .glyphicon-chevron-right,.carousel-control .icon-next,.carousel-control .icon-prev{width:30px;height:30px;margin-top:-15px;margin-left:-15px;font-size:30px}.carousel-caption{left:20%;right:20%;padding-bottom:30px}.carousel-indicators{bottom:20px}}
 
-	.jumbo-absolute-center{
-		position: absolute;
-	    text-align: center;
-	    right: 40px;
-	    left: 40px;
-	}
-	.jumbo-text {
-	    margin-top: 22vh;
-	    color: #444;
-	    font-weight: 100;
-	}
+/* Okay, that's all inline. But it will not be here forever
+ */
 
-	.jumbo-text-small {
-		font-size: 36px;
-		font-size: 6vh;
-	}
-	.jumbo-text-jumbo {
-		font-size: 60px;
-		font-size: 12vh;
-		margin-top: -3vh;
-	}
-	.jumbo-image{
-		height:1vh;
-		margin-top:5vh;
-	}
-	.jumbo-image svg{
-		fill:#ff6600;
-		height:25vh;
-	}
-	.carousel-inner > div{
-		height:60vh;
-	}
+/* Carousel specifics */
+.carousel{position:relative}.carousel-inner{position:relative;overflow:hidden;width:100%}.carousel-inner>.item{display:none;position:relative;-webkit-transition:.6s ease-in-out left ;transition:.6s ease-in-out left }.carousel-inner>.item>a>img,.carousel-inner>.item>img{line-height:1}.carousel-inner>.active,.carousel-inner>.next,.carousel-inner>.prev{display:block}.carousel-inner>.active{left:0}.carousel-inner>.next,.carousel-inner>.prev{position:absolute;top:0;width:100%}.carousel-inner>.next{left:100%}.carousel-inner>.prev{left:-100%}.carousel-inner>.next.left,.carousel-inner>.prev.right{left:0}.carousel-inner>.active.left{left:-100%}.carousel-inner>.active.right{left:100%}.carousel-control{position:absolute;top:0;left:0;bottom:0;width:15%;opacity:.5;filter:alpha(opacity=50);font-size:20px;color:#fff;text-align:center;text-shadow:0 1px 2px rgba(0,0,0,.6)}.carousel-control.left{background-image:-webkit-linear-gradient(left,color-stop(rgba(0,0,0,.5)0),color-stop(rgba(0,0,0,.0001)100%));background-image:linear-gradient(to right,rgba(0,0,0,.5)0,rgba(0,0,0,.0001)100%);background-repeat:repeat-x;filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#80000000', endColorstr='#00000000', GradientType=1)}.carousel-control.right{left:auto;right:0;background-image:-webkit-linear-gradient(left,color-stop(rgba(0,0,0,.0001)0),color-stop(rgba(0,0,0,.5)100%));background-image:linear-gradient(to right,rgba(0,0,0,.0001)0,rgba(0,0,0,.5)100%);background-repeat:repeat-x;filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#00000000', endColorstr='#80000000', GradientType=1)}.carousel-control:focus,.carousel-control:hover{outline:0;color:#fff;text-decoration:none;opacity:.9;filter:alpha(opacity=90)}.carousel-control .glyphicon-chevron-left,.carousel-control .glyphicon-chevron-right,.carousel-control .icon-next,.carousel-control .icon-prev{position:absolute;top:50%;z-index:5;display:inline-block}.carousel-control .glyphicon-chevron-left,.carousel-control .icon-prev{left:50%}.carousel-control .glyphicon-chevron-right,.carousel-control .icon-next{right:50%}.carousel-control .icon-next,.carousel-control .icon-prev{width:20px;height:20px;margin-top:-10px;margin-left:-10px;font-family:serif}.carousel-control .icon-prev:before{content:'\2039'}.carousel-control .icon-next:before{content:'\203a'}.carousel-indicators{position:absolute;bottom:10px;left:50%;z-index:15;width:60%;margin-left:-30%;padding-left:0;list-style:none;text-align:center}.carousel-indicators li{display:inline-block;width:10px;height:10px;margin:1px;text-indent:-999px;border:1px solid #fff;border-radius:10px;cursor:pointer;background-color:transparent}.carousel-indicators .active{margin:0;width:12px;height:12px;background-color:#fff}.carousel-caption{position:absolute;left:15%;right:15%;bottom:20px;z-index:10;padding-top:20px;padding-bottom:20px;color:#fff;text-align:center;text-shadow:0 1px 2px rgba(0,0,0,.6)}.carousel-caption .btn{text-shadow:none}@media screen and (min-width:768px){.carousel-control .glyphicon-chevron-left,.carousel-control .glyphicon-chevron-right,.carousel-control .icon-next,.carousel-control .icon-prev{width:30px;height:30px;margin-top:-15px;margin-left:-15px;font-size:30px}.carousel-caption{left:20%;right:20%;padding-bottom:30px}.carousel-indicators{bottom:20px}}
 
-	a.right.carousel-control,
-	a.left.carousel-control {
-		background:transparent;
-	}
+/* Some prestyled positions - more to be done */
 
+.jumbo-absolute-center{
+	position: absolute;
+    text-align: center;
+    right: 40px;
+    left: 40px;
+}
+.jumbo-text {
+    margin-top: 29vh;
+    color: #444;
+    font-weight: 100;
+}
+
+.jumbo-text-small {
+	font-size: 36px;
+	font-size: 6vh;
+}
+.jumbo-text-jumbo {
+	font-size: 60px;
+	font-size: 12vh;
+	margin-top: -3vh;
+}
+.jumbo-image{
+	height:1vh;
+	margin-top:2vh;
+}
+.jumbo-image svg{
+	fill:#ff6600;
+	height:25vh;
+}
+.carousel-inner > div{
+	height:60vh;
+}
+
+/* Overriding carousel controls */
+
+a.right.carousel-control,
+a.left.carousel-control {
+	background:transparent;
+}
 
 .glyphicon::before {
 	border-style: solid;
@@ -60,31 +66,98 @@
 .glyphicon-chevron-right:before {
 	left: 0;
 	transform: rotate(45deg);
+	-webkit-transform: rotate(45deg);
+	-ms-transform: rotate(45deg);
 }
 
 .chevron.bottom:before {
 	top: 0;
 	transform: rotate(135deg);
+	-webkit-transform: rotate(135deg);
+	-ms-transform: rotate(135deg);
 }
 
 .glyphicon-chevron-left:before {
 	left: 0.25em;
 	transform: rotate(-135deg);
+	-webkit-transform: rotate(-135deg);
+	-ms-transform: rotate(-135deg);
+}
+
+
+
+/* Fancy long shadow to the material-icons */
+
+.jumbo-image .material-icons {
+  font-size:30vh;
+  color:#ff6600;
+  text-shadow: 1px 1px 0px #ccc, 2px 2px 0px #ccc, 3px 3px 0px #ccc, 4px 4px 0px #ccc, 5px 5px 0px #ccc, 6px 6px 0px #ccc, 7px 7px 0px #ccc, 8px 8px 0px #ccc, 9px 9px 0px #ccc, 10px 10px 0px #ccc, 11px 11px 0px #ccc, 12px 12px 0px #ccc, 13px 13px 0px #ccc, 14px 14px 0px #ccc, 15px 15px 0px #ccc, 16px 16px 0px #ccc, 17px 17px 0px #ccc, 18px 18px 0px #ccc, 19px 19px 0px #ccc, 20px 20px 0px #ccc, 21px 21px 0px #ccc, 22px 22px 0px #ccc, 23px 23px 0px #ccc, 24px 24px 0px #ccc, 25px 25px 0px #ccc, 26px 26px 0px #ccc, 27px 27px 0px #ccc, 28px 28px 0px #ccc, 29px 29px 0px #ccc, 30px 30px 0px #ccc, 31px 31px 0px #ccc, 32px 32px 0px #ccc, 33px 33px 0px #ccc, 34px 34px 0px #ccc, 35px 35px 0px #ccc, 36px 36px 0px #ccc, 37px 37px 0px #ccc, 38px 38px 0px #ccc, 39px 39px 0px #ccc, 40px 40px 0px #ccc, 41px 41px 0px #ccc, 42px 42px 0px #ccc, 43px 43px 0px #ccc, 44px 44px 0px #ccc, 45px 45px 0px #ccc, 46px 46px 0px #ccc, 47px 47px 0px #ccc, 48px 48px 0px #ccc, 49px 49px 0px #ccc, 50px 50px 0px #ccc, 51px 51px 0px #ccc, 52px 52px 0px #ccc, 53px 53px 0px #ccc, 54px 54px 0px #ccc, 55px 55px 0px #ccc, 56px 56px 0px #ccc, 57px 57px 0px #ccc, 58px 58px 0px #ccc, 59px 59px 0px #ccc, 60px 60px 0px #ccc, 61px 61px 0px #ccc, 62px 62px 0px #ccc, 63px 63px 0px #ccc, 64px 64px 0px #ccc, 65px 65px 0px #ccc, 66px 66px 0px #ccc, 67px 67px 0px #ccc, 68px 68px 0px #ccc, 69px 69px 0px #ccc, 70px 70px 0px #ccc, 71px 71px 0px #ccc, 72px 72px 0px #ccc, 73px 73px 0px #ccc, 74px 74px 0px #ccc, 75px 75px 0px #ccc, 76px 76px 0px #ccc, 77px 77px 0px #ccc, 78px 78px 0px #ccc, 79px 79px 0px #ccc, 80px 80px 0px #ccc, 81px 81px 0px #ccc, 82px 82px 0px #ccc, 83px 83px 0px #ccc, 84px 84px 0px #ccc, 85px 85px 0px #ccc, 86px 86px 0px #ccc, 87px 87px 0px #ccc, 88px 88px 0px #ccc, 89px 89px 0px #ccc, 90px 90px 0px #ccc, 91px 91px 0px #ccc, 92px 92px 0px #ccc, 93px 93px 0px #ccc, 94px 94px 0px #ccc, 95px 95px 0px #ccc, 96px 96px 0px #ccc, 97px 97px 0px #ccc, 98px 98px 0px #ccc, 99px 99px 0px #ccc, 100px 100px 0px #ccc, 101px 101px 0px #ccc, 102px 102px 0px #ccc, 103px 103px 0px #ccc, 104px 104px 0px #ccc, 105px 105px 0px #ccc, 106px 106px 0px #ccc, 107px 107px 0px #ccc, 108px 108px 0px #ccc, 109px 109px 0px #ccc, 110px 110px 0px #ccc, 111px 111px 0px #ccc, 112px 112px 0px #ccc, 113px 113px 0px #ccc, 114px 114px 0px #ccc, 115px 115px 0px #ccc, 116px 116px 0px #ccc, 117px 117px 0px #ccc, 118px 118px 0px #ccc, 119px 119px 0px #ccc, 120px 120px 0px #ccc, 121px 121px 0px #ccc, 122px 122px 0px #ccc, 123px 123px 0px #ccc, 124px 124px 0px #ccc, 125px 125px 0px #ccc, 126px 126px 0px #ccc, 127px 127px 0px #ccc, 128px 128px 0px #ccc, 129px 129px 0px #ccc, 130px 130px 0px #ccc, 131px 131px 0px #ccc, 132px 132px 0px #ccc, 133px 133px 0px #ccc, 134px 134px 0px #ccc, 135px 135px 0px #ccc, 136px 136px 0px #ccc, 137px 137px 0px #ccc, 138px 138px 0px #ccc, 139px 139px 0px #ccc, 140px 140px 0px #ccc, 141px 141px 0px #ccc, 142px 142px 0px #ccc, 143px 143px 0px #ccc, 144px 144px 0px #ccc, 145px 145px 0px #ccc, 146px 146px 0px #ccc, 147px 147px 0px #ccc, 148px 148px 0px #ccc, 149px 149px 0px #ccc, 150px 150px 0px #ccc, 151px 151px 0px #ccc, 152px 152px 0px #ccc, 153px 153px 0px #ccc, 154px 154px 0px #ccc, 155px 155px 0px #ccc, 156px 156px 0px #ccc, 157px 157px 0px #ccc, 158px 158px 0px #ccc, 159px 159px 0px #ccc, 160px 160px 0px #ccc, 161px 161px 0px #ccc, 162px 162px 0px #ccc, 163px 163px 0px #ccc, 164px 164px 0px #ccc, 165px 165px 0px #ccc, 166px 166px 0px #ccc, 167px 167px 0px #ccc, 168px 168px 0px #ccc, 169px 169px 0px #ccc, 170px 170px 0px #ccc, 171px 171px 0px #ccc, 172px 172px 0px #ccc, 173px 173px 0px #ccc, 174px 174px 0px #ccc, 175px 175px 0px #ccc, 176px 176px 0px #ccc, 177px 177px 0px #ccc, 178px 178px 0px #ccc, 179px 179px 0px #ccc, 180px 180px 0px #ccc, 181px 181px 0px #ccc, 182px 182px 0px #ccc, 183px 183px 0px #ccc, 184px 184px 0px #ccc, 185px 185px 0px #ccc, 186px 186px 0px #ccc, 187px 187px 0px #ccc, 188px 188px 0px #ccc, 189px 189px 0px #ccc, 190px 190px 0px #ccc, 191px 191px 0px #ccc, 192px 192px 0px #ccc, 193px 193px 0px #ccc, 194px 194px 0px #ccc, 195px 195px 0px #ccc, 196px 196px 0px #ccc, 197px 197px 0px #ccc, 198px 198px 0px #ccc, 199px 199px 0px #ccc, 200px 200px 0px #ccc, 201px 201px 0px #ccc, 202px 202px 0px #ccc, 203px 203px 0px #ccc, 204px 204px 0px #ccc, 205px 205px 0px #ccc, 206px 206px 0px #ccc, 207px 207px 0px #ccc, 208px 208px 0px #ccc, 209px 209px 0px #ccc, 210px 210px 0px #ccc, 211px 211px 0px #ccc, 212px 212px 0px #ccc, 213px 213px 0px #ccc, 214px 214px 0px #ccc, 215px 215px 0px #ccc, 216px 216px 0px #ccc, 217px 217px 0px #ccc, 218px 218px 0px #ccc, 219px 219px 0px #ccc, 220px 220px 0px #ccc, 221px 221px 0px #ccc, 222px 222px 0px #ccc, 223px 223px 0px #ccc, 224px 224px 0px #ccc, 225px 225px 0px #ccc, 226px 226px 0px #ccc, 227px 227px 0px #ccc, 228px 228px 0px #ccc, 229px 229px 0px #ccc, 230px 230px 0px #ccc, 231px 231px 0px #ccc, 232px 232px 0px #ccc, 233px 233px 0px #ccc, 234px 234px 0px #ccc, 235px 235px 0px #ccc, 236px 236px 0px #ccc, 237px 237px 0px #ccc, 238px 238px 0px #ccc, 239px 239px 0px #ccc, 240px 240px 0px #ccc, 241px 241px 0px #ccc, 242px 242px 0px #ccc, 243px 243px 0px #ccc, 244px 244px 0px #ccc, 245px 245px 0px #ccc, 246px 246px 0px #ccc, 247px 247px 0px #ccc, 248px 248px 0px #ccc, 249px 249px 0px #ccc, 250px 250px 0px #ccc, 251px 251px 0px #ccc, 252px 252px 0px #ccc, 253px 253px 0px #ccc, 254px 254px 0px #ccc, 255px 255px 0px #ccc, 256px 256px 0px #ccc, 257px 257px 0px #ccc, 258px 258px 0px #ccc, 259px 259px 0px #ccc, 260px 260px 0px #ccc, 261px 261px 0px #ccc, 262px 262px 0px #ccc, 263px 263px 0px #ccc, 264px 264px 0px #ccc, 265px 265px 0px #ccc, 266px 266px 0px #ccc, 267px 267px 0px #ccc, 268px 268px 0px #ccc, 269px 269px 0px #ccc, 270px 270px 0px #ccc, 271px 271px 0px #ccc, 272px 272px 0px #ccc, 273px 273px 0px #ccc, 274px 274px 0px #ccc, 275px 275px 0px #ccc, 276px 276px 0px #ccc, 277px 277px 0px #ccc, 278px 278px 0px #ccc, 279px 279px 0px #ccc, 280px 280px 0px #ccc, 281px 281px 0px #ccc, 282px 282px 0px #ccc, 283px 283px 0px #ccc, 284px 284px 0px #ccc, 285px 285px 0px #ccc, 286px 286px 0px #ccc, 287px 287px 0px #ccc, 288px 288px 0px #ccc, 289px 289px 0px #ccc, 290px 290px 0px #ccc, 291px 291px 0px #ccc, 292px 292px 0px #ccc, 293px 293px 0px #ccc, 294px 294px 0px #ccc, 295px 295px 0px #ccc, 296px 296px 0px #ccc, 297px 297px 0px #ccc, 298px 298px 0px #ccc, 299px 299px 0px #ccc, 300px 300px 0px #ccc, 301px 301px 0px #ccc, 302px 302px 0px #ccc, 303px 303px 0px #ccc, 304px 304px 0px #ccc, 305px 305px 0px #ccc, 306px 306px 0px #ccc, 307px 307px 0px #ccc, 308px 308px 0px #ccc, 309px 309px 0px #ccc, 310px 310px 0px #ccc, 311px 311px 0px #ccc, 312px 312px 0px #ccc, 313px 313px 0px #ccc, 314px 314px 0px #ccc, 315px 315px 0px #ccc, 316px 316px 0px #ccc, 317px 317px 0px #ccc, 318px 318px 0px #ccc, 319px 319px 0px #ccc, 320px 320px 0px #ccc, 321px 321px 0px #ccc, 322px 322px 0px #ccc, 323px 323px 0px #ccc, 324px 324px 0px #ccc, 325px 325px 0px #ccc, 326px 326px 0px #ccc, 327px 327px 0px #ccc, 328px 328px 0px #ccc, 329px 329px 0px #ccc, 330px 330px 0px #ccc, 331px 331px 0px #ccc, 332px 332px 0px #ccc, 333px 333px 0px #ccc, 334px 334px 0px #ccc, 335px 335px 0px #ccc, 336px 336px 0px #ccc, 337px 337px 0px #ccc, 338px 338px 0px #ccc, 339px 339px 0px #ccc, 340px 340px 0px #ccc, 341px 341px 0px #ccc, 342px 342px 0px #ccc, 343px 343px 0px #ccc, 344px 344px 0px #ccc, 345px 345px 0px #ccc, 346px 346px 0px #ccc, 347px 347px 0px #ccc, 348px 348px 0px #ccc, 349px 349px 0px #ccc, 350px 350px 0px #ccc;
+}
+
+/* Carousel custom animations */
+
+
+/*
+.carousel-inner div.item.active-remove 
+ {
+	animation: page-out 0.1s both ease-out; 
+	-webkit-animation: page-out 0.1s both ease-out; 
+	-ms-animation: page-out 0.1s both ease-out; 
+
+}
+*/
+
+.carousel-inner div.item div.oncase-jumbo-1st
+ {
+	animation: page-out 0.2s both ease-out; 
+	-webkit-animation: page-out 0.2s both ease-out; 
+	-ms-animation: page-out 0.2s both ease-out; 
+
+}
+.carousel-inner div.item.active div.oncase-jumbo-1st {
+	animation: page-in 0.5s both ease-out 0.2s; 
+	-webkit-animation: page-in 0.5s both ease-out 0.2s; 
+	-ms-animation: page-in 0.5s both ease-out 0.2s; 
+}
+
+.carousel-inner div.item div.oncase-jumbo-2nd
+ {
+	animation: page-out 0.2s both ease-out; 
+	-ms-animation: page-out 0.2s both ease-out; 
+	-webkit-animation: page-out 0.2s both ease-out; 
+}
+.carousel-inner div.item.active div.oncase-jumbo-2nd {
+	animation: page-in 0.5s both ease-out 0.4s; 
+	-webkit-animation: page-in 0.5s both ease-out 0.4s; 
+	-ms-animation: page-in 0.5s both ease-out 0.4s; 
+}
+
+.carousel-inner div.item div.oncase-jumbo-3rd
+ {
+	animation: page-out 0.2s both ease-out; 
+	-webkit-animation: page-out 0.2s both ease-out; 
+	-ms-animation: page-out 0.2s both ease-out; 
+}
+.carousel-inner div.item.active div.oncase-jumbo-3rd {
+	animation: page-in 0.5s both ease-out 0.6s; 
+	-webkit-animation: page-in 0.5s both ease-out 0.6s; 
+	-ms-animation: page-in 0.5s both ease-out 0.6s; 
 }
 
 
 </style>
 <section class="oncase-home-jumbotron oncase-content-margin">  
   <div style="height:300px;">
-	<carousel interval="3000">
+	<carousel interval="5000">
 		<slide ng-repeat="slide in slides" active="slide.active">
 			
-			<div class="jumbo-image jumbo-absolute-center">
-				<div ng-include="'assets/img/analytics.svg'" class="jumbo-absolute-center" />
+			<div class="jumbo-image jumbo-absolute-center oncase-jumbo-1st">
+				<!--<div ng-include="'assets/img/analytics.svg'" class="jumbo-absolute-center" />-->
+				<i class="material-icons">{{ slide.icon }}</i>
 			</div>
 			<div class="jumbo-text jumbo-centered jumbo-absolute-center">
-			  	<div class="jumbo-text-small">{{ slide.smallText }}</div>
-			  	<div class="jumbo-text-jumbo">{{ slide.bigText }}</div>
+			  	<div class="jumbo-text-small oncase-jumbo-2nd">{{ slide.smallText }}</div>
+			  	<div class="jumbo-text-jumbo oncase-jumbo-3rd">{{ slide.bigText }}</div>
 			</div>
 
 		</slide>
@@ -94,5 +167,6 @@
 </section>
 
 <section class="oncase-content-margin oncase-content-paper md-whiteframe-z1">
-	This is home
+
+	
 </section>
