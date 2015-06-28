@@ -263,6 +263,7 @@ body,html{
 }
 
 
+
 @media 
   only screen 
   and (max-device-width: 1280px) 
@@ -275,7 +276,8 @@ body,html{
     { 
 
 
-	section.oncase-content-margin{
+	section.oncase-content-margin,
+	.oncase-home-jumbotron.oncase-content-margin{
 		margin:0;
 	}
 

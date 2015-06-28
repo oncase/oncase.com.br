@@ -17,13 +17,15 @@
         smallText : "Nosso neg\u00F3cio \u00E9", 
         bigText : "Intelig\u00EAncia",
         icon : "equalizer",
-        isIcon : true
+        isIcon : true,
+        iconColor : "orange"
       },
       {
         smallText : "Somos especialistas", 
         bigText : "em Cloud",
         icon : "cloud",
-        isIcon : true
+        isIcon : true,
+        iconColor : "orange"
       }
   	];
     
