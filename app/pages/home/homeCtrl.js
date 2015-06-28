@@ -8,19 +8,22 @@
 
   	$scope.slides = [
       {
+        smallText : "Somos orgulhosos", 
+        bigText : "Premium Partner",
+        imgPath:'assets/img/pentaho-premium-partner.svg',
+        isSvg : true
+      },
+      {
         smallText : "Nosso neg\u00F3cio \u00E9", 
         bigText : "Intelig\u00EAncia",
-        icon : "equalizer"
+        icon : "equalizer",
+        isIcon : true
       },
       {
         smallText : "Somos especialistas", 
         bigText : "em Cloud",
-        icon : "cloud"
-      },
-      {
-        smallText : "Premium Partner", 
-        bigText : "Pentaho",
-        icon : "new_releases"
+        icon : "cloud",
+        isIcon : true
       }
   	];
     

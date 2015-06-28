@@ -33,7 +33,8 @@
 }
 .jumbo-image svg{
 	fill:#ff6600;
-	height:25vh;
+	height:20vh;
+	margin-top:5vh;
 }
 .carousel-inner > div{
 	height:60vh;
@@ -181,8 +182,8 @@ a.left.carousel-control {
 		<slide ng-repeat="slide in slides" active="slide.active">
 			
 			<div class="jumbo-image jumbo-absolute-center oncase-jumbo-1st">
-				<!--<div ng-include="'assets/img/analytics.svg'" class="jumbo-absolute-center" />-->
-				<i class="material-icons">{{ slide.icon }}</i>
+				<div ng-if="slide.isSvg" ng-include="slide.imgPath" class="jumbo-absolute-center"></div>
+				<i ng-if="slide.isIcon" class="material-icons">{{ slide.icon }}</i>
 			</div>
 			<div class="jumbo-text jumbo-centered jumbo-absolute-center">
 			  	<div class="jumbo-text-small oncase-jumbo-2nd">{{ slide.smallText }}</div>
