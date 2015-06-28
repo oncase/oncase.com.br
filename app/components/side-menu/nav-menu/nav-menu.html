@@ -1,0 +1,59 @@
+<style type="text/css">
+  .oncase-nav-items{
+    margin-left:-16px;
+    padding-bottom:200px;
+  }
+  .oncase-nav-item{
+    padding:12px;
+    margin:6px auto;
+    margin-left:6px;
+  }
+  .oncase-nav-item.active{
+    border-left:solid 6px #ff6600;
+    font-weight:bold;
+    margin-left:0;
+  }
+  .oncase-nav-item{
+      -webkit-transition: all ease-out 200ms;
+    -moz-transition: all ease-out 200ms;
+    -o-transition: all ease-out 200ms;
+    transition: all ease-out 200ms;
+  }
+
+
+</style>
+      <div class="tapa-side-menu-content">
+        <header> 
+        	Menu 
+        	<md-button class="pull-left tapa-menu tapa-icon md-icon-button md-primary" ng-click="disposeMenu()" aria-label="Settings">
+          		<md-icon md-svg-icon="assets/img/arrow_forward_black.svg"></md-icon>
+        	</md-button>
+        </header>
+		<section class="tapa-scrollable tapa-side-menu-content-body">
+
+          
+      <div class="oncase-nav-items">
+
+        <div ng-click="navCtrl.menuClicked(0)" class="oncase-nav-item" ng-class="{ active:selectedIndex==0 }">
+          Home
+        </div>
+        <div ng-click="navCtrl.menuClicked(1)" class="oncase-nav-item" ng-class="{ active:selectedIndex==1 }">
+          Quem Somos
+        </div>
+        <div ng-click="navCtrl.menuClicked(2)" class="oncase-nav-item" ng-class="{ active:selectedIndex==2 }">
+         Serviços
+        </div>
+        <div ng-click="navCtrl.menuClicked(3)" class="oncase-nav-item" ng-class="{ active:selectedIndex==3 }">
+          Produtos
+        </div>
+        <div ng-click="navCtrl.menuClicked(4)" class="oncase-nav-item" ng-class="{ active:selectedIndex==4 }">
+          Clientes&Parceiros
+        </div>
+        <div ng-click="navCtrl.menuClicked(5)" class="oncase-nav-item" ng-class="{ active:selectedIndex==5 }">
+          Contato
+        </div>
+
+      </div>
+
+		</section>
+      </div>

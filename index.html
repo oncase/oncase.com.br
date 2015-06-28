@@ -22,7 +22,7 @@
 
   </head>
 
-  <body>
+  <body ng-class="bodyClasses">
 
     <oncase-header></oncase-header>
     <div class="oncase-waypoint-wrapper">
@@ -34,7 +34,8 @@
         <div ng-view class="oncase-main-view"></div>
 
     </div>
-
+    <side-menu></side-menu>
+    <div ng-class="olClasses" ng-click="closeCallback()" ></div>
   </body>
 
     <!-- Angular -->
@@ -61,6 +62,11 @@
     <script src="app/components/header/headerDirective.js"></script>
     <script src="app/components/header/menuService.js"></script>
     <script src="app/shared/waypointDirective.js"></script>
+
+    <script src="app/shared/overlayService.js"></script>
+
+    <script src="app/components/side-menu/sideMenuDirective.js"></script>
+    <script src="app/components/side-menu/nav-menu/navMenuDirective.js"></script>
 
     <!-- Pages-->
     <script src="app/pages/about/aboutCtrl.js"></script>

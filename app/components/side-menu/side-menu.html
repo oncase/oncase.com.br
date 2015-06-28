@@ -1,0 +1,198 @@
+<style type="text/css">
+
+
+/* ==============================================
+	Side menu
+   ============================================== */
+
+.tapa-side-menu-content-body{
+	padding:16px;
+}
+
+.tapa-scrollable{
+    overflow-y: auto;
+    height: 100%;
+}
+
+.oncase-info-logo{
+	margin-top:80px;
+	border-top:solid 1px #ccc;
+	padding-top:20px;
+	margin-bottom: 100px;
+}
+
+.tapa-overlay{
+	position:fixed;
+	top:0;
+	left:0;
+	right:0;
+	bottom:0;
+	background:rgba(136,136,136,.78);
+	visibility: visible;
+	opacity: 1;
+	z-index:101;
+}
+
+.tapa-side-menu-content{
+	z-index:21;
+	position:fixed;
+	top:0;
+	bottom:0;
+
+	width:300px;
+	background-color:#fff;
+	height:100%;
+
+
+	-webkit-box-shadow: 0 0 12px 4px rgba(0,0,0,0.4);
+	box-shadow: 0 0 12px 4px rgba(0,0,0,0.4);
+}
+
+.tapa-side-menu-content header{
+	padding:14px 24px 14px 10px;
+	background-color:#e5e5e5;
+	border-bottom:solid 1px #cccccc;
+	font-size:24px;
+	line-height:50px;
+}
+.tapa-side-menu-content header i {
+	font-size:24px;
+	line-height:24px;
+	cursor:pointer;
+}
+
+
+/* Menu on the left */
+
+.tapa-side-menu-left .tapa-side-menu-content{
+	left:0;
+	right:auto;
+}
+.tapa-side-menu-left .tapa-side-menu-content header{
+	text-align:left;
+}
+.tapa-side-menu-left .tapa-side-menu-content header i{
+	float:right;
+}
+
+/* Menu on the right */
+
+.tapa-side-menu-right .tapa-side-menu-content{
+	right:0;
+	left:auto;
+}
+.tapa-side-menu-right .tapa-side-menu-content header{
+	text-align:right;
+}
+.tapa-side-menu-right .tapa-side-menu-content header i{
+	float:left;
+}
+
+/* hidden menu style */
+
+
+.tapa-overlay.tapa-overlay-hidden {
+	visibility: hidden;
+	opacity: 0;
+}
+
+/* hidden menu left */
+.tapa-side-menu.tapa-side-menu-hidden.tapa-side-menu-left .tapa-side-menu-content{
+	left: -420px;
+}
+
+/* hidden menu right */
+.tapa-side-menu.tapa-side-menu-hidden.tapa-side-menu-right .tapa-side-menu-content{
+	right: -420px;
+}
+
+/* Header Transition rules */
+
+.tapa-side-menu .tapa-side-menu-content,
+.tapa-side-menu {
+    -webkit-transition: all ease-out 200ms;
+    -moz-transition: all ease-out 200ms;
+    -o-transition: all ease-out 200ms;
+    transition: all ease-out 200ms;
+
+    -webkit-transition-delay: 200ms;
+    -moz-transition-delay: 200ms;
+    -o-transition-delay: 200ms;
+    transition-delay: 200ms;
+}
+.tapa-side-menu.tapa-side-menu-hidden .tapa-side-menu-content,
+.tapa-side-menu.tapa-side-menu-hidden {
+    -webkit-transition-delay: 0ms;
+    -moz-transition-delay: 0ms;
+    -o-transition-delay: 0ms;
+    transition-delay: 0ms;
+}
+
+
+.tapa-overlay {
+	    -webkit-transition: all ease-out 200ms;
+    -moz-transition: all ease-out 200ms;
+    -o-transition: all ease-out 200ms;
+    transition: all ease-out 200ms;
+}
+
+
+/* left config menu list */
+
+.listdemoListControls md-divider {
+  margin-top: 10px;
+  margin-bottom: 10px; 
+}
+
+.tapa-list-icon{
+	margin-right:10px;
+	color:#777;
+}
+
+.oncase-menu-button {
+  position: absolute;
+  top: 0;
+  right: 0;
+  display:none;
+}
+
+.oncase-menu-button .md-button.md-icon-button{
+	line-height:64px;
+}
+
+
+body.tapa-locked{
+	overflow:hidden;
+}
+
+.tapa-side-menu-content{
+	z-index:102;
+}
+
+
+
+@media 
+  only screen 
+  and (max-device-width: 1280px) 
+  and (orientation: portrait) 
+  and (-webkit-min-device-pixel-ratio: 1),
+   
+ only screen 
+  and (max-device-width: 1022px){
+  	.oncase-menu-button{
+  		display:block;
+  	}
+  }
+
+
+
+
+</style>
+<div class="tapa-side-menu tapa-side-menu-right" ng-class="{'tapa-side-menu-hidden': sideMenuCtrl.rightMenuHidden}">
+  <nav-menu></nav-menu>
+</div>
+
+
+
+
+

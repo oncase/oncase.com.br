@@ -13,13 +13,13 @@
         icon : "equalizer"
       },
       {
-        smallText : "Você está pronto para", 
-        bigText : "a Nuvem?",
+        smallText : "Somos especialistas", 
+        bigText : "em Cloud",
         icon : "cloud"
       },
       {
-        smallText : "Somos o único Pentaho Premium Partner", 
-        bigText : "do Brasil",
+        smallText : "Premium Partner", 
+        bigText : "Pentaho",
         icon : "new_releases"
       }
   	];

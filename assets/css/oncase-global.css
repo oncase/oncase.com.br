@@ -14,6 +14,13 @@ body,html{
 
 }
 
+.pull-right {
+	float:right;
+}
+
+.pull-left {
+	float:left;
+}
 
 /* ==============================================
 	Header
@@ -254,3 +261,49 @@ body,html{
     from    { -webkit-transform: translateY(0);opacity:1; }
     to      { -webkit-transform: translateY(30px);opacity:0; }
 }
+
+
+@media 
+  only screen 
+  and (max-device-width: 1280px) 
+  and (orientation: portrait) 
+  and (-webkit-min-device-pixel-ratio: 1),
+   
+ only screen 
+  and (max-device-width: 1022px)
+
+    { 
+
+
+	section.oncase-content-margin{
+		margin:0;
+	}
+
+	.oncase-header {
+		height:68px;
+	}
+	.oncase-header md-tabs{
+		display:none;
+	}
+	.oncase-waypoint-wrapper {
+	  padding-top: 30px;
+	}
+	.oncase-header .oncase-logo{
+		top:0px;
+		margin-left:0;
+		width:140px;
+	}
+
+
+	.jumbo-text-small{
+		font-size:1em;
+	}
+	.jumbo-text-jumbo{
+		font-size:2em;
+		margin-top:0;
+	}
+	.jumbo-text{
+		margin-top: 31vh;
+	}
+}
+
