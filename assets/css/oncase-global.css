@@ -313,7 +313,7 @@ body,html{
 
 
 .jumbo-background{
-  background-image: url(http://demo.uncommons.pro/themes/wp/tammat/wp-content/uploads/2015/05/bd1.png?id=28);
+  background-image: url(../img/jumboBg.png);
   height: 700px;
   position: absolute;
   z-index: 0;
