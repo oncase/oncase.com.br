@@ -188,7 +188,7 @@ body,html{
    ============================================== */
 
 .oncase-waypoint-wrapper{
-	padding-top: 194px;
+	height: 228px;
 }
 
 .oncase-waypoint{
@@ -309,3 +309,32 @@ body,html{
 	}
 }
 
+
+
+
+.jumbo-background{
+  background-image: url(http://demo.uncommons.pro/themes/wp/tammat/wp-content/uploads/2015/05/bd1.png?id=28);
+  height: 700px;
+  position: absolute;
+  z-index: 0;
+  top: 0;
+  left: 0;
+  right: 0;
+  border-bottom: solid 1px #ccc;
+  background-size: fixed;
+  background-position:center center;
+  background-repeat:no-repeat;
+  opacity: 0;
+  background-attachment: fixed;
+}
+
+.jumbo-background.active{
+	opacity: 1;
+}
+
+.jumbo-background {
+	    -webkit-transition: all ease-in 400ms;
+    -moz-transition: all ease-in 400ms;
+    -o-transition: all ease-in 400ms;
+    transition: all ease-in 400ms;
+}

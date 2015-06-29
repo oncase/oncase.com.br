@@ -8,7 +8,8 @@
       'headerModule',
       'ngRoute',
       'ngAnimate',
-      'oncasePages'
+      'oncasePages',
+      'jumboBackgroundService'
   	]
   ).config(function($mdThemingProvider, $routeProvider, $locationProvider) {
 

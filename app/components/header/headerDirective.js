@@ -12,14 +12,16 @@
   	};
   })
 
-  .controller('HeaderCtrl',['$scope','menuService','$location',
-    function($scope,menuService,$location){
+  .controller('HeaderCtrl',['$scope','menuService','$location','jumboBackgroundService',
+    function($scope,menuService,$location,jumboBackgroundService){
 
     $scope.selectedIndex = menuService.getIndexForRoute($location.url());
 
     this.tabClicked = function(idx){
       menuService.navigateToIndex(idx);
     };
+
+    this.jumboBackgroundVisible = jumboBackgroundService.getVisibility;
     
   }]);
 

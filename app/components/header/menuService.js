@@ -1,7 +1,8 @@
 (function(){
 
 	angular.module('headerModule').
-	factory('menuService',['$location','$window','$timeout',function($location,$window,$timeout){
+	factory('menuService',['$location','$window','$timeout','jumboBackgroundService',
+		function($location,$window,$timeout,jumboBackgroundService){
 
 		var _selectedIndex = 0;
 
@@ -26,6 +27,7 @@
 
 		var _triggerLocation = function(url){
 			$location.url(url);
+			jumboBackgroundService.setHidden();
 			_resetHeader();
 		};
 

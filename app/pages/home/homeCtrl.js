@@ -1,8 +1,10 @@
 (function(){
 
-  angular.module('homeModule',['ui.bootstrap']).
+  angular.module('homeModule',['ui.bootstrap','jumboBackgroundService']).
 
-  controller('homeCtrl',function($scope){
+  controller('homeCtrl',['$scope','jumboBackgroundService',function($scope,jumboBackgroundService){
+
+    jumboBackgroundService.setVisible();
 
   	$scope.myInterval = 5000;
 
@@ -29,6 +31,6 @@
       }
   	];
     
-  });
+  }]);
 
 })();

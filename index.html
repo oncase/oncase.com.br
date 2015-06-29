@@ -23,7 +23,7 @@
   </head>
 
   <body ng-class="bodyClasses">
-
+    <div class="jumbo-background" ng-class="{  active : HeaderCtrl.jumboBackgroundVisible()  }"></div>
     <oncase-header></oncase-header>
     <div class="oncase-waypoint-wrapper">
       <div class="oncase-waypoint" id="oncase-waypoint" waypoint-config="{'target' :'.oncase-header','addDown' : 'oncase-small-header', 'remUp' : 'oncase-small-header'}"></div>
@@ -63,6 +63,7 @@
     <script src="app/components/header/menuService.js"></script>
     <script src="app/shared/waypointDirective.js"></script>
 
+    <script src="app/shared/jumboBackgroundService.js"></script>
     <script src="app/shared/overlayService.js"></script>
 
     <script src="app/components/side-menu/sideMenuDirective.js"></script>
