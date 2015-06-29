@@ -288,7 +288,7 @@ body,html{
 		display:none;
 	}
 	.oncase-waypoint-wrapper {
-	  padding-top: 30px;
+	  height: 30px;
 	}
 	.oncase-header .oncase-logo{
 		top:0px;
@@ -313,7 +313,7 @@ body,html{
 
 
 .jumbo-background{
-  background-image: url(http://i.imgur.com/wt4NRqA.jpg);
+  background-image: url(../img/jumboBg-blue.jpg);
   height: 700px;
   position: absolute;
   z-index: 0;
@@ -321,8 +321,7 @@ body,html{
   left: 0;
   right: 0;
   border-bottom: solid 1px #ccc;
-  background-size: 100%;
-  background-position:center center;
+  background-size: cover;
   background-repeat:no-repeat;
   opacity: 0;
   background-attachment: fixed;
