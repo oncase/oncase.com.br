@@ -264,6 +264,38 @@ body,html{
 
 
 
+
+
+.jumbo-background{
+  background-image: url(../img/jumboBg-blue.jpg);
+  height: 700px;
+  position: absolute;
+  z-index: 0;
+  top: 0;
+  left: 0;
+  right: 0;
+  border-bottom: solid 1px #ccc;
+  background-size: ;
+  background-repeat:no-repeat;
+  opacity: 0;
+  background-attachment: fixed;
+}
+
+.jumbo-background.active{
+	opacity: 1;
+}
+
+.jumbo-background {
+	    -webkit-transition: all ease-in 400ms;
+    -moz-transition: all ease-in 400ms;
+    -o-transition: all ease-in 400ms;
+    transition: all ease-in 400ms;
+}
+
+
+
+
+
 @media 
   only screen 
   and (max-device-width: 1280px) 
@@ -297,43 +329,17 @@ body,html{
 	}
 
 
-	.jumbo-text-small{
-		font-size:1em;
-	}
-	.jumbo-text-jumbo{
-		font-size:2em;
-		margin-top:0;
-	}
+
 	.jumbo-text{
 		margin-top: 31vh;
 	}
+
+	.jumbo-background{
+		height:60vh;
+	}
 }
 
-
-
-
-.jumbo-background{
-  background-image: url(../img/jumboBg-blue.jpg);
-  height: 700px;
-  position: absolute;
-  z-index: 0;
-  top: 0;
-  left: 0;
-  right: 0;
-  border-bottom: solid 1px #ccc;
-  background-size: cover;
-  background-repeat:no-repeat;
-  opacity: 0;
-  background-attachment: fixed;
-}
-
-.jumbo-background.active{
-	opacity: 1;
-}
-
-.jumbo-background {
-	    -webkit-transition: all ease-in 400ms;
-    -moz-transition: all ease-in 400ms;
-    -o-transition: all ease-in 400ms;
-    transition: all ease-in 400ms;
+@media only screen 
+  and (max-device-width: 568px) {
+  	.jumbo-background{background-attachment: scroll;}
 }

@@ -159,6 +159,98 @@ a.left.carousel-control {
 }
 
 
+md-grid-list md-grid-tile{
+	background-color:#fff;
+}
+
+.home-anouncement-card{
+  background-image: url(assets/img/mountains.png);
+  background-position: bottom left;
+  background-size: contain;
+  height: 400px;
+  position: relative;
+  background-repeat:no-repeat;
+  background-color:#fff;
+
+}
+
+.oncase-anouncement-readmore{
+	position:absolute;
+	right:20px;
+	bottom:20px;
+}
+
+.oncase-anouncement-image{
+	background-image: url(assets/img/magnifier.png);
+	position:absolute;
+	left:0;
+	top:0;
+	bottom:0;
+	width:50%;
+	background-position:40px center;
+	background-repeat:no-repeat;
+	background-size:auto 80%;
+	opacity: 0.9;
+
+	    -webkit-transition: all ease-out 200ms;
+    -moz-transition: all ease-out 200ms;
+    -o-transition: all ease-out 200ms;
+    transition: all ease-out 200ms;
+
+}
+.oncase-anouncement-image:hover{
+	opacity: 1;
+	transform: rotate(-2deg);
+	-webkit-transform: rotate(-2deg);
+	-ms-transform: rotate(-2deg);
+
+}
+
+.oncase-anouncement-image-text-wrapper{
+	position:absolute;
+	right:0;
+	top:0;
+	bottom:0;
+	width:60%;
+}
+
+.oncase-anouncement-image-text{
+	text-align:left;
+	width:100%;
+	color:#555;
+}
+
+.oncase-anouncement-image-text h1.oncase-anouncement{
+	font-size:3em;
+	margin-bottom:0;
+	margin-top:0;
+}
+
+.oncase-anouncement-image-text h3.oncase-anouncement{
+	margin-top:0;
+	margin-bottom:0;
+	font-size:2em;
+	font-weight:100;
+}
+
+
+md-list.oncase-anouncement md-list-item{
+  min-height:0;
+  font-size: 1.4em;
+  font-weight: 100;
+  margin: 10px;
+
+  margin-left: 0;
+  padding-left: 0;
+}
+
+md-list.oncase-anouncement md-list-item i{
+  color:#339641;
+  margin-right:15px;
+}
+
+
+
 
 @media 
   only screen 
@@ -172,10 +264,10 @@ a.left.carousel-control {
     { 
 
 	.jumbo-text-small{
-		font-size:1em;
+		font-size:8vw;
 	}
 	.jumbo-text-jumbo{
-		font-size:2em;
+		font-size:12vw;
 		margin-top:0;
 	}
 	.jumbo-text{
@@ -183,7 +275,7 @@ a.left.carousel-control {
 	}
 	.jumbo-image svg{
 		height:auto;
-		width:100%;
+		width:70%;
 		margin-top:10vh;
 		margin 0 auto;
 	}
@@ -199,11 +291,30 @@ a.left.carousel-control {
 	.oncase-content-margin{
 		margin:0;
 	}
+
+	md-list.oncase-anouncement md-list-item{
+	  font-size: 1em;
+	  margin:0;
+	}
+
+
+	.oncase-anouncement-image-text h1.oncase-anouncement{
+		font-size:1.7em;
+	}
+
+	.oncase-anouncement-image-text h3.oncase-anouncement{
+		font-size:1.2em;
+	}
+	.oncase-anouncement-image{
+		background-size:50% auto;
+		background-position:30px 90%;
+	}
+
 }
 
-md-grid-list md-grid-tile{
-	background-color:#fff;
-}
+
+
+
 
 
 </style>
@@ -234,33 +345,49 @@ md-grid-list md-grid-tile{
 </section>-->
 
 
-  <md-grid-list
-        md-cols-sm="1" md-cols-md="2" md-cols-gt-md="12"
-        md-row-height-gt-md="1:1" md-row-height="2:2"
-        md-gutter="40px" md-gutter-gt-sm="40px" class="oncase-content-margin">
-    <md-grid-tile class="md-whiteframe-z1 gray"
-        md-colspan="12" md-rowspan="4" md-colspan-sm="1">
 
-    </md-grid-tile>
-    <md-grid-tile class="md-whiteframe-z1 green"  md-colspan="3" md-rowspan="2" md-colspan-sm="1">
 
-    </md-grid-tile>
-    <md-grid-tile class="md-whiteframe-z1 yellow" md-colspan="3" md-rowspan="2" md-colspan-sm="1">
+<div class="md-whiteframe-z1 home-anouncement-card oncase-content-margin">
+	<div class="oncase-anouncement-image pull-left"></div>
+	<div class="oncase-anouncement-image-text-wrapper" layout="column" layout-align="center center">
+		<div class="oncase-anouncement-image-text">
+			<h1 class="oncase-anouncement">Analytics de ponta a ponta</h1>
+			<h3 class="oncase-anouncement">Entenda melhor os seus dados</h3>
+			<md-list class="oncase-anouncement">
+				<md-list-item>
+					<i class="material-icons">check</i>
+					Reduza perdas
+				</md-list-item>
+				<md-list-item>
+					<i class="material-icons">check</i>
+					Minimize custos
+				</md-list-item>
+				<md-list-item>
+					<i class="material-icons">check</i>
+					Aumente receitas
+				</md-list-item>
+				<md-list-item>
+					<i class="material-icons">check</i>
+					Economize tempo
+				</md-list-item>
+			</md-list>
+			<div class="md-actions oncase-anouncement-readmore" >
+				<md-button class="md-raised md-primary">Leia mais</md-button>
+			</div>
+		</div>
+	</div>
+</div>
 
-    </md-grid-tile>
-    <md-grid-tile class="md-whiteframe-z1 yellow" md-colspan="3" md-rowspan="2" md-colspan-sm="1">
-
-    </md-grid-tile>
-    <md-grid-tile class="md-whiteframe-z1 yellow" md-colspan="3" md-rowspan="2" md-colspan-sm="1">
-
-    </md-grid-tile>
-    <md-grid-tile class="md-whiteframe-z1 yellow" md-colspan="4" md-rowspan="4" md-colspan-sm="1">
-
-    </md-grid-tile>
-    <md-grid-tile class="md-whiteframe-z1 yellow" md-colspan="4" md-rowspan="4" md-colspan-sm="1">
-
-    </md-grid-tile>
-    <md-grid-tile class="md-whiteframe-z1 yellow" md-colspan="4" md-rowspan="4" md-colspan-sm="1">
-
-    </md-grid-tile>
-  </md-grid-list>
+&nbsp;
+<br />&nbsp;
+<br />&nbsp;
+<br />&nbsp;
+<br />&nbsp;
+<br />&nbsp;
+<br />&nbsp;
+<br />&nbsp;
+<br />&nbsp;
+<br />&nbsp;
+<br />&nbsp;
+<br />&nbsp;
+<br />
