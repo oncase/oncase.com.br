@@ -259,22 +259,21 @@ md-list.oncase-anouncement md-list-item i{
   and (-webkit-min-device-pixel-ratio: 1),
    
  only screen 
-  and (max-device-width: 1022px)
+  and (max-device-width: 1023px)
 
     { 
 
 	.jumbo-text-small{
-		font-size:8vw;
+		font-size:3em;
 	}
 	.jumbo-text-jumbo{
-		font-size:12vw;
+		font-size:4em;
 		margin-top:0;
 	}
 	.jumbo-text{
-		margin-top: 31vh;
+		margin-top: 30vh;
 	}
 	.jumbo-image svg{
-		height:auto;
 		width:70%;
 		margin-top:10vh;
 		margin 0 auto;
@@ -313,7 +312,34 @@ md-list.oncase-anouncement md-list-item i{
 }
 
 
+@media 
+  only screen 
+  and (min-device-width: 320px) 
+  and (max-device-width: 568px)
+  and (-webkit-min-device-pixel-ratio: 2) {
+	.jumbo-text-small{
+		font-size:1em;
+	}
+	.jumbo-text-jumbo{
+		font-size:2em;
+		margin-top:0;
+	}
+	.oncase-anouncement-image-text-wrapper{
+		width:80%;
+	}
 
+	.oncase-anouncement-image{
+		width:30%;
+	}
+	.jumbo-image svg{
+	}
+	.jumbo-image i{
+		margin-top:10px;
+	}
+	..home-anouncement-card{
+		height:200px;
+	}
+  }
 
 
 

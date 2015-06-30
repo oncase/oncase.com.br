@@ -303,7 +303,7 @@ body,html{
   and (-webkit-min-device-pixel-ratio: 1),
    
  only screen 
-  and (max-device-width: 1022px)
+  and (max-device-width: 1023px)
 
     { 
 
@@ -328,11 +328,6 @@ body,html{
 		width:140px;
 	}
 
-
-
-	.jumbo-text{
-		margin-top: 31vh;
-	}
 
 	.jumbo-background{
 		height:60vh;
