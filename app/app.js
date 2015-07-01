@@ -4,12 +4,11 @@
   	'oncase',
   	[
   		'ngMaterial',
-      'waypointConfigDirective',
       'headerModule',
       'ngRoute',
       'ngAnimate',
       'oncasePages',
-      'jumboBackgroundService'
+      'jumboBackgroundService','mouseOverClass'
   	]
   ).config(function($mdThemingProvider, $routeProvider, $locationProvider) {
 

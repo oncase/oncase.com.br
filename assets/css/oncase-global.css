@@ -27,7 +27,7 @@ body,html{
    ============================================== */
 
 .oncase-header{
-	position: fixed;
+	position: absolute;
 	border: none;
 	outline:none;
 	background-color: #2b4c7f;
@@ -166,13 +166,13 @@ body,html{
 }
 .oncase-header.oncase-small-header {
 	height:68px;
+	position:fixed;
 }
 .oncase-header.oncase-small-header md-tabs{
 	top:-180px;
 }
 
 /* Header animations
- */
 
 .oncase-header .oncase-logo,
 .oncase-header md-tabs,
@@ -181,14 +181,14 @@ body,html{
     -moz-transition: all ease-in 300ms;
     -o-transition: all ease-in 300ms;
     transition: all ease-in 300ms;
-}
+}*/
 
 /* ==============================================
 	Main content waypoint style
    ============================================== */
 
 .oncase-waypoint-wrapper{
-	height: 228px;
+	height: 248px;
 }
 
 .oncase-waypoint{
@@ -315,6 +315,7 @@ body,html{
 
 	.oncase-header {
 		height:68px;
+		position:fixed;
 	}
 	.oncase-header md-tabs{
 		display:none;

@@ -1,7 +1,7 @@
 (function(){
 
   angular.module('headerModule', ['ripple',
-      'sideMenu'] )
+      'sideMenu', 'scrollModule'] )
   
   .directive('oncaseHeader',function(){
   	return {

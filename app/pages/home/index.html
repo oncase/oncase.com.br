@@ -22,10 +22,10 @@
 }
 
 .jumbo-text-small {
-	font-size: 2.5em;
+	font-size: 2.1em;
 }
 .jumbo-text-jumbo {
-	font-size: 4em;
+	font-size: 3.6em;
 	line-height:1em;
 }
 .jumbo-image{
@@ -171,6 +171,7 @@ md-grid-list md-grid-tile{
   position: relative;
   background-repeat:no-repeat;
   background-color:#fff;
+  margin-top:-20px;
 
 }
 
@@ -217,7 +218,7 @@ md-grid-list md-grid-tile{
 .oncase-anouncement-image-text{
 	text-align:left;
 	width:100%;
-	color:#555;
+	color:#444;
 }
 
 .oncase-anouncement-image-text h1.oncase-anouncement{
@@ -250,7 +251,91 @@ md-list.oncase-anouncement md-list-item i{
 }
 
 
+.oncase-content-margin-flex{
+	margin: 0px 32px;
+}
 
+.oncase-flexcards-wrapper {
+	margin: 20px 25px;
+}
+
+
+.oncase-flexcard{
+	background-color:#fff;
+	padding:20px;
+	color:#444;
+	margin-bottom:20px;
+	text-align: center;
+	padding-bottom:60px;
+	cursor:pointer;
+}
+
+.oncase-flexcard-img{
+	height:160px;
+	width:100%;
+  	text-align: center;
+  	margin-bottom: 30px;
+}
+
+.oncase-flexcard-img svg{
+	height:160px;
+	fill:#ccc;
+}
+
+.oncase-flexcard .oncase-flexcard-img svg{
+	fill:#999;
+}
+.oncase-flexcard:hover .oncase-flexcard-img svg{
+	fill:reset;
+}
+
+.oncase-flexcard h2{
+	text-align:center;
+}
+
+.oncase-header-underscore{
+	height:1px;
+	margin:0 auto;
+	width:0px;
+	margin-top:-10px;
+	margin-bottom:20px;
+}
+
+.oncase-flexcard:hover .oncase-header-underscore{
+	width:90%;
+}
+
+
+.oncase-flexcard:hover .fill-red svg			{fill:#f23b2e;}
+.oncase-flexcard:hover .fill-pink svg			{fill:#e60063;}
+.oncase-flexcard:hover .fill-purple svg			{fill:#9900b7;}
+.oncase-flexcard:hover .fill-deep-purple svg	{fill:#6427bd;}
+.oncase-flexcard:hover .fill-blue svg			{fill:#228ff9;}
+.oncase-flexcard:hover .fill-green svg			{fill:#52b33d;}
+.oncase-flexcard:hover .fill-light-green svg	{fill:#8ec62b;}
+
+.bg-red 		{background-color:#f23b2e;}
+.bg-pink 		{background-color:#e60063;}
+.bg-purple 		{background-color:#9900b7;}
+.bg-deep-purple {background-color:#6427bd;}
+.bg-blue 		{background-color:#228ff9;}
+.bg-green 		{background-color:#52b33d;}
+.bg-light-green {background-color:#8ec62b;}
+
+.oncase-flexcard,
+.oncase-flexcard svg,
+.oncase-header-underscore{
+		    -webkit-transition: all ease-out 200ms;
+    -moz-transition: all ease-out 200ms;
+    -o-transition: all ease-out 200ms;
+    transition: all ease-out 200ms;
+}
+
+[layout-wrap]{
+	justify-content: space-between;
+	-webkit-box-pack:justify;
+	-webkit-box-orient:horizontal;
+}
 
 @media 
   only screen 
@@ -259,15 +344,20 @@ md-list.oncase-anouncement md-list-item i{
   and (-webkit-min-device-pixel-ratio: 1),
    
  only screen 
-  and (max-device-width: 1023px)
+  and (max-device-width: 1022px) { 
 
-    { 
+	.oncase-flexcards-wrapper {
+		margin: 20px 5px;
+	}
 
+    .carousel-inner{
+    	padding-top:20px;
+    }
 	.jumbo-text-small{
-		font-size:3em;
+		font-size:2.4em;
 	}
 	.jumbo-text-jumbo{
-		font-size:4em;
+		font-size:3.6em;
 		margin-top:0;
 	}
 	.jumbo-text{
@@ -288,7 +378,7 @@ md-list.oncase-anouncement md-list-item i{
 	}
 
 	.oncase-content-margin{
-		margin:0;
+		margin:23px;
 	}
 
 	md-list.oncase-anouncement md-list-item{
@@ -296,6 +386,9 @@ md-list.oncase-anouncement md-list-item i{
 	  margin:0;
 	}
 
+	.oncase-content-margin-flex{
+		margin: 0;
+	}
 
 	.oncase-anouncement-image-text h1.oncase-anouncement{
 		font-size:1.7em;
@@ -318,8 +411,9 @@ md-list.oncase-anouncement md-list-item i{
 		text-shadow: none;
 	}
 
-}
 
+
+}
 
 @media 
   only screen 
@@ -345,16 +439,26 @@ md-list.oncase-anouncement md-list-item i{
 	.jumbo-image i{
 		margin-top:10px;
 	}
-	..home-anouncement-card{
-		height:200px;
+	.home-anouncement-card{
+		height:360px;
+		margin-top:-20px;
 	}
-  }
+	.oncase-flex-element>div.oncase-flexcard{
 
+		max-width:96%;
+		margin:10px auto;
+
+	}
+	.oncase-flex-element{
+		margin:12px;
+	}
+
+  }
 
 
 </style>
 
-<section class="oncase-home-jumbotron ">  
+<section class="oncase-home-jumbotron " >  
  
 	<carousel interval="5000">
 		<slide ng-repeat="slide in slides" active="slide.active">
@@ -373,16 +477,9 @@ md-list.oncase-anouncement md-list-item i{
 	</carousel>
 
 </section>
-<!--
-<section class="oncase-content-margin oncase-content-paper md-whiteframe-z2">
-
-	
-</section>-->
 
 
-
-
-<div class="md-whiteframe-z1 home-anouncement-card oncase-content-margin">
+<div class="md-whiteframe-z1 home-anouncement-card oncase-content-margin" layout-margin>
 	<div class="oncase-anouncement-image pull-left"></div>
 	<div class="oncase-anouncement-image-text-wrapper" layout="column" layout-align="center center">
 		<div class="oncase-anouncement-image-text">
@@ -411,8 +508,43 @@ md-list.oncase-anouncement md-list-item i{
 			</div>
 		</div>
 	</div>
+
 </div>
 
+<div class="oncase-flexcards-wrapper" >
+
+	<div layout="row" layout-wrap layout-margin class="oncase-flex-element">
+
+	  <div flex="23" flex-md="45" flex-sm="100" class="oncase-flexcard md-whiteframe-z1" mouse-over-class="md-whiteframe-z2" >
+	  	<div class="oncase-flexcard-img fill-red" ng-include="'assets/img/elephant.svg'"></div>
+	  	<h2>Big Data Integration</h2>
+	  	<div class="oncase-header-underscore bg-red"></div>
+	  	Integrate, Clean and Enhance your data consuming it from virtualy any source.
+	  </div>
+
+	  <div flex="23" flex-md="45" flex-sm="100"  class="oncase-flexcard md-whiteframe-z1" mouse-over-class="md-whiteframe-z2" >
+		<div class="oncase-flexcard-img fill-blue" ng-include="'assets/img/charts.svg'"></div>
+		<h2>Business Intelligence</h2>
+	  	<div class="oncase-header-underscore bg-blue"></div>
+		Explore, get alerted and and visualize your information on any demand and depth
+	  </div>
+
+	  <div flex="23" flex-md="45" flex-sm="100"  class="oncase-flexcard md-whiteframe-z1" mouse-over-class="md-whiteframe-z2" >
+		<div class="oncase-flexcard-img fill-green" ng-include="'assets/img/analytics-card.svg'"></div>
+		<h2>Data Analytics</h2>
+	  	<div class="oncase-header-underscore bg-green"></div>
+		Understand the knowledge within your information and antecipate risks
+	  </div>
+
+	  <div flex="23" flex-md="45" flex-sm="100"  class="oncase-flexcard md-whiteframe-z1" mouse-over-class="md-whiteframe-z2" >
+		<div class="oncase-flexcard-img fill-purple" ng-include="'assets/img/optimization.svg'"></div>
+		<h2>Optimization</h2>
+	  	<div class="oncase-header-underscore bg-purple"></div>
+		Tune your organization to its full potential
+	  </div>
+	</div>
+
+</div>
 &nbsp;
 <br />&nbsp;
 <br />&nbsp;

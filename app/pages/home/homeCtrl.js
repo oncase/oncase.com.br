@@ -29,7 +29,13 @@
         isIcon : true,
         iconColor : "orange"
       }
+
   	];
+
+
+      $scope.test = function(){
+        console.log(1);
+      };
     
   }]);
 
