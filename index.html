@@ -10,6 +10,7 @@
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet" />
     <link href='http://fonts.googleapis.com/css?family=Roboto:400,300' rel='stylesheet' type='text/css' />
 
+    <link rel="stylesheet" href="assets/css/bootstrap-grid-system.min.css" />
     <link rel="stylesheet" href="https://ajax.googleapis.com/ajax/libs/angular_material/0.9.4/angular-material.min.css" />
     
     <!-- Carousel -->
@@ -23,7 +24,7 @@
   </head>
 
   <body ng-class="bodyClasses">
-    <div class="jumbo-background" ng-class="{  active : HeaderCtrl.jumboBackgroundVisible()  }"></div>
+    <div class="jumbo-background" ng-class="{ active : HeaderCtrl.jumboBackgroundVisible() }"></div>
     <oncase-header></oncase-header>
     <div class="oncase-waypoint-wrapper">
       <!--<div class="oncase-waypoint" id="oncase-waypoint" waypoint-config="{'target' :'.oncase-header','addDown' : 'oncase-small-header', 'remUp' : 'oncase-small-header'}"></div>-->
@@ -36,6 +37,7 @@
     </div>
     <side-menu></side-menu>
     <div ng-class="olClasses" ng-click="closeCallback()" ></div>
+<span class="visible-xs">SIZE XS</span><span class="visible-sm">SIZE SM</span><span class="visible-md">SIZE MD</span><span class="visible-lg">SIZE LG</span>
   </body>
 
     <!-- Angular -->

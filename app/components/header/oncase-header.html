@@ -3,11 +3,11 @@
                         targetDepth : 6, 
                         triggerSelector : '.oncase-header-ripple-tgt md-tab-item *, .oncase-header-ripple-tgt md-tab-item', 
                         doNotTriggerSelector : 'md-tab-item.md-active, md-tab-item.md-active *'
-                      }" scroll="180">
+                      }" scroll="80">
 
   <div class="oncase-logo"></div>
 
-  <md-tabs md-selected="selectedIndex" class="oncase-header-ripple-tgt" md-scompotretch-tabs="never" md-center-tabs md-no-ink md-align-tabs="bottom" >
+  <md-tabs md-selected="selectedIndex" class="hidden-md hidden-sm hidden-xs oncase-header-ripple-tgt" md-scompotretch-tabs="never" md-center-tabs md-no-ink md-align-tabs="bottom" >
       <md-tab md-on-select="HeaderCtrl.tabClicked(selectedIndex)" label="Home" data-identifier="actualTab"></md-tab>
       <md-tab md-on-select="HeaderCtrl.tabClicked(selectedIndex)" label="Quem Somos"></md-tab>
       <md-tab md-on-select="HeaderCtrl.tabClicked(selectedIndex)" label="Serviços"></md-tab>
@@ -15,7 +15,7 @@
       <md-tab md-on-select="HeaderCtrl.tabClicked(selectedIndex)" label="Clientes&Parceiros"></md-tab>
       <md-tab md-on-select="HeaderCtrl.tabClicked(selectedIndex)" label="Contato"></md-tab>
   </md-tabs>
-      <div class="oncase-menu-button">
+      <div class="hidden-lg oncase-menu-button">
         <md-button class="pull-right tapa-menu tapa-icon md-icon-button md-primary" ng-click="showMenu('right')" aria-label="Settings">
           <md-icon md-svg-icon="assets/img/menu.svg"></md-icon>
         </md-button>
