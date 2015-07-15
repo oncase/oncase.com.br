@@ -356,6 +356,13 @@ p.oncase-promo-text{
     height:50px;
 }
 
+
+button.md-raised.oncase-button:hover{
+    box-shadow: 0 5px 8px 0 rgba(0,0,0,.4); 
+    -moz-box-shadow: 0 5px 8px 0 rgba(0,0,0,.4); 
+    -webkit-box-shadow: 0 5px 8px 0 rgba(0,0,0,.4); 
+}
+
 /* ==============================================
 	Medium devices specifics - sync with BS3.0
    ============================================== */
@@ -397,7 +404,7 @@ p.oncase-promo-text{
     X-Small devices specifics - sync with BS3.0
 
      ---- portrait ----
-     
+
    ============================================== */
 @media(max-width:767px) and(orientation:portrait){
     .oncase-white-section h1.oncase-section-heading{
