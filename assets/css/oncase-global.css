@@ -2,6 +2,7 @@ body,
 html {
     background-color: #eee;
     background-image: url(../img/bg-texture.png);
+    font-family: 'Roboto', sans-serif;
 }
 .oncase-logo {
     background-image: url(../img/oncase-logo-sec-noslogan.svg);
@@ -259,6 +260,98 @@ md-tabs.md-default-theme .md-tab.md-focused {
     transition: all ease-in 400ms;
 }
 
+
+
+
+
+/* global items
+ */
+
+.oncase-big-button {
+    padding:5px 30px;
+
+}
+
+.oncase-white-section{
+
+    padding:40px 0;
+    width:100%;
+    background-color:#fff;
+    margin-top:60px;
+}
+
+.oncase-white-section h2.oncase-section-heading{
+    font-weight:bold;
+    text-align:center;
+    font-size:2em;
+    margin-top:0px;
+    margin-bottom:0;
+    letter-spacing: -1px;
+    
+}
+.oncase-white-section h3.oncase-section-heading{
+    font-weight:bold;
+    text-align:center;
+    font-size:2.8em;
+    margin-top:0px;
+    margin-bottom:0;
+    letter-spacing: -1px;
+    
+}
+.oncase-white-section h1.oncase-section-heading{
+    font-weight:900;
+    text-align:center;
+    font-size:3.6em;
+    margin-top:0px;
+    text-transform: uppercase;
+    letter-spacing: -1px;
+    margin-bottom:0;
+    line-height: 1em;
+}
+
+.oncase-section-heading-underscore {
+    width:16%;
+    margin:0 auto;
+    height:1px;
+    margin-top:16px;
+}
+
+.bg-oncase-blue {background-color:#2b4c7f;}
+.bg-oncase-orange{background-color:#fb6816;}
+.bg-oncase-gray{background-color:#444;}
+.bg-oncase-light-gray{background-color:#ccc;}
+
+.oncase-blue {color:#2b4c7f;}
+.oncase-orange{color:#fb6816;}
+.oncase-gray{color:#444;}
+.oncase-light-gray{color:#ccc;}
+
+p.oncase-promo-text{
+    font-size:18px;
+    color:#444;
+    text-align:center;
+    clear:both;
+}
+
+.oncase-section-image-single svg{
+    margin-top:10px;
+    width:300px;
+}
+
+.oncase-section-image-double svg{
+    margin-top:10px;
+    width:180px;
+}
+
+.oncase-section-image-triple svg{
+    margin-top:10px;
+    width:320px;
+}
+
+.oncase-separator{
+    width:100%;
+    height:50px;
+}
 
 /* ==============================================
 	Medium devices specifics - sync with BS3.0

@@ -37,6 +37,10 @@
 .jumbo-absolute-center{
     text-align: center;
 }
+
+.oncase-absolute-center{
+    text-align: center;
+}
 .jumbo-text {
     margin-top: 50px;
     color: #444;
@@ -285,20 +289,21 @@ md-list.oncase-anouncement md-list-item i{
 
 
 .oncase-flexcard{
-	background-color:#fff;
 	padding:20px;
 	color:#444;
 	margin-bottom:20px;
 	text-align: center;
 	padding-bottom:30px;
-	cursor:pointer;
+	cursor:default;
 }
-
+.oncase-flexcard:hover{
+	background-color:#f5f5f5;
+}
 .oncase-flexcard-img{
 	height:160px;
 	width:100%;
   	text-align: center;
-  	margin-bottom: 30px;
+  	margin-bottom: 0;
 }
 
 .oncase-flexcard-img svg{
@@ -315,14 +320,14 @@ md-list.oncase-anouncement md-list-item i{
 
 .oncase-flexcard h2{
 	text-align:center;
+	margin-bottom:0;
+  	margin-top: 10px;
 }
 
 .oncase-header-underscore{
 	height:1px;
 	margin:0 auto;
 	width:0px;
-	margin-top:-10px;
-	margin-bottom:20px;
 }
 
 .oncase-flexcard:hover .oncase-header-underscore{
@@ -330,13 +335,6 @@ md-list.oncase-anouncement md-list-item i{
 }
 
 
-.oncase-flexcard:hover .fill-red svg			{fill:#f23b2e;}
-.oncase-flexcard:hover .fill-pink svg			{fill:#e60063;}
-.oncase-flexcard:hover .fill-purple svg			{fill:#9900b7;}
-.oncase-flexcard:hover .fill-deep-purple svg	{fill:#6427bd;}
-.oncase-flexcard:hover .fill-blue svg			{fill:#228ff9;}
-.oncase-flexcard:hover .fill-green svg			{fill:#52b33d;}
-.oncase-flexcard:hover .fill-light-green svg	{fill:#8ec62b;}
 
 .bg-red 		{background-color:#f23b2e;}
 .bg-pink 		{background-color:#e60063;}
@@ -559,11 +557,6 @@ md-list.oncase-anouncement md-list-item i{
 					Economize tempo
 				</md-list-item>
 			</md-list>
-			<!--
-			<div class="md-actions oncase-anouncement-readmore" >
-				<md-button class="md-raised md-primary">Leia mais</md-button>
-			</div>
-		-->
 		</div>
 	</div>
 
@@ -575,10 +568,10 @@ md-list.oncase-anouncement md-list-item i{
 
 	<div class="col-lg-height col-sm-12 col-md-6 col-lg-3">
 
-	  <div class=" oncase-flexcard md-whiteframe-z1" mouse-over-class="md-whiteframe-z2" >
-	  	<div class="oncase-flexcard-img fill-red" ng-include="'assets/img/elephant.svg'"></div>
+	  <div class=" oncase-flexcard " mouse-over-class="md-whiteframe-z1" >
+	  	<div class="oncase-flexcard-img" ng-include="'assets/img/elephant.svg'"></div>
 	  	<h2>Big Data Integration</h2>
-	  	<div class="oncase-header-underscore bg-red"></div>
+	  	<div class="oncase-header-underscore bg-oncase-blue"></div>
 	  	<div class="oncase-wrapped-text-3l">Integrate, Clean and Enhance your data consuming it from virtualy any source.</div>
 	  </div>
 
@@ -586,36 +579,87 @@ md-list.oncase-anouncement md-list-item i{
 	</div>
 	<div class="col-lg-height col-sm-12 col-md-6 col-lg-3">
 
-	  <div class=" oncase-flexcard md-whiteframe-z1" mouse-over-class="md-whiteframe-z2" >
-		<div class="oncase-flexcard-img fill-blue" ng-include="'assets/img/charts.svg'"></div>
+	  <div class=" oncase-flexcard " mouse-over-class="md-whiteframe-z1" >
+		<div class="oncase-flexcard-img" ng-include="'assets/img/charts.svg'"></div>
 		<h2>Business Intelligence</h2>
-	  	<div class="oncase-header-underscore bg-blue"></div>
+	  	<div class="oncase-header-underscore bg-oncase-blue"></div>
 		<div class="oncase-wrapped-text-3l">Explore, get alerted and and visualize your information on any demand and depth</div>
 	  </div>
 
 	</div>
 	<div class="col-lg-height col-sm-12 col-md-6 col-lg-3">
 
-	  <div class=" oncase-flexcard md-whiteframe-z1" mouse-over-class="md-whiteframe-z2" >
-		<div class="oncase-flexcard-img fill-green" ng-include="'assets/img/analytics-card.svg'"></div>
+	  <div class=" oncase-flexcard " mouse-over-class="md-whiteframe-z1" >
+		<div class="oncase-flexcard-img" ng-include="'assets/img/analytics-card.svg'"></div>
 		<h2>Data Analytics</h2>
-	  	<div class="oncase-header-underscore bg-green"></div>
+	  	<div class="oncase-header-underscore bg-oncase-blue"></div>
 		<div class="oncase-wrapped-text-3l">Understand the knowledge within your information and antecipate risks</div>
 	  </div>
 
 	</div>
 	<div class="col-lg-height col-sm-12 col-md-6 col-lg-3">
 
-	  <div class=" oncase-flexcard md-whiteframe-z1" mouse-over-class="md-whiteframe-z2" >
-		<div class="oncase-flexcard-img fill-purple" ng-include="'assets/img/optimization.svg'"></div>
+	  <div class=" oncase-flexcard " mouse-over-class="md-whiteframe-z1" >
+		<div class="oncase-flexcard-img" ng-include="'assets/img/optimization.svg'"></div>
 		<h2>Optimization</h2>
-	  	<div class="oncase-header-underscore bg-purple"></div>
+	  	<div class="oncase-header-underscore bg-oncase-blue"></div>
 		<div class="oncase-wrapped-text-3l">Tune your organization to its full potential</div>
 	  </div>
 
 	</div>
 
+
+
 </div>
+
+<div layout="row" layout-align="center center">
+	  <md-button class="md-raised oncase-big-button md-primary">See more</md-button>
+</div>
+
+<section class="oncase-white-section">
+	<div class="oncase-content-margin">
+
+		<h2 class="oncase-section-heading oncase-gray" >Um pouco do nosso</h2>
+		<h1 class="oncase-section-heading oncase-blue">Reconhecimento</h1>
+		<div class="oncase-section-heading-underscore bg-oncase-orange"></div>
+		<p class="oncase-promo-text">
+			A Oncase tem em sua veia, a busca constante pela entrega de qualidade nos seus serviços e produtos oferecidos.
+			<br />Como consequência direta disso, acumulamos alguns reconhecimentos perseguidos, que ilustram a seriedade do nosso trabalho.
+		</p>
+
+
+		<div class="oncase-separator"></div>
+		<h3 class="oncase-section-heading oncase-blue">Premium Partner</h2>
+		<div ng-include="'assets/img/pentaho-premium-partner.svg'" class="oncase-absolute-center oncase-section-image-single"></div>
+		<p class="oncase-promo-text">
+			Até o momento, somos o único Premium Partner Pentaho no Brasil e isso não é qualquer status.
+			<br />Uma empresa torna-se Premium Partner no momento em que a Pentaho reconhece a sua importância e influência no mercado
+		</p>
+
+
+		<div class="oncase-separator "></div>
+		<h3 class="oncase-section-heading oncase-blue">Partner of the Year</h2>
+		<div class="col-sm-12 col-lg-offset-3 col-lg-3 oncase-absolute-center oncase-section-image-double" ng-include="'assets/img/poty-2013.svg'" ></div>
+		<div class="col-sm-12                 col-lg-3 oncase-absolute-center oncase-section-image-double" ng-include="'assets/img/poty-2014.svg'" ></div>
+		<p class="oncase-promo-text">
+			Até o momento, somos o único Premium Partner Pentaho no Brasil e isso não é qualquer status.
+			<br />Uma empresa torna-se Premium Partner no momento em que a Pentaho reconhece a sua importância e influência no mercado
+		</p>
+
+		<div class="oncase-separator"></div>
+		<h3 class="oncase-section-heading oncase-blue">Certifications</h2>
+		<div class="col-md-12  col-lg-4 oncase-absolute-center oncase-section-image-triple" ng-include="'assets/img/cmmi-dev.svg'" ></div>
+		<div class="col-md-12  col-lg-4 oncase-absolute-center oncase-section-image-triple" ng-include="'assets/img/cmmi-svc.svg'" ></div>
+		<div class="col-md-12  col-lg-4 oncase-absolute-center oncase-section-image-triple" ng-include="'assets/img/mps-br.svg'" ></div>
+		<p class="oncase-promo-text">
+			Até o momento, somos o único Premium Partner Pentaho no Brasil e isso não é qualquer status.
+			<br />Uma empresa torna-se Premium Partner no momento em que a Pentaho reconhece a sua importância e influência no mercado
+		</p>
+
+
+	</div>
+
+</section>
 
 &nbsp;
 &nbsp;
