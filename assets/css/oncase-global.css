@@ -298,7 +298,7 @@ md-tabs.md-default-theme .md-tab.md-focused {
     margin-bottom:0;
     letter-spacing: -1px;
     clear:both;
-    
+    border-bottom:solid 1px #ccc;
 }
 .oncase-white-section h1.oncase-section-heading{
     font-weight:900;
@@ -391,4 +391,21 @@ p.oncase-promo-text{
 		height:350px;
 	}
 	
+}
+
+/* ==============================================
+    X-Small devices specifics - sync with BS3.0
+
+     ---- portrait ----
+     
+   ============================================== */
+@media(max-width:767px) and(orientation:portrait){
+    .oncase-white-section h1.oncase-section-heading{
+        font-size:2.2em;
+    }
+    .oncase-section-image-triple svg,
+    .oncase-section-image-single svg{
+        margin-top:10px;
+        width:250px;
+    }
 }
