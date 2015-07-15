@@ -287,6 +287,7 @@ md-tabs.md-default-theme .md-tab.md-focused {
     margin-top:0px;
     margin-bottom:0;
     letter-spacing: -1px;
+    clear:both;
     
 }
 .oncase-white-section h3.oncase-section-heading{
@@ -296,6 +297,7 @@ md-tabs.md-default-theme .md-tab.md-focused {
     margin-top:0px;
     margin-bottom:0;
     letter-spacing: -1px;
+    clear:both;
     
 }
 .oncase-white-section h1.oncase-section-heading{
@@ -307,6 +309,7 @@ md-tabs.md-default-theme .md-tab.md-focused {
     letter-spacing: -1px;
     margin-bottom:0;
     line-height: 1em;
+    clear:both;
 }
 
 .oncase-section-heading-underscore {
