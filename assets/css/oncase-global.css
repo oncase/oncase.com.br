@@ -237,7 +237,7 @@ md-tabs.md-default-theme .md-tab.md-focused {
     }
 }
 .jumbo-background {
-    background-image: url(../img/jumboBg-blue.jpg);
+    background-image: url(../img/jumbo-bg.png);
     height: 700px;
     position: absolute;
     z-index: 0;
