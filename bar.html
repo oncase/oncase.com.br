@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<meta charset="utf-8">
+
+<head>
+</head>
+
+<body>
+<div id="barChart"></div>
+<script src="http://d3js.org/d3.v3.min.js"></script>
+
+<script>
+
+var dataBar = [
+  {category:'01', value:53},
+  {category:'02', value:33},
+  {category:'03', value:63},
+  {category:'04', value:83},
+  {category:'05', value:13}
+
+];
+var marginBar = {top: 0, right: 0, bottom: 0, left: 0},
+    width = 200 - marginBar.left - marginBar.right,
+    height = 140 - marginBar.top - marginBar.bottom;
+
+var x = d3.scale.ordinal().rangeRoundBands([0, width], .05);
+var y = d3.scale.linear().range([height, 0]);
+
+var svgBar = d3.select("#barChart").append("svg")
+    .attr("width", width + marginBar.left + marginBar.right)
+    .attr("height", height + marginBar.top + marginBar.bottom)
+  .append("g")
+    .attr("transform", 
+          "translate(" + marginBar.left + "," + marginBar.top + ")");
+
+	
+  x.domain(dataBar.map(function(d) { return d.category; }));
+  y.domain([0, d3.max(dataBar, function(d) { return d.value; })]);
+
+
+  svgBar.selectAll("bar")
+      .data(dataBar)
+    .enter().append("rect")
+      .style("fill", "steelblue")
+      .attr("x", function(d) { return x(d.category); })
+      .attr("width", x.rangeBand()-10)
+      .attr("y", function(d) { return y(d.value); })
+      .attr("height", function(d) { return height - y(d.value); });
+
+</script>
+
+</body>

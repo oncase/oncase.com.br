@@ -37,8 +37,12 @@
     </div>
     <side-menu></side-menu>
     <div ng-class="olClasses" ng-click="closeCallback()" ></div>
-<span class="visible-xs">SIZE XS</span><span class="visible-sm">SIZE SM</span><span class="visible-md">SIZE MD</span><span class="visible-lg">SIZE LG</span>
+<!--<span class="visible-xs">SIZE XS</span><span class="visible-sm">SIZE SM</span><span class="visible-md">SIZE MD</span><span class="visible-lg">SIZE LG</span>-->
+    <oncase-footer></oncase-footer>
   </body>
+
+    <!-- d3js for our awesome(?) footer -->
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/d3/3.5.6/d3.min.js"></script>
 
     <!-- Angular -->
     <script src="/assets/js/angular.min.js"></script>
@@ -63,6 +67,7 @@
     <script src="/app/shared/rippleService.js"></script>
     <script src="/app/components/header/headerDirective.js"></script>
     <script src="/app/components/header/menuService.js"></script>
+    <script src="/app/components/footer/footerDirective.js"></script>
     <script src="/app/shared/scrollDirective.js"></script>
 
     <script src="/app/shared/jumboBackgroundService.js"></script>

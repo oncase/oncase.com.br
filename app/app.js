@@ -4,6 +4,7 @@
       'oncase', [
         'ngMaterial',
         'headerModule',
+        'footerModule',
         'ngRoute',
         'ngAnimate',
         'oncasePages',
