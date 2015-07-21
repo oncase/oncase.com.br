@@ -21,10 +21,10 @@
                   { x: 0, y: 0 },
                   { x: 1, y: 8 },
                   { x: 2, y: 0 },
-                  { x: 3, y: 15 },
-                  { x: 4, y: 0 },
-                  { x: 5, y: 8 },
-                  { x: 6, y: 35 },
+                  { x: 3, y: 35 },
+                  { x: 4, y: 5 },
+                  { x: 5, y: 5 },
+                  { x: 6, y: 5 },
                   { x: 7, y: 5 },
                   { x: 8, y: 5 },
                   { x: 9, y: 5 },
@@ -139,7 +139,7 @@
                               .attr("class", "circles-container");
 
                 var circles = circlesContainer.selectAll("g.dots")
-                              .data(data.slice(0,8))
+                              .data(data.slice(0,5))
                               .enter()
                               .append("g")
                               .attr("class", "oncase-dots");
