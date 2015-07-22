@@ -11,12 +11,11 @@ html {
     background-size: contain;
     margin: 0 auto auto 0;
 }
-.pull-right {
-    float: right;
-}
-.pull-left {
-    float: left;
-}
+.pull-right { float: right; }
+.pull-left  { float: left;  }
+.text-left  { text-align: left; }
+.text-right { text-align: right ;}
+
 .oncase-wrapped-text-3l {
     line-height: 2.5ex;
     height: 7.5ex;
@@ -180,6 +179,11 @@ md-tabs.md-default-theme .md-tab.md-focused {
 .oncase-content-margin {
     margin: 0px 40px
 }
+
+.oncase-content-margin-flex{
+    margin: 20px 10px;
+}
+
 /* ==============================================
 	Animations between pages
    ============================================== */
@@ -280,6 +284,23 @@ md-tabs.md-default-theme .md-tab.md-focused {
     margin-top:60px;
 }
 
+h1.oncase-section-heading-thin{
+    font-weight:100;
+    font-size:2em;
+    text-align:center;
+    margin-top:0;
+    margin-bottom:10px;
+}
+h2.oncase-section-heading-thin{
+    font-weight:900;
+    font-size:1em;
+    margin-top:0;
+    margin-bottom:0px;
+}
+span.oncase-border-bottom{
+    border-bottom:solid 1px;
+}
+
 .oncase-white-section h2.oncase-section-heading{
     font-weight:bold;
     text-align:center;
@@ -324,10 +345,17 @@ md-tabs.md-default-theme .md-tab.md-focused {
 .bg-oncase-gray{background-color:#444;}
 .bg-oncase-light-gray{background-color:#ccc;}
 
+
+.underscore-oncase-blue {border-bottom:solid 1px #2b4c7f;}
+.underscore-oncase-orange{border-bottom:solid 1px #fb6816;}
+.underscore-oncase-gray{border-bottom:solid 1px #444;}
+.underscore-oncase-light-gray{border-bottom:solid 1px #ccc;}
+
 .oncase-blue {color:#2b4c7f;}
 .oncase-orange{color:#fb6816;}
 .oncase-gray{color:#444;}
 .oncase-light-gray{color:#ccc;}
+.oncase-white{color:#fff;}
 
 p.oncase-promo-text{
     font-size:18px;
@@ -385,6 +413,10 @@ button.md-raised.oncase-button:hover{
     }
     .jumbo-background {
         background-attachment: scroll;
+    }
+    .container-fluid.oncase-content-margin-flex.ng-scope {
+      margin: 0;
+      padding: 8px;
     }
 
 }

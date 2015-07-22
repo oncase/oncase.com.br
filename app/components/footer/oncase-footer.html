@@ -10,10 +10,18 @@
     	height:165px;
     }
     .footer-content{
-    	background-color:#2b4c7f;
-    	width:100%;
-    	height:220px;
-    	margin-top:-6px;
+      background-color:#2b4c7f;
+      width:100%;
+      display: inline-block;
+      margin-top:-6px;
+      padding-bottom:60px;
+      color:#fff;
+
+    }
+    .footer-content-gray{
+      background-color:#333;
+      width:100%;
+      height:0px;
     }
 
 
@@ -67,6 +75,68 @@
       opacity: 1;
     }
 
+
+
+
+    /*
+      Social
+     */
+
+     .footer-social-wrapper {
+      clear: both;
+      margin: 0 auto;
+      text-align: center;
+      font-size: 1.4em;
+    }
+
+    .footer-social-wrapper .socicon {
+      margin: 20px;
+      cursor: pointer;
+    }
+
+    .footer-social-wrapper .socicon i.fa-circle {
+      -webkit-transition: all 400ms cubic-bezier(0.175, 0.885, 0.32, 1.275);
+      -moz-transition: all 400ms cubic-bezier(0.175, 0.885, 0.32, 1.275);
+      -o-transition: all 400ms cubic-bezier(0.175, 0.885, 0.32, 1.275);
+      transition: all 400ms cubic-bezier(0.175, 0.885, 0.32, 1.275);
+
+      text-shadow: none;
+      text-shadow: 0px 1px 10px rgba(0, 0, 0, 0.2);
+
+    }
+    .footer-social-wrapper .socicon:hover i.fa-circle {
+        text-shadow: 0px 6px 20px rgba(0, 0, 0, 0.4);
+        stroke-width:2px;
+    }
+
+    .oncase-footer-grid{
+      padding-bottom:20px;
+      margin-top:30px;
+      padding-top:30px;
+      background-color:rgba(0,0,0,0.08);
+
+      -webkit-border-radius: 2px;
+      -moz-border-radius: 2px;
+      border-radius: 2px;
+
+    }
+    ul.oncase-links {
+      list-style: none;
+      margin-top:5px;
+      padding-left: 0px;
+    }
+
+    ul.oncase-links li a,
+    ul.oncase-links li a:visited,
+    ul.oncase-links li a:active{
+      font-weight: 100;
+      color:#fff;
+      text-decoration:none;
+    }
+
+    ul.oncase-links li a:hover{
+      text-decoration: underline;
+    }
     </style>
 
 
@@ -74,8 +144,110 @@
     <div class="charts">
     	<svg id="area" />
     </div>
-    <div class="footer-content"></div>
+    <div class="footer-content">
+    <h1 class="oncase-section-heading-thin oncase-white">Stay connected</h3>
+      <div class="oncase-section-heading-underscore bg-oncase-orange"></div>
 
+
+      <div class="footer-social-wrapper">
+        
+        <span class="fa-stack fa-lg socicon">
+          <i class="fa fa-circle fa-stack-2x"></i>
+          <i class="fa fa-facebook fa-stack-1x oncase-blue" ></i>
+          <md-tooltip>
+            Like us on Facebook
+          </md-tooltip>
+        </span>
+
+        <span class="fa-stack fa-lg socicon">
+          <i class="fa fa-circle fa-stack-2x"></i>
+          <i class="fa fa-twitter fa-stack-1x oncase-blue" ></i>
+          <md-tooltip>
+            Follow us on Twitter
+          </md-tooltip>
+        </span>
+
+        <span class="fa-stack fa-lg socicon">
+          <i class="fa fa-circle fa-stack-2x"></i>
+          <i class="fa fa-youtube fa-stack-1x oncase-blue" ></i>
+          <md-tooltip>
+            Watch us on Youtube
+          </md-tooltip>
+        </span>
+
+        <span class="fa-stack fa-lg socicon">
+          <i class="fa fa-circle fa-stack-2x" ></i>
+          <i class="fa fa-wordpress fa-stack-1x oncase-blue" ></i>
+          <md-tooltip>
+            Read our blog
+          </md-tooltip>
+        </span>
+
+        <span class="fa-stack fa-lg socicon">
+          <i class="fa fa-circle fa-stack-2x"></i>
+          <i class="fa fa-linkedin fa-stack-1x oncase-blue" ></i>
+          <md-tooltip>
+            Follow us on Linkedin
+          </md-tooltip>
+        </span>
+
+
+        <span class="fa-stack fa-lg socicon">
+          <i class="fa fa-circle fa-stack-2x"></i>
+          <i class="fa fa-github fa-stack-1x oncase-blue" ></i>
+          <md-tooltip>
+            Fork us on GitHub
+          </md-tooltip>
+        </span>
+
+      </div>
+
+      <div class="row oncase-content-margin oncase-footer-grid" >
+        <div class="col-xs-12 col-sm-3 text-left" >
+          <h2 class="oncase-section-heading-thin text-left"><span>Site Content</span></h2>
+          <ul class="oncase-links">
+            <li><a href="/">Home</a></li>
+            <li><a href="/about">About</a></li>
+            <li><a href="/services">Services</a></li>
+            <li><a href="/products">Products</a></li>
+            <li><a href="/clipar">Clients and Partners</a></li>
+            <li><a href="/contact">Contact</a></li>
+          <ul>
+        </div>
+        <div class="col-xs-12 col-sm-3 text-left" >
+          <h2 class="oncase-section-heading-thin text-left"><span >More Content</span></h2>
+          <ul class="oncase-links">
+            <li><a href="http://carreers.onca.se/" target="blank">Carreers</a></li>
+            <li><a href="http://sandbox.onca.se/" target="blank">Oncase Sandbox</a></li>
+            <li><a href="http://labtransp.onca.se/" target="blank">Labtransp</a></li>
+            <li><a href="http://pentahobrasil.com.br/" target="blank">Pentaho Brasil</a></li>
+          <ul>
+        </div>
+        <div class="col-xs-12 col-sm-3 text-left" >
+          <h2 class="oncase-section-heading-thin text-left"><span >Fale conosco</span></h2>
+          Rua do Bom Jesus, 123,
+          <br />Recife-PE - +55-81-3077-8558
+          <br />
+          <br />Brasília - +55-81-3077-8558
+          <br />
+          <br />Rio de Janeiro - +55-81-3077-8558
+
+
+        </div>
+        <div class="col-xs-12 col-sm-3 text-left" >
+          <h2 class="oncase-section-heading-thin text-left">Site Content</h2>
+          <ul class="oncase-links">
+            <li>Home</li>
+            <li>About</li>
+            <li>Services</li>
+            <li>Products</li>
+            <li>Clients and Partners</li>
+            <li>Contact</li>
+          <ul>
+        </div>
+      </div>
+    </div>
+    
   <script>
 
 
