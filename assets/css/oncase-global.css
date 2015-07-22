@@ -214,14 +214,14 @@ md-tabs.md-default-theme .md-tab.md-focused {
    ============================================== */
 
 .oncase-main-view.ng-enter {
-    animation: page-in 0.5s both ease-in 0.3s;
-    -ms-animation: page-in 0.5s both ease-in 0.3s;
-    -webkit-animation: page-in 0.5s both ease-in 0.3s;
+    animation: page-in 0.5s both ease-in 0.2s;
+    -ms-animation: page-in 0.5s both ease-in 0.2s;
+    -webkit-animation: page-in 0.5s both ease-in 0.2s;
 }
 .oncase-main-view.ng-leave {
-    animation: page-out 0.3s both ease-in;
-    -ms-animation: page-out 0.3s both ease-in;
-    -webkit-animation: page-out 0.3s both ease-in;
+    animation: page-out 0.1s both ease-in;
+    -ms-animation: page-out 0.1s both ease-in;
+    -webkit-animation: page-out 0.1s both ease-in;
 }
 /* animation */
 

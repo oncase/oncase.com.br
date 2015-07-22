@@ -2,8 +2,9 @@
 
   angular.module('contactModule',[]).
 
-  controller('contactCtrl',function(){
-
-  });
+  controller('contactCtrl',["jumboBackgroundService",function(jumboBackgroundService){
+  	jumboBackgroundService.setSmall(true);
+    jumboBackgroundService.setVisible();
+  }]);
 
 })();
