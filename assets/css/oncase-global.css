@@ -181,6 +181,21 @@ md-tabs.md-default-theme .md-tab.md-focused {
 	Main content
    ============================================== */
 
+.oncase-breadcrumbs{
+    position:relative;
+    z-index:10;
+    line-height:120px;
+    font-size:32px;;
+}
+
+.oncase-section-jumbotron{
+    height:120px;
+}
+
+.jumbo-background.jumbo-background-small {
+    height: 310px;
+}
+
 .oncase-content-paper {
     min-height: 100vh;
     background-color: white;

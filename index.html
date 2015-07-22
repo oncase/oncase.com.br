@@ -26,7 +26,7 @@
   </head>
 
   <body ng-class="bodyClasses">
-    <div class="jumbo-background" ng-class="{ active : HeaderCtrl.jumboBackgroundVisible() }"></div>
+    <div class="jumbo-background" ng-class="{ active : HeaderCtrl.jumboBackgroundVisible(), 'jumbo-background-small' : HeaderCtrl.isJumboSmall() }"></div>
     <oncase-header></oncase-header>
     <div class="oncase-waypoint-wrapper">
       <!--<div class="oncase-waypoint" id="oncase-waypoint" waypoint-config="{'target' :'.oncase-header','addDown' : 'oncase-small-header', 'remUp' : 'oncase-small-header'}"></div>-->

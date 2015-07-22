@@ -1,9 +1,10 @@
 (function(){
 
-  angular.module('homeModule',['ui.bootstrap','jumboBackgroundService']).
+  angular.module('homeModule',['ui.bootstrap']).
 
   controller('homeCtrl',['$scope','jumboBackgroundService',function($scope,jumboBackgroundService){
 
+    jumboBackgroundService.setSmall(false);
     jumboBackgroundService.setVisible();
 
   	$scope.myInterval = 5000;

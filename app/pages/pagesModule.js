@@ -6,7 +6,8 @@
   	'servicesModule',
   	'productsModule',
   	'cliParModule',
-  	'contactModule'
+  	'contactModule',
+  	'jumboBackgroundService'
   	] );
 
 })();

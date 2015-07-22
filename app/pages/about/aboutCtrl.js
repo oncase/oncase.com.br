@@ -2,8 +2,9 @@
 
   angular.module('aboutModule',[]).
 
-  controller('aboutCtrl',function(){
-
-  });
+  controller('aboutCtrl',['jumboBackgroundService',function(jumboBackgroundService){
+  	jumboBackgroundService.setSmall(true);
+    jumboBackgroundService.setVisible();
+  }]);
 
 })();

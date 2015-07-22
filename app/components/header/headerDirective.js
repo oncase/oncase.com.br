@@ -22,6 +22,7 @@
     };
 
     this.jumboBackgroundVisible = jumboBackgroundService.getVisibility;
+    this.isJumboSmall = function(){return jumboBackgroundService.getSmall()};
     
   }]);
 
