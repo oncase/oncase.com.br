@@ -23,6 +23,16 @@ html {
     
     overflow: hidden;
 }
+
+    a.white-link,
+    a.white-link:visited,
+    a.white-link:active{
+      color:#fff;
+    }
+
+    .no-margin{
+        margin:0;
+    }
 /* ==============================================
 	Header
    ============================================== */
@@ -342,18 +352,18 @@ span.oncase-border-bottom{
 
 .bg-oncase-blue {background-color:#2b4c7f;}
 .bg-oncase-orange{background-color:#fb6816;}
-.bg-oncase-gray{background-color:#444;}
+.bg-oncase-gray{background-color:#333;}
 .bg-oncase-light-gray{background-color:#ccc;}
 
 
 .underscore-oncase-blue {border-bottom:solid 1px #2b4c7f;}
 .underscore-oncase-orange{border-bottom:solid 1px #fb6816;}
-.underscore-oncase-gray{border-bottom:solid 1px #444;}
+.underscore-oncase-gray{border-bottom:solid 1px #333;}
 .underscore-oncase-light-gray{border-bottom:solid 1px #ccc;}
 
 .oncase-blue {color:#2b4c7f;}
 .oncase-orange{color:#fb6816;}
-.oncase-gray{color:#444;}
+.oncase-gray{color:#333;}
 .oncase-light-gray{color:#ccc;}
 .oncase-white{color:#fff;}
 

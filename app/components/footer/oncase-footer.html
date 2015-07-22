@@ -83,14 +83,10 @@
      */
 
      .footer-social-wrapper {
-      clear: both;
-      margin: 0 auto;
-      text-align: center;
-      font-size: 1.4em;
+      font-size: 14px;
     }
 
     .footer-social-wrapper .socicon {
-      margin: 20px;
       cursor: pointer;
     }
 
@@ -109,34 +105,78 @@
         stroke-width:2px;
     }
 
-    .oncase-footer-grid{
-      padding-bottom:20px;
-      margin-top:30px;
-      padding-top:30px;
-      background-color:rgba(0,0,0,0.08);
-
-      -webkit-border-radius: 2px;
-      -moz-border-radius: 2px;
-      border-radius: 2px;
-
+    .oncase-footer-grid {
+        padding-bottom: 20px;
+        /* margin-top: 10px; */
+        padding-top: 10px;
+        background-color: rgba(0,0,0,0.08);
+        -webkit-border-radius: 2px;
+        -moz-border-radius: 2px;
+        border-radius: 2px;
+        padding-bottom: 0;
     }
     ul.oncase-links {
       list-style: none;
       margin-top:5px;
       padding-left: 0px;
+      display:inline-block;
+    }
+    ul.oncase-links li {
+      margin-right:20px;
+    }
+    ul.oncase-links li.inline-block {
+      margin-right:20px;
+      display:inline-block;
     }
 
     ul.oncase-links li a,
     ul.oncase-links li a:visited,
     ul.oncase-links li a:active{
-      font-weight: 100;
-      color:#fff;
       text-decoration:none;
+    }
+
+    ul.oncase-links li a.active{
+      font-weight:900;
     }
 
     ul.oncase-links li a:hover{
       text-decoration: underline;
+
     }
+
+    .footer-section{
+      margin:0 auto;
+      padding:5px 0;
+      margin-top:-8px;
+    }
+
+    .footer-section.z1{
+      position: relative;
+      z-index: 1;
+      box-shadow: 0 -2px 4px 1px rgba(0,0,0,0.2);
+    }
+
+    .footer-section.z2{
+      position: relative;
+      z-index: 2;
+      box-shadow: 0 -2px 8px 0px rgba(0,0,0,0.5);
+    }
+    .footer-social-text-line{
+      line-height:40px;
+    }
+
+    .south-america-map {
+        position: absolute;
+        width: 400px;
+        height: 350px;
+        background-image: url(assets/img/south_america.svg);
+        background-repeat: no-repeat;
+        background-size: contain;
+        background-position: right;
+        right: 80px;
+        margin-top: -140px;
+    }
+
     </style>
 
 
@@ -145,48 +185,96 @@
     	<svg id="area" />
     </div>
     <div class="footer-content">
-    <h1 class="oncase-section-heading-thin oncase-white">Stay connected</h3>
-      <div class="oncase-section-heading-underscore bg-oncase-orange"></div>
+      
+      <div class="row oncase-content-margin oncase-footer-grid" >
+        <div class="col-xs-12 col-sm-3 text-left" >
+          <h2 class="oncase-section-heading-thin text-left"><span>Quem somos</span></h2>
+          <ul class="oncase-links"><li>
+            Ajudamos você a entender melhor os dados de sua empresa, transformando-os em informação útil para a tomada de decisão, reduzindo perdas, minimizando custos, aumentando receitas e otimizando o seu bem mais precioso: O seu tempo
+          </li></ul>
+        </div>
+        <div class="col-xs-12 col-sm-offset-1 col-sm-2 text-left" >
+          <h2 class="oncase-section-heading-thin text-left"><span >Outros Canais</span></h2>
+          <ul class="oncase-links">
+            <li><a class="white-link" href="http://carreers.onca.se/" target="blank">Carreers</a></li>
+            <li><a class="white-link" href="http://sandbox.onca.se/" target="blank">Oncase Sandbox</a></li>
+            <li><a class="white-link" href="http://labtransp.onca.se/" target="blank">Labtransp</a></li>
+            <li><a class="white-link" href="http://pentahobrasil.com.br/" target="blank">Pentaho Brasil</a></li>
+          <ul>
+        </div>
+        <div class="col-xs-12 col-sm-3 text-left" >
+          <h2 class="oncase-section-heading-thin text-left"><span >Fale conosco</span></h2>
+          <ul class="oncase-links">
+            <li>Recife, PE - +55-81-3077-8558</li>
+            <li>Brasília, DF - +55-81-3077-8558</li>
+            <li>Rio de Janeiro, RJ - +55-81-3077-8558</li>
+          </ul>
+            
+            <md-button class="md-raised md-warn oncase-button no-margin">Contato</md-button>
+          
+        </div>
 
+<div class="south-america-map"></div>
+      </div> 
+    </div>
+
+<div class="footer-section z1 oncase-blue bg-oncase-light-gray">
+  <div class="row oncase-content-margin" >
+    <div class="col-xs-12 col-sm-6 text-left" >
+          <ul class="oncase-links">
+            <li class="inline-block"><a class="oncase-blue active" href="/">Home</a></li>
+            <li class="inline-block"><a class="oncase-blue" href="/about">About</a></li>
+            <li class="inline-block"><a class="oncase-blue" href="/services">Services</a></li>
+            <li class="inline-block"><a class="oncase-blue" href="/products">Products</a></li>
+            <li class="inline-block"><a class="oncase-blue" href="/clipar">Clients and Partners</a></li>
+            <li class="inline-block"><a class="oncase-blue" href="/contact">Contact</a></li>
+          <ul>
+      </div>
+  </div>
+</div>
+<div class="footer-section z2 oncase-white bg-oncase-gray">
+  <div class="row oncase-content-margin" >
+    <div class="col-xs-12 col-sm-6 text-left footer-social-text-line" >Website desenvolvido pela Oncase</div>
+    <div class="col-xs-12 col-sm-6 text-right" >
 
       <div class="footer-social-wrapper">
         
         <span class="fa-stack fa-lg socicon">
           <i class="fa fa-circle fa-stack-2x"></i>
-          <i class="fa fa-facebook fa-stack-1x oncase-blue" ></i>
-          <md-tooltip>
+          <i class="fa fa-facebook fa-stack-1x oncase-gray" ></i>
+          <md-tooltip md-direction="top">
             Like us on Facebook
           </md-tooltip>
         </span>
 
         <span class="fa-stack fa-lg socicon">
           <i class="fa fa-circle fa-stack-2x"></i>
-          <i class="fa fa-twitter fa-stack-1x oncase-blue" ></i>
-          <md-tooltip>
+          <i class="fa fa-twitter fa-stack-1x oncase-gray" ></i>
+          <md-tooltip md-direction="top">
             Follow us on Twitter
           </md-tooltip>
         </span>
 
         <span class="fa-stack fa-lg socicon">
           <i class="fa fa-circle fa-stack-2x"></i>
-          <i class="fa fa-youtube fa-stack-1x oncase-blue" ></i>
-          <md-tooltip>
+          <i class="fa fa-youtube fa-stack-1x oncase-gray" ></i>
+          <md-tooltip md-direction="top">
             Watch us on Youtube
           </md-tooltip>
         </span>
 
         <span class="fa-stack fa-lg socicon">
           <i class="fa fa-circle fa-stack-2x" ></i>
-          <i class="fa fa-wordpress fa-stack-1x oncase-blue" ></i>
-          <md-tooltip>
+          <i class="fa fa-wordpress fa-stack-1x oncase-gray" ></i>
+          <md-tooltip md-direction="top">
             Read our blog
           </md-tooltip>
         </span>
 
         <span class="fa-stack fa-lg socicon">
           <i class="fa fa-circle fa-stack-2x"></i>
-          <i class="fa fa-linkedin fa-stack-1x oncase-blue" ></i>
-          <md-tooltip>
+          <i class="fa fa-linkedin fa-stack-1x oncase-gray" ></i>
+          <md-tooltip md-direction="top">
             Follow us on Linkedin
           </md-tooltip>
         </span>
@@ -194,63 +282,18 @@
 
         <span class="fa-stack fa-lg socicon">
           <i class="fa fa-circle fa-stack-2x"></i>
-          <i class="fa fa-github fa-stack-1x oncase-blue" ></i>
-          <md-tooltip>
+          <i class="fa fa-github fa-stack-1x oncase-gray" ></i>
+          <md-tooltip md-direction="top">
             Fork us on GitHub
           </md-tooltip>
         </span>
 
       </div>
 
-      <div class="row oncase-content-margin oncase-footer-grid" >
-        <div class="col-xs-12 col-sm-3 text-left" >
-          <h2 class="oncase-section-heading-thin text-left"><span>Site Content</span></h2>
-          <ul class="oncase-links">
-            <li><a href="/">Home</a></li>
-            <li><a href="/about">About</a></li>
-            <li><a href="/services">Services</a></li>
-            <li><a href="/products">Products</a></li>
-            <li><a href="/clipar">Clients and Partners</a></li>
-            <li><a href="/contact">Contact</a></li>
-          <ul>
-        </div>
-        <div class="col-xs-12 col-sm-3 text-left" >
-          <h2 class="oncase-section-heading-thin text-left"><span >More Content</span></h2>
-          <ul class="oncase-links">
-            <li><a href="http://carreers.onca.se/" target="blank">Carreers</a></li>
-            <li><a href="http://sandbox.onca.se/" target="blank">Oncase Sandbox</a></li>
-            <li><a href="http://labtransp.onca.se/" target="blank">Labtransp</a></li>
-            <li><a href="http://pentahobrasil.com.br/" target="blank">Pentaho Brasil</a></li>
-          <ul>
-        </div>
-        <div class="col-xs-12 col-sm-3 text-left" >
-          <h2 class="oncase-section-heading-thin text-left"><span >Fale conosco</span></h2>
-          Rua do Bom Jesus, 123,
-          <br />Recife-PE - +55-81-3077-8558
-          <br />
-          <br />Brasília - +55-81-3077-8558
-          <br />
-          <br />Rio de Janeiro - +55-81-3077-8558
 
-
-        </div>
-        <div class="col-xs-12 col-sm-3 text-left" >
-          <h2 class="oncase-section-heading-thin text-left">Site Content</h2>
-          <ul class="oncase-links">
-            <li>Home</li>
-            <li>About</li>
-            <li>Services</li>
-            <li>Products</li>
-            <li>Clients and Partners</li>
-            <li>Contact</li>
-          <ul>
-        </div>
-      </div>
     </div>
-    
-  <script>
+  </div>
+</div>
 
 
 
-
-  </script>
