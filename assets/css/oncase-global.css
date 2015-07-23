@@ -15,6 +15,11 @@ html {
 .pull-left  { float: left;  }
 .text-left  { text-align: left; }
 .text-right { text-align: right ;}
+.text-center { text-align: center ;}
+
+md-toolbar.md-default-theme.md-accent{
+    color:#fff;
+}
 
 .oncase-wrapped-text-3l {
     line-height: 2.5ex;
@@ -197,9 +202,10 @@ md-tabs.md-default-theme .md-tab.md-focused {
 }
 
 .oncase-content-paper {
-    min-height: 100vh;
     background-color: white;
     position: relative;
+    -webkit-border-radius: 2px;
+    border-radius: 2px;
 }
 .oncase-content-margin {
     margin: 0px 40px
@@ -209,6 +215,25 @@ md-tabs.md-default-theme .md-tab.md-focused {
     margin: 20px 10px;
 }
 
+.oncase-margin-top{
+    margin-top:40px;
+    display:block;
+}
+.oncase-margin-bottom{
+    margin-bottom:40px;
+    display:block;
+}
+
+.oncase-padding-top {
+    padding-top:40px;
+}
+.oncase-padding-bottom {
+    padding-bottom:40px;
+}
+
+.oncase-margin-bottom-fix{
+    margin-bottom:140px;
+}
 /* ==============================================
 	Animations between pages
    ============================================== */
@@ -305,14 +330,12 @@ md-tabs.md-default-theme .md-tab.md-focused {
 
     padding:40px 0;
     width:100%;
-    background-color:#fff;
     margin-top:60px;
 }
 
 h1.oncase-section-heading-thin{
     font-weight:100;
     font-size:2em;
-    text-align:center;
     margin-top:0;
     margin-bottom:10px;
 }
@@ -328,7 +351,6 @@ span.oncase-border-bottom{
 
 .oncase-white-section h2.oncase-section-heading{
     font-weight:bold;
-    text-align:center;
     font-size:2em;
     margin-top:0px;
     margin-bottom:0;
@@ -338,7 +360,6 @@ span.oncase-border-bottom{
 }
 .oncase-white-section h3.oncase-section-heading{
     font-weight:bold;
-    text-align:center;
     font-size:2.8em;
     margin-top:0px;
     margin-bottom:0;
@@ -348,7 +369,6 @@ span.oncase-border-bottom{
 }
 .oncase-white-section h1.oncase-section-heading{
     font-weight:900;
-    text-align:center;
     font-size:3.6em;
     margin-top:0px;
     text-transform: uppercase;
@@ -369,6 +389,7 @@ span.oncase-border-bottom{
 .bg-oncase-orange{background-color:#fb6816;}
 .bg-oncase-gray{background-color:#333;}
 .bg-oncase-light-gray{background-color:#ccc;}
+.bg-oncase-white{background-color:#fff;}
 
 
 .underscore-oncase-blue {border-bottom:solid 1px #2b4c7f;}
@@ -382,10 +403,18 @@ span.oncase-border-bottom{
 .oncase-light-gray{color:#ccc;}
 .oncase-white{color:#fff;}
 
+span.md-code{
+    border: solid 1px #ccc;
+    padding: 2px 6px;
+    border-radius: 2px;
+    font-family: monospace;
+    font-size: .9em;
+    background-color: rgba(255,0,0,0.04);
+}
+
 p.oncase-promo-text{
     font-size:18px;
     color:#444;
-    text-align:center;
     clear:both;
 }
 

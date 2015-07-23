@@ -32,41 +32,49 @@
         'contrastDarkColors': ['50', '100', '200', '300', '400', 'A100']
       });
 
+
       $mdThemingProvider
 
         .theme('default')
-        .primaryPalette('oncasePalette');
+        .primaryPalette('oncasePalette')
+        .accentPalette('deep-orange');
 
       $routeProvider
 
         .when('/', {
         templateUrl: 'app/pages/home/index.html',
-        controller: 'homeCtrl'
+        controller: 'homeCtrl',
+        controllerAs: 'homeCtrl'
       })
 
       .when('/about', {
         templateUrl: 'app/pages/about/index.html',
-        controller: 'aboutCtrl'
+        controller: 'aboutCtrl',
+        controllerAs: 'aboutCtrl'
       })
 
       .when('/services', {
         templateUrl: 'app/pages/services/index.html',
-        controller: 'servicesCtrl'
+        controller: 'servicesCtrl',
+        controllerAs: 'servicesCtrl'
       })
 
       .when('/products', {
         templateUrl: 'app/pages/products/index.html',
-        controller: 'productsCtrl'
+        controller: 'productsCtrl',
+        controllerAs: 'productsCtrl'
       })
 
       .when('/clients-and-partners', {
         templateUrl: 'app/pages/clipar/index.html',
-        controller: 'cliParCtrl'
+        controller: 'cliParCtrl',
+        controllerAs: 'cliParCtrl'
       })
 
       .when('/contact', {
         templateUrl: 'app/pages/contact/index.html',
-        controller: 'contactCtrl'
+        controller: 'ContactCtrl',
+        controllerAs: 'ContactCtrl'
       })
 
       .otherwise({

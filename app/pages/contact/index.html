@@ -1,7 +1,134 @@
-<section class="oncase-section-jumbotron oncase-content-margin oncase-section-jumbotron-internals">   
-	<div class="oncase-breadcrumbs oncase-white">Contato</div>
+
+
+<link rel="stylesheet" href="../..//assets/css/send-button.css" />
+
+<style type="text/css">
+
+	.input-icons .input-icon {
+	  
+	}
+	.input-icons md-input-container:not(.md-input-invalid) > md-icon.email {
+	  color: green; 
+	}
+	.input-icons md-input-container:not(.md-input-invalid) > md-icon.name {
+	  color: dodgerblue; 
+	}
+	.input-icons md-input-container.md-input-invalid > md-icon.email, .input-icons md-input-container.md-input-invalid > md-icon.name {
+	  color: red; 
+	}
+
+	.md-icon-float textarea{
+		margin-left:38px;
+	}
+	.md-icon-float.md-input-focused textarea,
+	.md-icon-float.md-input-has-value textarea{
+	    margin-left: 38px;
+	    margin-top: 20px;
+	}
+
+	.oncase-google-map{
+	    width: 100%;
+	    height: 500px;
+	    margin-bottom: -20px;
+	}
+
+	.oncase-google-map map{
+		height: 470px;
+	}
+
+</style>
+<section class="oncase-section-jumbotron oncase-content-margin oncase-section-jumbotron-internals">
+    <div class="oncase-breadcrumbs oncase-white">Contato</div>
+</section>
+<section class="oncase-content-margin oncase-content-paper md-whiteframe-z1 oncase-padding-bottom">
+    <md-toolbar class="md-accent oncase-margin-bottom">
+        <div class="md-toolbar-tools">
+            <h2 class="md-flex">Formulário de contato</h2>
+        </div>
+    </md-toolbar>
+    <div class="oncase-form-wrapper">
+        <div class="row oncase-content-margin input-icons">
+            <div class="col-sm-12 col-md-6">
+                <md-input-container class="md-icon-float" >
+                    <label>Name (obrigatório)</label>
+                    <md-icon md-svg-src="../../assets/img/ic_person_24px.svg" class="name input-icon"></md-icon>
+                    <input ng-model="ContactCtrl.user.name" type="text" ng-required="true">
+                </md-input-container>
+            </div>
+            <div class="col-sm-12 col-md-6">
+                <md-input-container class="md-icon-float">
+                    <label>Email (obrigatório) </label>
+                    <md-icon md-svg-src="../../assets/img/ic_email_24px.svg" class="email input-icon"></md-icon>
+                    <input ng-model="ContactCtrl.user.email" type="email" ng-required="true">
+                </md-input-container>
+            </div>
+        </div>
+        <div class="row oncase-content-margin">
+            <div class="col-sm-12">
+                <md-input-container class="md-icon-float">
+                    <label>Telefone</label>
+                    <md-icon class="input-icon" md-svg-src="../../assets/img/ic_phone_24px.svg"></md-icon>
+                    <input ng-model="ContactCtrl.user.tel" type="text" >
+                </md-input-container>
+            </div>
+        </div>
+        <div class="row oncase-content-margin">
+            <div class="col-sm-12">
+                <md-input-container class="md-icon-float">
+                    <md-icon class="input-icon" md-svg-src="../../assets/img/ic_message_black_24px.svg"></md-icon>
+                    <label>Mensagem (obrigatório)</label>
+                    <textarea ng-model="ContactCtrl.usre.msg"  md-maxlength="1024" ng-required="true"></textarea>
+                </md-input-container>
+            </div>
+        </div>
+    </div>
+    <div class="send-button" ng-click="ContactCtrl.send()" mouse-over-class="md-whiteframe-z4">
+        <span class="send-plane send-plane-transition"></span>
+        <span class="send-check"></span>
+    </div>
 </section>
 
-<section class="oncase-content-margin oncase-content-paper md-whiteframe-z1">
-	Contato
+
+<section class="oncase-white-section">
+	<div class="oncase-content-margin row">
+            <div class="col-sm-12 col-md-6">
+
+				<h2 class="oncase-section-heading oncase-gray text-left " >Recife</h2>
+				<p class="oncase-promo-text text-left">
+					Rua da guia, 123, Bairro do Recife
+					<br />Recife-PE CEP 51.111-040
+					<br />Fone: +55-81-3077-8558
+					<br />Mobile: +55-81-8795-1937
+				</p>
+
+				<h2 class="oncase-section-heading oncase-gray text-left " >Rio de Janeiro</h2>
+				<p class="oncase-promo-text text-left">
+					Rua da guia, 123, Bairro do Recife
+					<br />Recife-PE CEP 51.111-040
+					<br />Fone: +55-21-3077-8558
+				</p>
+
+
+				<h2 class="oncase-section-heading oncase-gray text-left " >Brasília</h2>
+				<p class="oncase-promo-text text-left">
+					Rua da guia, 123, Bairro do Recife
+					<br />Recife-PE CEP 51.111-040
+					<br />Fone: +55-61-3077-8558
+				</p>
+			</div>
+            <div class="col-sm-12 col-md-6">
+				<h2 class="oncase-section-heading oncase-gray text-left " >Trabalhe conosco</h2>
+				<p class="oncase-promo-text">
+					Enquanto não preparamos nosso hotsite de carreiras, envie seu currículo para <span class="md-code">contato@oncase.com.br</span> com o assunto <i>"Vaga Pentaho"</i>
+				</p>
+			</div>
+	</div>
 </section>
+
+<div class="oncase-google-map md-whiteframe-z4">
+	<map center="-13.6864209,-49.2565201" zoom="4" default-style="false" scrollwheel="false" styles='[{"featureType":"landscape","stylers":[{"saturation":-100},{"lightness":65},{"visibility":"on"}]},{"featureType":"poi","stylers":[{"saturation":-100},{"lightness":51},{"visibility":"simplified"}]},{"featureType":"road.highway","stylers":[{"saturation":-100},{"visibility":"simplified"}]},{"featureType":"road.arterial","stylers":[{"saturation":-100},{"lightness":30},{"visibility":"on"}]},{"featureType":"road.local","stylers":[{"saturation":-100},{"lightness":40},{"visibility":"on"}]},{"featureType":"transit","stylers":[{"saturation":-100},{"visibility":"simplified"}]},{"featureType":"administrative.province","stylers":[{"visibility":"off"}]},{"featureType":"water","elementType":"labels","stylers":[{"visibility":"on"},{"lightness":-25},{"saturation":-100}]},{"featureType":"water","elementType":"geometry","stylers":[{"hue":"#ffff00"},{"lightness":-25},{"saturation":-97}]}]'></map>
+</div>
+
+<div class="row oncase-content-margin oncase-margin-top oncase-margin-bottom">&nbsp;</div>
+<div class="row oncase-content-margin oncase-margin-top oncase-margin-bottom">&nbsp;</div>
+<div class="row oncase-content-margin oncase-margin-top oncase-margin-bottom">&nbsp;</div>
