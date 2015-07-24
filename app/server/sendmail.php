@@ -36,7 +36,7 @@ $email_body .= "<br /><strong>tel:</strong> ".tel;
 $email_body .= "<br /><strong>msg:</strong> <br />".msg;
 $email_body .= "</p>";
 
-$headers = array ('MIME-Version' => '1.0\r\n','Content-Type' => "text/html; charset=UTF-8\r\n",'From' => $email_from, 'To' => $to, 'Subject' => $email_subject, 'Reply-To' => $email_address);
+$headers = array ('MIME-Version' => '1.0','Content-Type' => "text/html; charset=UTF-8",'From' => $email_from, 'To' => $to, 'Subject' => $email_subject, 'Reply-To' => $email_address);
 $smtp = Mail::factory('smtp', array ('host' => $host, 'port' => $port, 'auth' => true, 'username' => $username, 'password' => $password));
 $mail = $smtp->send($to, $headers, $email_body);
 

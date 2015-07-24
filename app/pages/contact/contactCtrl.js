@@ -61,12 +61,12 @@
       ContactCtrl.animateSending();
 
       sendMailService.sendContactPost(ContactCtrl.user)
-      .success(function(){
-
+      .success(function(data, status, headers, config){
+        
+        console.log(data);
         ContactCtrl.animateSentOK();
         ContactCtrl.animateAirplaneBack();
         ContactCtrl.resetContactForm();
-
 
       })
       .error(function(data, status, headers, config) {
