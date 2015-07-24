@@ -86,6 +86,11 @@
 
     this.send = function(){
       
+      if(!$scope.contactForm.$valid){
+        ContactCtrl.showToast("Por favor, corrija o formulário!");
+        return;
+      }
+
       ContactCtrl.animateSending();
 
       sendMailService.sendContactPost(ContactCtrl.user)
