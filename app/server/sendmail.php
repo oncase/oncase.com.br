@@ -41,7 +41,7 @@ $mail = $smtp->send($to, $headers, $email_body);
 if (PEAR::isError($mail)) {
         echo("0");
 } else {
-        echo("0");
+        echo("1");
 }
 
 ?>
