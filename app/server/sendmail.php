@@ -5,7 +5,11 @@ error_reporting(E_ALL ^ E_NOTICE ^ E_DEPRECATED ^ E_STRICT);
 
 
 set_include_path("." . PATH_SEPARATOR . ($UserDir = dirname($_SERVER['DOCUMENT_ROOT'])) . "/pear/php" . PATH_SEPARATOR . get_include_path());
-require_once "Mail.php";
+
+$path = '/home/oncase/pear/share/pear';
+set_include_path(get_include_path() . PATH_SEPARATOR . $path);
+
+require_once "../../../Mail/Mail.php";
 
 
 $host = "ssl://mail.oncase.com.br";
@@ -25,9 +29,9 @@ $mail = $smtp->send($to, $headers, $email_body);
 
 
 if (PEAR::isError($mail)) {
-	echo("<p>" . $mail->getMessage() . "</p>");
+        echo("<p>" . $mail->getMessage() . "</p>");
 } else {
-	echo("<p>Message successfully sent!</p>");
+        echo("<p>Message successfully sent!</p>");
 }
 
 ?>
