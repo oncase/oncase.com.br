@@ -2,8 +2,8 @@
 
   angular.module('contactModule',['ngMap']).
 
-  controller('ContactCtrl',['jumboBackgroundService','$scope','$window','$document','content','sendMailService',
-  	function(jumboBackgroundService,$scope,$window,$document,content,sendMailService){
+  controller('ContactCtrl',['jumboBackgroundService','$scope','$window','$document','content','sendMailService','$mdToast',
+  	function(jumboBackgroundService,$scope,$window,$document,content,sendMailService,$mdToast){
 
   	var ContactCtrl = this;
   	var google = $window.google;
@@ -67,28 +67,40 @@
     		},4000);
     };
 
-    this.send = function(){
+    this.showToast = function(msg){
+      $mdToast.show($mdToast.simple().content(msg));
+    };
 
+    this.errorSending = function(){
+      ContactCtrl.showToast("Erro ao enviar");
+      ContactCtrl.animateSentError();
+      ContactCtrl.animateAirplaneBack();
+    };
+
+    this.sendSuccess = function(){
+      ContactCtrl.showToast("Mensagem enviada com sucesso. Obrigado!");
+      ContactCtrl.animateSentOK();
+      ContactCtrl.animateAirplaneBack();
+      ContactCtrl.resetContactForm();
+    }
+
+    this.send = function(){
+      
       ContactCtrl.animateSending();
 
       sendMailService.sendContactPost(ContactCtrl.user)
       .success(function(data, status, headers, config){
+
         if ( "1" == data ){
-          ContactCtrl.animateSentOK();
-          ContactCtrl.animateAirplaneBack();
-          ContactCtrl.resetContactForm();
+          ContactCtrl.sendSuccess();
         }else{
-          ContactCtrl.animateSentError();
-          ContactCtrl.animateAirplaneBack();
+          ContactCtrl.errorSending();
         }
 
       })
       .error(function(data, status, headers, config) {
-        ContactCtrl.animateSentError();
-        ContactCtrl.animateAirplaneBack();
+          ContactCtrl.errorSending();
       });
-  
-
   
     	
     };
