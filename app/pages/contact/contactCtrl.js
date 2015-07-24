@@ -62,8 +62,11 @@
 
       sendMailService.sendContactPost(ContactCtrl.user)
       .success(function(data, status, headers, config){
-        
+        console.log("email successfully sent");
         console.log(data);
+        console.log(status);
+        console.log(headers);
+        console.log(config);
         ContactCtrl.animateSentOK();
         ContactCtrl.animateAirplaneBack();
         ContactCtrl.resetContactForm();
