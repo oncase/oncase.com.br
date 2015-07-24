@@ -10,13 +10,10 @@ $path = '/home/oncase/pear/share/pear';
 set_include_path(get_include_path() . PATH_SEPARATOR . $path);
 
 require_once "../../../Mail/Mail.php";
+include '../../../../mail_vars.php';
 
 $dataJS = json_decode(file_get_contents("php://input"));
 
-$host = "ssl://mail.oncase.com.br";
-$username = "no-reply@oncase.com.br";
-$password = "Oncase12";
-$port = "465";
 $to = "balaum@gmail.com";
 $email_from = "no-reply@oncase.com.br";
 $email_subject = "Contato atraves do site" ;
