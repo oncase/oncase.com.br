@@ -27,12 +27,12 @@ $email = $_POST["email"];
 $tel = $_POST["tel"];
 $msg = nl2br($_POST["msg"]);
 
-
-$email_body .= ="<br /><hr /><br />";
-$email_body .= "Nome: ".name;
-$email_body .= "email: ".email ;
-$email_body .= "tel: ".tel;
-$email_body .= "msg: <br />".msg;
+$email_body .= "<style type=\"text/css\">  *{ font-size:22px; font-family: 'HelveticaNeue-Light', 'Helvetica Neue Light', 'Helvetica Neue', Helvetica, Arial, 'Lucida Grande', sans-serif; font-weight: 300; }</style>";
+$email_body .= "<br /><hr /><br />";
+$email_body .= "<br /><strong>Nome:</strong> ".name;
+$email_body .= "<br /><strong>email:</strong> ".email ;
+$email_body .= "<br /><strong>tel:</strong> ".tel;
+$email_body .= "<br /><strong>msg:</strong> <br />".msg;
 
 
 $headers = array ('MIME-Version' => '1.0\r\n','Content-Type' => "text/html; charset=UTF-8\r\n",'From' => $email_from, 'To' => $to, 'Subject' => $email_subject, 'Reply-To' => $email_address);
