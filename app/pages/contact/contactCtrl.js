@@ -22,6 +22,8 @@
         for(key in ContactCtrl.user){
           ContactCtrl.user[key] = "";
         }
+
+      $scope.contactForm.$setUntouched();
     };
 
     this.animateSending = function(){
@@ -70,7 +72,9 @@
       .error(function(data, status, headers, config) {
         ContactCtrl.animateAirplaneBack();
       });
-    	
+  
+
+  
     	
     };
 

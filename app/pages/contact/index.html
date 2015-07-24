@@ -63,42 +63,44 @@
             <h2 class="md-flex">Formulário de contato</h2>
         </div>
     </md-toolbar>
-    <div class="oncase-form-wrapper">
-        <div class="row oncase-content-margin input-icons">
-            <div class="col-sm-12 col-md-6">
-                <md-input-container class="md-icon-float" >
-                    <label>Name (obrigatório)</label>
-                    <md-icon md-svg-src="../../assets/img/ic_person_24px.svg" class="name input-icon"></md-icon>
-                    <input ng-model="ContactCtrl.user.name" type="text" ng-required="true">
-                </md-input-container>
-            </div>
-            <div class="col-sm-12 col-md-6">
-                <md-input-container class="md-icon-float">
-                    <label>Email (obrigatório) </label>
-                    <md-icon md-svg-src="../../assets/img/ic_email_24px.svg" class="email input-icon"></md-icon>
-                    <input ng-model="ContactCtrl.user.email" type="email" ng-required="true">
-                </md-input-container>
-            </div>
-        </div>
-        <div class="row oncase-content-margin">
-            <div class="col-sm-12">
-                <md-input-container class="md-icon-float">
-                    <label>Telefone</label>
-                    <md-icon class="input-icon" md-svg-src="../../assets/img/ic_phone_24px.svg"></md-icon>
-                    <input ng-model="ContactCtrl.user.tel" type="text" >
-                </md-input-container>
-            </div>
-        </div>
-        <div class="row oncase-content-margin">
-            <div class="col-sm-12">
-                <md-input-container class="md-icon-float">
-                    <md-icon class="input-icon" md-svg-src="../../assets/img/ic_message_black_24px.svg"></md-icon>
-                    <label>Mensagem (obrigatório)</label>
-                    <textarea ng-model="ContactCtrl.usre.msg"  md-maxlength="1024" ng-required="true"></textarea>
-                </md-input-container>
-            </div>
-        </div>
-    </div>
+    <form name="contactForm" id="contactForm">
+	    <div class="oncase-form-wrapper">
+	        <div class="row oncase-content-margin input-icons">
+	            <div class="col-sm-12 col-md-6">
+	                <md-input-container class="md-icon-float" >
+	                    <label>Name (obrigatório)</label>
+	                    <md-icon md-svg-src="../../assets/img/ic_person_24px.svg" class="name input-icon"></md-icon>
+	                    <input ng-model="ContactCtrl.user.name" type="text" ng-required="true">
+	                </md-input-container>
+	            </div>
+	            <div class="col-sm-12 col-md-6">
+	                <md-input-container class="md-icon-float">
+	                    <label>Email (obrigatório) </label>
+	                    <md-icon md-svg-src="../../assets/img/ic_email_24px.svg" class="email input-icon"></md-icon>
+	                    <input ng-model="ContactCtrl.user.email" type="email" ng-required="true">
+	                </md-input-container>
+	            </div>
+	        </div>
+	        <div class="row oncase-content-margin">
+	            <div class="col-sm-12">
+	                <md-input-container class="md-icon-float">
+	                    <label>Telefone</label>
+	                    <md-icon class="input-icon" md-svg-src="../../assets/img/ic_phone_24px.svg"></md-icon>
+	                    <input ng-model="ContactCtrl.user.tel" type="text" >
+	                </md-input-container>
+	            </div>
+	        </div>
+	        <div class="row oncase-content-margin">
+	            <div class="col-sm-12">
+	                <md-input-container class="md-icon-float">
+	                    <md-icon class="input-icon" md-svg-src="../../assets/img/ic_message_black_24px.svg"></md-icon>
+	                    <label>Mensagem (obrigatório)</label>
+	                    <textarea ng-model="ContactCtrl.usre.msg"  md-maxlength="1024" ng-required="true"></textarea>
+	                </md-input-container>
+	            </div>
+	        </div>
+	    </div>
+	</form>
     <div class="send-button" ng-click="ContactCtrl.send()" mouse-over-class="md-whiteframe-z4">
         <span class="send-plane send-plane-transition"></span>
         <span class="send-check"></span>

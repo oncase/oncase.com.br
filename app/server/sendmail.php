@@ -19,11 +19,23 @@ $port = "465";
 $to = "marcello@oncase.com.br";
 $email_from = "no-reply@oncase.com.br";
 $email_subject = "Contato atraves do site" ;
-$email_body = "Oi, Marcello, tudo bem?" ;
+$email_body = "Contato atraves do website";
 $email_address = "balaum@gmail.com";
 
+$name = $_POST["name"];
+$email = $_POST["email"];
+$tel = $_POST["tel"];
+$msg = nl2br($_POST["msg"]);
 
-$headers = array ('From' => $email_from, 'To' => $to, 'Subject' => $email_subject, 'Reply-To' => $email_address);
+
+$email_body .= ="<br /><hr /><br />";
+$email_body .= "Nome: ".name;
+$email_body .= "email: ".email ;
+$email_body .= "tel: ".tel;
+$email_body .= "msg: <br />".msg;
+
+
+$headers = array ('MIME-Version' => '1.0\r\n','Content-Type' => "text/html; charset=UTF-8\r\n",'From' => $email_from, 'To' => $to, 'Subject' => $email_subject, 'Reply-To' => $email_address);
 $smtp = Mail::factory('smtp', array ('host' => $host, 'port' => $port, 'auth' => true, 'username' => $username, 'password' => $password));
 $mail = $smtp->send($to, $headers, $email_body);
 
