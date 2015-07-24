@@ -149,6 +149,7 @@
     ul.oncase-links li a:visited,
     ul.oncase-links li a:active{
       text-decoration:none;
+      outline:none;
     }
 
     ul.oncase-links li a.active{
@@ -214,7 +215,7 @@
           <ul class="oncase-links">
             <li><a class="white-link" href="http://carreers.onca.se/" target="blank">Carreers</a></li>
             <li><a class="white-link" href="http://sandbox.onca.se/" target="blank">Oncase Sandbox</a></li>
-            <li><a class="white-link" href="http://labtransp.onca.se/" target="blank">Labtransp</a></li>
+            <li><a class="white-link" href="http://www.transparencia.pub/" target="blank">Labtransp</a></li>
             <li><a class="white-link" href="http://pentahobrasil.com.br/" target="blank">Pentaho Brasil</a></li>
           <ul>
         </div>
@@ -238,12 +239,12 @@
   <div class="row oncase-content-margin" >
     <div class="col-xs-12  text-left" >
           <ul class="oncase-links">
-            <li class="inline-block"><a class="oncase-blue active" href="/">Home</a></li>
-            <li class="inline-block"><a class="oncase-blue" href="/about">About</a></li>
-            <li class="inline-block"><a class="oncase-blue" href="/services">Services</a></li>
-            <li class="inline-block"><a class="oncase-blue" href="/products">Products</a></li>
-            <li class="inline-block"><a class="oncase-blue" href="/clipar">Clients and Partners</a></li>
-            <li class="inline-block"><a class="oncase-blue" href="/contact">Contact</a></li>
+            <li class="inline-block"><a class="oncase-blue" ng-class="{active : selectedIndex===0}" href="/" ng-click="selectedIndex=0;HeaderCtrl.tabClicked(selectedIndex)">Home</a></li>
+            <li class="inline-block"><a class="oncase-blue" ng-class="{active : selectedIndex===1}" href="/about" ng-click="selectedIndex=1;HeaderCtrl.tabClicked(selectedIndex)">About</a></li>
+            <li class="inline-block"><a class="oncase-blue" ng-class="{active : selectedIndex===2}" href="/services" ng-click="selectedIndex=2;HeaderCtrl.tabClicked(selectedIndex)">Services</a></li>
+            <li class="inline-block"><a class="oncase-blue" ng-class="{active : selectedIndex===3}" href="/products" ng-click="selectedIndex=3;HeaderCtrl.tabClicked(selectedIndex)">Products</a></li>
+            <li class="inline-block"><a class="oncase-blue" ng-class="{active : selectedIndex===4}" href="/clients-and-partners" ng-click="selectedIndex=4;HeaderCtrl.tabClicked(selectedIndex)">Clients and Partners</a></li>
+            <li class="inline-block"><a class="oncase-blue" ng-class="{active : selectedIndex===5}" href="/contact" ng-click="selectedIndex=5;HeaderCtrl.tabClicked(selectedIndex)">Contact</a></li>
           <ul>
       </div>
   </div>

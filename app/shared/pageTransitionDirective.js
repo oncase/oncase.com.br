@@ -11,12 +11,10 @@
 
 		      $rootScope.$on('$routeChangeStart', function(){
 		        scope.isRouteLoading = true;
-		        console.log("Page Loading");
 		      });
 
 		      $rootScope.$on('$routeChangeSuccess', function(){
 		        scope.isRouteLoading = false;
-		        console.log("Page Loaded!!!!!");
 		      });
 
 	      }
