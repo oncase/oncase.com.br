@@ -464,6 +464,16 @@ button.md-raised.oncase-button:hover{
 
 /* ==============================================
     X-Small devices specifics - sync with BS3.0
+   ============================================== */
+
+@media(max-width:767px){
+    .oncase-content-margin {
+        margin: 0px 10px;
+    }
+}
+
+/* ==============================================
+    X-Small devices specifics - sync with BS3.0
 
      ---- portrait ----
 
@@ -478,7 +488,6 @@ button.md-raised.oncase-button:hover{
         width:250px;
     }
 }
-
 
 
 
