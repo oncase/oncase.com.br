@@ -36,13 +36,24 @@
 
     this.animateSentOK = function(){
 
-		setTimeout(function(){
-			$('.send-check').fadeIn();
-		},500);
+  		setTimeout(function(){
+  			$('.send-check').fadeIn();
+  		},500);
 
-		setTimeout(function(){
-			$('.send-check').addClass('send-active');
-		},1000);
+  		setTimeout(function(){
+  			$('.send-check').addClass('send-active');
+  		},1000);
+
+    };
+
+    this.animateSentError = function(){
+      setTimeout(function(){
+        $('.send-check').fadeIn();
+      },500);
+
+      setTimeout(function(){
+        $('.send-check').addClass('send-error');
+      },1000);
 
     };
 
@@ -50,29 +61,30 @@
 
 		/* TODO: This should be translated to Angular
 		 */
-		setTimeout(function(){
-			$('.send-check').fadeOut().removeClass('send-active');
-			$('.send-plane').removeClass('send-active');
-		},4000);
+  		  setTimeout(function(){
+    			$('.send-check').fadeOut().removeClass('send-active');
+    			$('.send-plane').removeClass('send-active');
+    		},4000);
     };
 
-    this.send =  function(){
+    this.send = function(){
 
       ContactCtrl.animateSending();
 
       sendMailService.sendContactPost(ContactCtrl.user)
       .success(function(data, status, headers, config){
-        console.log("email successfully sent");
-        console.log(data);
-        console.log(status);
-        console.log(headers);
-        console.log(config);
-        ContactCtrl.animateSentOK();
-        ContactCtrl.animateAirplaneBack();
-        ContactCtrl.resetContactForm();
+        if ( "1" == data ){
+          ContactCtrl.animateSentOK();
+          ContactCtrl.animateAirplaneBack();
+          ContactCtrl.resetContactForm();
+        }else{
+          ContactCtrl.animateSentError();
+          ContactCtrl.animateAirplaneBack();
+        }
 
       })
       .error(function(data, status, headers, config) {
+        ContactCtrl.animateSentError();
         ContactCtrl.animateAirplaneBack();
       });
   

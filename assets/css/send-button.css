@@ -127,3 +127,7 @@
 .send-check.send-active:after {
 	width: 30px;
 }
+
+.send-check.send-error {
+    background-color:#c00;
+}
