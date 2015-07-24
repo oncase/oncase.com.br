@@ -14,11 +14,11 @@ include '../../../mail_vars.php';
 
 $dataJS = json_decode(file_get_contents("php://input"));
 
-$to = "balaum@gmail.com";
+$to = "contato@oncase.com.br";
 $email_from = "no-reply@oncase.com.br";
 $email_subject = "Contato atraves do site" ;
 $email_body = "Contato atraves do website";
-$email_address = "balaum@gmail.com";
+$email_address = "marcello@oncase.com.br";
 
 $name = $dataJS->name;
 $email = $dataJS->email;
