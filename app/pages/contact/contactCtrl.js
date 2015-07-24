@@ -2,8 +2,8 @@
 
   angular.module('contactModule',['ngMap']).
 
-  controller('ContactCtrl',['jumboBackgroundService','$scope','$window','$document',
-  	function(jumboBackgroundService,$scope,$window,$document){
+  controller('ContactCtrl',['jumboBackgroundService','$scope','$window','$document','content',
+  	function(jumboBackgroundService,$scope,$window,$document,content){
 
   	var ContactCtrl = this;
   	var google = $window.google;

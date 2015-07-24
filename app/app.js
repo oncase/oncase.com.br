@@ -1,5 +1,9 @@
 (function () {
 
+  var pageContentResolve = function(pageLoaderService){
+    return pageLoaderService.getContent();
+  };
+
   var app = angular.module(
       'oncase', [
         'ngMaterial',
@@ -8,7 +12,9 @@
         'ngRoute',
         'ngAnimate',
         'oncasePages',
-        'jumboBackgroundService', 'mouseOverClass'
+        'jumboBackgroundService', 
+        'mouseOverClass',
+        'pageTransitionDirective'
       ]
     )
     .config(function ($mdThemingProvider, $routeProvider, $locationProvider) {
@@ -44,37 +50,55 @@
         .when('/', {
         templateUrl: 'app/pages/home/index.html',
         controller: 'homeCtrl',
-        controllerAs: 'homeCtrl'
+        controllerAs: 'homeCtrl',
+        resolve: {
+          content:pageContentResolve
+        }
       })
 
       .when('/about', {
         templateUrl: 'app/pages/about/index.html',
         controller: 'aboutCtrl',
-        controllerAs: 'aboutCtrl'
+        controllerAs: 'aboutCtrl',
+        resolve: {
+          content:pageContentResolve
+        }
       })
 
       .when('/services', {
         templateUrl: 'app/pages/services/index.html',
         controller: 'servicesCtrl',
-        controllerAs: 'servicesCtrl'
+        controllerAs: 'servicesCtrl',
+        resolve: {
+          content:pageContentResolve
+        }
       })
 
       .when('/products', {
         templateUrl: 'app/pages/products/index.html',
         controller: 'productsCtrl',
-        controllerAs: 'productsCtrl'
+        controllerAs: 'productsCtrl',
+        resolve: {
+          content:pageContentResolve
+        }
       })
 
       .when('/clients-and-partners', {
         templateUrl: 'app/pages/clipar/index.html',
         controller: 'cliParCtrl',
-        controllerAs: 'cliParCtrl'
+        controllerAs: 'cliParCtrl',
+        resolve: {
+          content:pageContentResolve
+        }
       })
 
       .when('/contact', {
         templateUrl: 'app/pages/contact/index.html',
         controller: 'ContactCtrl',
-        controllerAs: 'ContactCtrl'
+        controllerAs: 'ContactCtrl',
+        resolve: {
+          content:pageContentResolve
+        }
       })
 
       .otherwise({

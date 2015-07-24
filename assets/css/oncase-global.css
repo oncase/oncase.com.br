@@ -3,6 +3,7 @@ html {
     background-color: #eee;
     background-image: url(../img/bg-texture.png);
     font-family: 'Roboto', sans-serif;
+    height: 100%; width: 100%; margin: 0;
 }
 .oncase-logo {
     background-image: url(../img/oncase-logo-sec-noslogan.svg);
@@ -238,58 +239,33 @@ md-tabs.md-default-theme .md-tab.md-focused {
 	Animations between pages
    ============================================== */
 
-.oncase-main-view.ng-enter {
-    animation: page-in 0.5s both ease-in 0.2s;
-    -ms-animation: page-in 0.5s both ease-in 0.2s;
-    -webkit-animation: page-in 0.5s both ease-in 0.2s;
-}
-.oncase-main-view.ng-leave {
-    animation: page-out 0.1s both ease-in;
-    -ms-animation: page-out 0.1s both ease-in;
-    -webkit-animation: page-out 0.1s both ease-in;
-}
-/* animation */
+.oncase-main-view {
 
-@keyframes page-in {
-    from {
-        transform: translateY(30px);
-        opacity: 0;
-    }
-    to {
-        transform: translateY(0);
-        opacity: 1;
-    }
 }
-@keyframes page-out {
-    from {
-        transform: translateY(0);
-        opacity: 1;
-    }
-    to {
-        transform: translateY(30px);
-        opacity: 0;
-    }
+.oncase-main-view.oncase-page-loading{
+    opacity: 0;
 }
-@-webkit-keyframes page-in {
-    from {
-        -webkit-transform: translateY(30px);
-        opacity: 0;
-    }
-    to {
-        -webkit-transform: translateY(0);
-        opacity: 1;
-    }
+.oncase-main-view.oncase-page-loaded{
+
+    opacity: 1;
 }
-@-webkit-keyframes page-out {
-    from {
-        -webkit-transform: translateY(0);
-        opacity: 1;
-    }
-    to {
-        -webkit-transform: translateY(30px);
-        opacity: 0;
-    }
+.oncase-transition-wrapper {
+    height:150vh;
+    margin: 0  auto;
+    position:relative;
+    margin-top:0;
+    padding-top:30px;
+    
 }
+.oncase-transition-wrapper.oncase-page-loading{
+    display: block;
+}
+.oncase-transition-wrapper.oncase-page-loaded{
+    display: none;
+}
+
+
+
 .jumbo-background {
     background-image: url(../img/jumbo-bg.png);
     height: 700px;
@@ -502,3 +478,7 @@ button.md-raised.oncase-button:hover{
         width:250px;
     }
 }
+
+
+
+

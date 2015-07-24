@@ -2,7 +2,7 @@
 
   angular.module('cliParModule',[]).
 
-  controller('cliParCtrl',["jumboBackgroundService",function(jumboBackgroundService){
+  controller('cliParCtrl',['jumboBackgroundService','content',function(jumboBackgroundService,content){
   	jumboBackgroundService.setSmall(true);
     jumboBackgroundService.setVisible();
   }]);

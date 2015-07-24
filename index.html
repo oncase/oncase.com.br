@@ -26,20 +26,23 @@
   </head>
 
   <body ng-class="bodyClasses">
-    <div class="jumbo-background" ng-class="{ active : HeaderCtrl.jumboBackgroundVisible(), 'jumbo-background-small' : HeaderCtrl.isJumboSmall() }"></div>
+    <div class="jumbo-background" page-transition ng-class="{ active : HeaderCtrl.jumboBackgroundVisible(), 'jumbo-background-small' : HeaderCtrl.isJumboSmall() }"></div>
     <oncase-header></oncase-header>
     <div class="oncase-waypoint-wrapper">
       <!--<div class="oncase-waypoint" id="oncase-waypoint" waypoint-config="{'target' :'.oncase-header','addDown' : 'oncase-small-header', 'remUp' : 'oncase-small-header'}"></div>-->
     </div>
+    <div class="oncase-transition-wrapper" ng-class=" {'oncase-page-loading' : isRouteLoading, 'oncase-page-loaded' : !isRouteLoading, } ">
+        <div layout="row" layout-sm="column" layout-align="space-around">
+          <md-progress-circular md-mode="indeterminate"></md-progress-circular>
+        </div>
+    </div>
     <!-- Main content and injected views -->
     <div id="main">
-
-        <div ng-view class="oncase-main-view"></div>
-
+        <div ng-view class="oncase-main-view" ng-class=" {'oncase-page-loading' : isRouteLoading, 'oncase-page-loaded' : !isRouteLoading, } "></div>
     </div>
     <side-menu></side-menu>
     <div ng-class="olClasses" ng-click="closeCallback()" ></div>
-<!--<span class="visible-xs">SIZE XS</span><span class="visible-sm">SIZE SM</span><span class="visible-md">SIZE MD</span><span class="visible-lg">SIZE LG</span>-->
+
     <oncase-footer></oncase-footer>
   </body>
 
@@ -76,6 +79,7 @@
     <script src="/app/components/header/menuService.js"></script>
     <script src="/app/components/footer/footerDirective.js"></script>
     <script src="/app/shared/scrollDirective.js"></script>
+    <script src="/app/shared/pageTransitionDirective.js"></script>
 
     <script src="/app/shared/jumboBackgroundService.js"></script>
     <script src="/app/shared/overlayService.js"></script>
@@ -92,6 +96,7 @@
     <script src="/app/pages/products/productsCtrl.js"></script>
     <script src="/app/pages/services/servicesCtrl.js"></script>
     <script src="/app/pages/pagesModule.js"></script>
+    <script src="/app/pages/pageLoaderService.js"></script>
 
     <!-- APP -->
     <script src="app/app.js"></script>

@@ -2,7 +2,8 @@
 
   angular.module('homeModule',['ui.bootstrap']).
 
-  controller('homeCtrl',['$scope','jumboBackgroundService',function($scope,jumboBackgroundService){
+  controller('homeCtrl',['$scope','jumboBackgroundService','content',
+    function($scope,jumboBackgroundService,content){
 
     jumboBackgroundService.setSmall(false);
     jumboBackgroundService.setVisible();
