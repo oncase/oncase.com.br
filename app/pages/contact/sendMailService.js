@@ -7,10 +7,12 @@
 			var _sendMailUrl = '/app/server/sendmail.php'
 
 			var _sendContactPost = function(formData){
-				return $http.post(
-						_sendMailUrl,
-						formData
-					);
+				return $http({
+			      method: "post",
+			      url: _sendMailUrl,
+			      data: formData,
+			      headers: {'Content-Type': 'application/x-www-form-urlencoded'}
+			    });
 			};
 
 			return {
