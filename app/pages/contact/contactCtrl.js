@@ -2,8 +2,8 @@
 
   angular.module('contactModule',['ngMap']).
 
-  controller('ContactCtrl',['jumboBackgroundService','$scope','$window','$document','content',
-  	function(jumboBackgroundService,$scope,$window,$document,content){
+  controller('ContactCtrl',['jumboBackgroundService','$scope','$window','$document','content','sendMailService',
+  	function(jumboBackgroundService,$scope,$window,$document,content,sendMailService){
 
   	var ContactCtrl = this;
   	var google = $window.google;
@@ -13,10 +13,16 @@
     	email: "",
     	tel:"",
     	msg : ""
-	};
+	 };
 
   	jumboBackgroundService.setSmall(true);
     jumboBackgroundService.setVisible();
+
+    this.resetContactForm = function(){
+        for(key in ContactCtrl.user){
+          ContactCtrl.user[key] = "";
+        }
+    };
 
     this.animateSending = function(){
 
@@ -49,9 +55,23 @@
     };
 
     this.send =  function(){
-    	ContactCtrl.animateSending();
-    	ContactCtrl.animateSentOK();
-    	ContactCtrl.animateAirplaneBack();
+
+      ContactCtrl.animateSending();
+
+      sendMailService.sendContactPost(ContactCtrl.user)
+      .success(function(){
+
+        ContactCtrl.animateSentOK();
+        ContactCtrl.animateAirplaneBack();
+        ContactCtrl.resetContactForm();
+
+
+      })
+      .error(function(data, status, headers, config) {
+        ContactCtrl.animateAirplaneBack();
+      });
+    	
+    	
     };
 
 
