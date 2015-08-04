@@ -516,6 +516,55 @@ button.md-raised.oncase-button:hover{
 
 
 
+
+
+
+
+
+/* animation */
+
+@keyframes page-in {
+    from {
+        transform: translateY(30px);
+        opacity: 0;
+    }
+    to {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+@keyframes page-out {
+    from {
+        transform: translateY(0);
+        opacity: 1;
+    }
+    to {
+        transform: translateY(30px);
+        opacity: 0;
+    }
+}
+@-webkit-keyframes page-in {
+    from {
+        -webkit-transform: translateY(30px);
+        opacity: 0;
+    }
+    to {
+        -webkit-transform: translateY(0);
+        opacity: 1;
+    }
+}
+@-webkit-keyframes page-out {
+    from {
+        -webkit-transform: translateY(0);
+        opacity: 1;
+    }
+    to {
+        -webkit-transform: translateY(30px);
+        opacity: 0;
+    }
+}
+
+
 /* ==============================================
 	Medium devices specifics - sync with BS3.0
    ============================================== */

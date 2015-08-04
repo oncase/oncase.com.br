@@ -23,6 +23,12 @@
 
     this.jumboBackgroundVisible = jumboBackgroundService.getVisibility;
     this.isJumboSmall = function(){return jumboBackgroundService.getSmall()};
+
+    $scope.$on( "$routeChangeStart", function(event, next, current) {
+      var nextRoute = next.$$route.originalPath;
+
+      $scope.selectedIndex = menuService.getIndexForRoute(nextRoute);
+    });
     
   }]);
 

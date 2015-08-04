@@ -7,6 +7,12 @@
     jumboBackgroundService.setVisible();
     $scope.showAwardsSeeMoreButton = false;
     $scope.showServicesFlowMoreButton = false;
+
+    this.goTo = function(idx){
+    	$scope.$parent.selectedIndex = idx;
+    	return $scope.$parent.selectedIndex;
+    };
+
   }]);
 
 })();
