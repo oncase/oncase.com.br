@@ -36,9 +36,7 @@
     text-align: center;
 }
 
-.oncase-absolute-center{
-    text-align: center;
-}
+
 .jumbo-text {
     margin-top: 50px;
     color: #444;
@@ -278,92 +276,11 @@ md-list.oncase-anouncement md-list-item i{
 
 
 
-
-.oncase-flexcards-wrapper {
-	margin: 20px 25px;
-}
-
-
-.oncase-flexcard{
-	padding:20px;
-	color:#444;
-	margin-bottom:20px;
-	text-align: center;
-	padding-bottom:30px;
-	cursor:default;
-}
-.oncase-flexcard:hover{
-	background-color:#f5f5f5;
-}
-.oncase-flexcard-img{
-	height:160px;
-	width:100%;
-  	text-align: center;
-  	margin-bottom: 0;
-}
-
-.oncase-flexcard-img svg{
-	height:160px;
-	fill:#ccc;
-}
-
-.oncase-flexcard .oncase-flexcard-img svg{
-	fill:#999;
-}
-.oncase-flexcard:hover .oncase-flexcard-img svg{
-	fill:reset;
-}
-
-.oncase-flexcard h2{
-	text-align:center;
-	margin-bottom:0;
-  	margin-top: 10px;
-}
-
-.oncase-header-underscore{
-	height:1px;
-	margin:0 auto;
-	width:0px;
-}
-
-.oncase-flexcard:hover .oncase-header-underscore{
-	width:90%;
-}
-
-
-
-.bg-red 		{background-color:#f23b2e;}
-.bg-pink 		{background-color:#e60063;}
-.bg-purple 		{background-color:#9900b7;}
-.bg-deep-purple {background-color:#6427bd;}
-.bg-blue 		{background-color:#228ff9;}
-.bg-green 		{background-color:#52b33d;}
-.bg-light-green {background-color:#8ec62b;}
-
-.oncase-flexcard,
-.oncase-flexcard svg,
-.oncase-header-underscore{
-		    -webkit-transition: all ease-out 200ms;
-    -moz-transition: all ease-out 200ms;
-    -o-transition: all ease-out 200ms;
-    transition: all ease-out 200ms;
-}
-
-[layout-wrap]{
-	justify-content: space-between;
-	-webkit-box-pack:justify;
-	-webkit-box-orient:horizontal;
-}
-
 /* ==============================================
 	Medium devices specifics - sync with BS3.0
    ============================================== */
 @media(max-width:1199px){
 
-	section.oncase-content-margin,
-	.oncase-home-jumbotron.oncase-content-margin{
-		margin:0;
-	}
 
     .carousel-inner{
     	padding-top:20px;
@@ -555,109 +472,10 @@ md-list.oncase-anouncement md-list-item i{
 
 </div>
 
+<div ng-include="'app/shared/partials/services-flow.html'"></div>
 
 
-<div class="container-fluid oncase-content-margin-flex" class="row-height" >
-
-	<div class="col-lg-height col-sm-12 col-md-6 col-lg-3">
-
-	  <div class=" oncase-flexcard " mouse-over-class="md-whiteframe-z1" >
-	  	<div class="oncase-flexcard-img" ng-include="'assets/img/elephant.svg'"></div>
-	  	<h2>Big Data Integration</h2>
-	  	<div class="oncase-header-underscore bg-oncase-blue"></div>
-	  	<div class="oncase-wrapped-text-3l">Integrate, Clean and Enhance your data consuming it from virtualy any source.</div>
-	  </div>
-
-
-	</div>
-	<div class="col-lg-height col-sm-12 col-md-6 col-lg-3">
-
-	  <div class=" oncase-flexcard " mouse-over-class="md-whiteframe-z1" >
-		<div class="oncase-flexcard-img" ng-include="'assets/img/charts.svg'"></div>
-		<h2>Business Intelligence</h2>
-	  	<div class="oncase-header-underscore bg-oncase-blue"></div>
-		<div class="oncase-wrapped-text-3l">Explore, get alerted and and visualize your information on any demand and depth</div>
-	  </div>
-
-	</div>
-	<div class="col-lg-height col-sm-12 col-md-6 col-lg-3">
-
-	  <div class=" oncase-flexcard " mouse-over-class="md-whiteframe-z1" >
-		<div class="oncase-flexcard-img" ng-include="'assets/img/analytics-card.svg'"></div>
-		<h2>Data Analytics</h2>
-	  	<div class="oncase-header-underscore bg-oncase-blue"></div>
-		<div class="oncase-wrapped-text-3l">Understand the knowledge within your information and antecipate risks</div>
-	  </div>
-
-	</div>
-	<div class="col-lg-height col-sm-12 col-md-6 col-lg-3">
-
-	  <div class=" oncase-flexcard " mouse-over-class="md-whiteframe-z1" >
-		<div class="oncase-flexcard-img" ng-include="'assets/img/optimization.svg'"></div>
-		<h2>Optimization</h2>
-	  	<div class="oncase-header-underscore bg-oncase-blue"></div>
-		<div class="oncase-wrapped-text-3l">Tune your organization to its full potential</div>
-	  </div>
-
-	</div>
-
-
-
-</div>
-
-<div layout="row" layout-align="center center">
-	  <md-button class="md-raised oncase-big-button md-primary oncase-button">See more</md-button>
-</div>
-
-<section class="oncase-white-section bg-oncase-white">
-	<div class="oncase-content-margin">
-
-		<h2 class="oncase-section-heading oncase-gray text-center" >Um pouco do nosso</h2>
-		<h1 class="oncase-section-heading oncase-blue text-center">Reconhecimento</h1>
-		<div class="oncase-section-heading-underscore bg-oncase-orange"></div>
-		<p class="oncase-promo-text text-center">
-			A Oncase tem em sua veia, a busca constante pela entrega de qualidade nos seus serviços e produtos oferecidos.
-			<br />Como consequência direta disso, acumulamos alguns reconhecimentos perseguidos, que ilustram a seriedade do nosso trabalho.
-		</p>
-
-
-		<div class="oncase-separator"></div>
-		<h3 class="oncase-section-heading oncase-blue text-center">Premium Partner</h2>
-		<div ng-include="'assets/img/pentaho-premium-partner.svg'" class="oncase-absolute-center oncase-section-image-single"></div>
-		<p class="oncase-promo-text text-center">
-			Até o momento, somos o único Premium Partner Pentaho no Brasil e isso não é qualquer status.
-			<br />Uma empresa torna-se Premium Partner no momento em que a Pentaho reconhece a sua importância e influência no mercado
-		</p>
-
-		<!-- This is not necessary
-
-
-		<div class="oncase-separator "></div>
-		<h3 class="oncase-section-heading oncase-blue">Partner of the Year</h2>
-		-->
-		<div class="col-sm-12 col-md-offset-3 col-md-3 oncase-absolute-center oncase-section-image-double" ng-include="'assets/img/poty-2013.svg'" ></div>
-		<div class="col-sm-12                 col-md-3 oncase-absolute-center oncase-section-image-double" ng-include="'assets/img/poty-2014.svg'" ></div>
-		<p class="oncase-promo-text text-center">
-			Anualmente, em convenções da Empresa, a Pentaho premia os parceiros mais relevantes e a Oncase já levou a premiação por dois anos consecutivos.
-		</p>
-
-		<div class="oncase-separator"></div>
-		<h3 class="oncase-section-heading oncase-blue text-center">Certifications</h2>
-		<div class="col-md-12  col-md-4 oncase-absolute-center oncase-section-image-triple" ng-include="'assets/img/cmmi-dev.svg'" ></div>
-		<div class="col-md-12  col-md-4 oncase-absolute-center oncase-section-image-triple" ng-include="'assets/img/cmmi-svc.svg'" ></div>
-		<div class="col-md-12  col-md-4 oncase-absolute-center oncase-section-image-triple" ng-include="'assets/img/mps-br.svg'" ></div>
-		<p class="oncase-promo-text  text-center">
-			Nos últimos anos, em busca de tornar pública nossa maneira de trabalhar, submetemo-nos constantemente a processos que credenciassem a Oncase no mercado. 
-			O resultado desse esforço está estampado em três certificações adquiridas e mantidas.
-		</p>
-
-		<div class="oncase-separator"></div>
-		<div layout="row" layout-align="center center">
-			  <md-button class="md-raised oncase-big-button md-primary oncase-button" >See more</md-button>
-		</div>
-	</div>
-
-</section>
+<div ng-include="'app/shared/partials/awards.html'"></div>
 <br />&nbsp;
 <br />&nbsp;
 <br />&nbsp;

@@ -325,7 +325,7 @@ span.oncase-border-bottom{
     border-bottom:solid 1px;
 }
 
-.oncase-white-section h2.oncase-section-heading{
+.oncase-white-section-fonts h2.oncase-section-heading{
     font-weight:bold;
     font-size:2em;
     margin-top:0px;
@@ -334,7 +334,7 @@ span.oncase-border-bottom{
     clear:both;
     
 }
-.oncase-white-section h3.oncase-section-heading{
+.oncase-white-section-fonts h3.oncase-section-heading{
     font-weight:bold;
     font-size:2.8em;
     margin-top:0px;
@@ -343,7 +343,7 @@ span.oncase-border-bottom{
     clear:both;
     border-bottom:solid 1px #ccc;
 }
-.oncase-white-section h1.oncase-section-heading{
+.oncase-white-section-fonts h1.oncase-section-heading{
     font-weight:900;
     font-size:3.6em;
     margin-top:0px;
@@ -399,6 +399,10 @@ p.oncase-promo-text{
     width:300px;
 }
 
+i.oncase-big-icon{
+    font-size: 128px;
+}
+
 .oncase-section-image-double svg{
     margin-top:10px;
     width:180px;
@@ -421,10 +425,103 @@ button.md-raised.oncase-button:hover{
     -webkit-box-shadow: 0 5px 8px 0 rgba(0,0,0,.4); 
 }
 
+
+
+
+/* ==============================================
+    Inherited from home
+   ============================================== */
+
+.oncase-absolute-center{
+    text-align: center;
+}
+
+.oncase-flexcards-wrapper {
+    margin: 20px 25px;
+}
+
+
+.oncase-flexcard{
+    padding:20px;
+    color:#444;
+    margin-bottom:20px;
+    text-align: center;
+    padding-bottom:30px;
+    cursor:default;
+}
+.oncase-flexcard:hover{
+    background-color:#f5f5f5;
+}
+.oncase-flexcard-img{
+    height:160px;
+    width:100%;
+    text-align: center;
+    margin-bottom: 0;
+}
+
+.oncase-flexcard-img svg{
+    height:160px;
+    fill:#ccc;
+}
+
+.oncase-flexcard .oncase-flexcard-img svg{
+    fill:#999;
+}
+.oncase-flexcard:hover .oncase-flexcard-img svg{
+    fill:reset;
+}
+
+.oncase-flexcard h2{
+    text-align:center;
+    margin-bottom:0;
+    margin-top: 10px;
+}
+
+.oncase-header-underscore{
+    height:1px;
+    margin:0 auto;
+    width:0px;
+}
+
+.oncase-flexcard:hover .oncase-header-underscore{
+    width:90%;
+}
+
+
+
+.bg-red         {background-color:#f23b2e;}
+.bg-pink        {background-color:#e60063;}
+.bg-purple      {background-color:#9900b7;}
+.bg-deep-purple {background-color:#6427bd;}
+.bg-blue        {background-color:#228ff9;}
+.bg-green       {background-color:#52b33d;}
+.bg-light-green {background-color:#8ec62b;}
+
+.oncase-flexcard,
+.oncase-flexcard svg,
+.oncase-header-underscore{
+            -webkit-transition: all ease-out 200ms;
+    -moz-transition: all ease-out 200ms;
+    -o-transition: all ease-out 200ms;
+    transition: all ease-out 200ms;
+}
+
+[layout-wrap]{
+    justify-content: space-between;
+    -webkit-box-pack:justify;
+    -webkit-box-orient:horizontal;
+}
+
+
+
+
+
 /* ==============================================
 	Medium devices specifics - sync with BS3.0
    ============================================== */
 @media(max-width:1199px){
+
+
 
     .oncase-header {
         height: 68px;
@@ -447,6 +544,15 @@ button.md-raised.oncase-button:hover{
     .container-fluid.oncase-content-margin-flex.ng-scope {
       margin: 0;
       padding: 8px;
+    }
+
+
+    /* from Home/index */
+
+    
+    section.oncase-content-margin,
+    .oncase-home-jumbotron.oncase-content-margin{
+        margin:0;
     }
 
 }
@@ -479,7 +585,7 @@ button.md-raised.oncase-button:hover{
 
    ============================================== */
 @media(max-width:767px) and(orientation:portrait){
-    .oncase-white-section h1.oncase-section-heading{
+    .oncase-white-section-fonts h1.oncase-section-heading{
         font-size:2.2em;
     }
     .oncase-section-image-triple svg,

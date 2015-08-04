@@ -2,9 +2,11 @@
 
   angular.module('aboutModule',[]).
 
-  controller('aboutCtrl',['jumboBackgroundService','content',function(jumboBackgroundService,content){
+  controller('aboutCtrl',['$scope','jumboBackgroundService','content',function($scope,jumboBackgroundService,content){
   	jumboBackgroundService.setSmall(true);
     jumboBackgroundService.setVisible();
+    $scope.showAwardsSeeMoreButton = false;
+    $scope.showServicesFlowMoreButton = false;
   }]);
 
 })();

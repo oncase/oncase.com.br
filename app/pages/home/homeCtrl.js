@@ -9,6 +9,8 @@
     jumboBackgroundService.setVisible();
 
   	$scope.myInterval = 5000;
+    $scope.showAwardsSeeMoreButton = true;
+    $scope.showServicesFlowMoreButton = true;
 
   	$scope.slides = [
       {
