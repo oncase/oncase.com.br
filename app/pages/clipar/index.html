@@ -43,12 +43,12 @@
 	<div class="container-fluid oncase-margin-top">
 		<div class="row-fluid">
 
-			<div ng-repeat="client in cliParCtrl.clients | orderBy:'-priority'" class="col-sm-12 col-md-3 oncase-margin-bottom" >
+			<div ng-repeat="client in cliParCtrl.clients | orderBy:'-priority'" class="col-sm-12 col-md-4 col-lg-3 oncase-margin-bottom" >
 
 					<div class="oncase-desaturated-container oncase-clipar-logo-wrapper md-whiteframe-z1 bg-oncase-white oncase-content-paper" >
 						<div class="oncase-table oncase-width-100">
 							<div class="oncase-absolute-center oncase-section-image-single text-center oncase-clipar-logo oncase-width-100">
-								<img class="oncase-desaturated-img" ng-src="{{client.logo}}" width="180" />
+								<img class="oncase-desaturated-img" ng-src="{{client.logo}}" />
 							</div>
 						</div>
 						<div class="oncase-clipar-action text-center oncase-light-gray no-outline">

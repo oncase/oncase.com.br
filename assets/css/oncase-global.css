@@ -712,12 +712,22 @@ button.md-raised.oncase-button:hover{
     .oncase-svg-128    { height:128px; margin:0;}
     .oncase-svg-128 svg{width:128px; height:128px; margin:0;}
 
+img.oncase-desaturated-img{
+    width:200px;
+}
+
+.oncase-clipar-logo-wrapper h1{
+    line-height: .8em;
+}
+
 /* ==============================================
 	Medium devices specifics - sync with BS3.0
    ============================================== */
 @media(max-width:1199px){
 
-
+    img.oncase-desaturated-img{
+        width:180px;
+    }
 
     .oncase-header {
         height: 68px;
