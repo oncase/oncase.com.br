@@ -30,15 +30,24 @@ md-toolbar.md-default-theme.md-accent{
     overflow: hidden;
 }
 
-    a.white-link,
-    a.white-link:visited,
-    a.white-link:active{
-      color:#fff;
-    }
+a.white-link,
+a.white-link:visited,
+a.white-link:active{
+  color:#fff;
+}
 
-    .no-margin{
-        margin:0;
-    }
+.no-margin{
+    margin:0;
+}
+
+.oncase-fixed-session-text{
+    margin-top: -200px;
+    margin-bottom: 60px;
+    position: relative;
+    font-weight: 100;
+    font-size: 72px;
+}
+
 /* ==============================================
 	Header
    ============================================== */
@@ -497,6 +506,15 @@ button.md-raised.oncase-button:hover{
 .bg-green       {background-color:#52b33d;}
 .bg-light-green {background-color:#8ec62b;}
 
+.oncase-secondary-red {color:#cb6866;}
+.oncase-secondary-green {color:#a5bf4b;}
+.oncase-secondary-blue {color:#66b1cb;}
+.oncase-secondary-yellow {color:#cbb966;}
+.oncase-secondary-deep-purple {color:#6427bd;}
+.oncase-secondary-pink        {color:#e60063;}
+.oncase-secondary-light-green {color:#8ec62b;}
+
+
 .oncase-flexcard,
 .oncase-flexcard svg,
 .oncase-header-underscore{
@@ -564,6 +582,65 @@ button.md-raised.oncase-button:hover{
     }
 }
 
+
+
+
+
+
+
+/* ==============================================
+    From about
+   ============================================== */
+
+    .historico{
+        background-image: url(../img/bom-jesus.jpg);
+        display: table-cell;
+        background-size: cover;
+        height: 100%;
+        vertical-align: top;
+        float: none;
+    }
+    .oncase-table {
+        display:table;
+        margin-left: -16px;
+    }
+
+    .oncase-fixed-session{
+        height:300px;
+        margin-top: -20px;
+        position: relative;
+        z-index: -1;
+    }
+    .oncase-fixed-background{
+        background-attachment: fixed;
+    }
+
+    .oncase-material-analytics-bg{
+        background-image: url(../img/analytics-bg.png);
+        background-size:cover;
+        background-repeat:no-repeat;
+            -webkit-filter: brightness(.3);
+            -moz-filter: brightness(.3);
+            filter: brightness(.3);
+            margin-bottom: -50px;
+
+    }
+    .oncase-pic-info{
+
+                position: absolute;
+                bottom: 0;
+                background-color: #000;
+                width: 100%;
+                margin: 0;
+                margin-left: -15px;
+                padding: 20px;
+                opacity: .6;
+                color: #fff;
+
+    }
+
+    .oncase-svg-128    { height:128px; margin:0;}
+    .oncase-svg-128 svg{width:128px; height:128px; margin:0;}
 
 /* ==============================================
 	Medium devices specifics - sync with BS3.0
