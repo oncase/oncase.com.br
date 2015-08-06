@@ -51,13 +51,6 @@
 				priority : 97000
 			},
 			{
-				name : "ITA",
-				logo : "../../../assets/img/clients/logo-ita.png",
-				areas : "Suporte em Data Mining",
-				site : "http://www.ita.br",
-				priority : 96000
-			},
-			{
 				name : "Autoviação 1001",
 				logo : "../../../assets/img/clients/logo-1001.png",
 				areas : "Suporte ao produto e ao Desenvolvedor",
