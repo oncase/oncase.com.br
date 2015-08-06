@@ -2,6 +2,67 @@
 	<div class="oncase-breadcrumbs oncase-white">Clientes e Parceiros</div>
 </section>
 
-<section class="oncase-content-margin oncase-content-paper md-whiteframe-z1">
-	Cli Par
+
+<section class="oncase-content-margin oncase-content-paper md-whiteframe-z1 oncase-padding-bottom oncase-white-section-fonts oncase-padding-top">
+	<div class="oncase-content-margin">
+		<h2 class="oncase-section-heading oncase-gray text-center" >Bom relacionamento é</h2>
+		<h1 class="oncase-section-heading oncase-blue text-center">Fundamental</h1>
+		<div class="oncase-section-heading-underscore bg-oncase-orange"></div>
+		<div class="oncase-separator"></div>
+		<div class="row">
+			<div class="col-sm-12" >
+				<div class="oncase-content-margin">
+					<div class="oncase-absolute-center oncase-section-image-single text-center ">
+						<!--<i class="fa fa-bullseye oncase-big-icon oncase-orange"></i>-->
+						<img src="../../../assets/img/handshake.jpg" width="150" height="150"  class="img-circle"/>
+					</div>
+					<h2 class="oncase-section-heading oncase-gray text-center" >Transparência</h2>
+					<p class=" oncase-promo-text text-center">
+						O Sucesso dos nossos clientes é o nosso sucesso. A Honestidade com que procuramos lidar em nosso relacionamento com Clientes e Parceiros, nos dá a tranquilidade de podermos buscar a melhora contínua em nossos processos e na prestação dos nossos serviços. 
+					</p>
+					<p class=" oncase-promo-text text-center">
+						Somos muito orgulhosos pelos serviços que prestamos a cada um dos nossos clientes. Percorremos muitas empresas e por onde andamos deixamos procuramos deixar as portas abertas para futuras oportunidades.
+					</p>
+				</div>
+			</div>
+
+			
+		</div>
+
+    </div>
 </section>
+
+<div class="oncase-separator"></div>	
+
+<div class="oncase-white-section-fonts oncase-content-margin">
+	<h2 class="oncase-section-heading oncase-gray text-center" >Alguns dos nossos</h2>
+	<h1 class="oncase-section-heading oncase-blue text-center">Clientes</h1>
+	<div class="oncase-section-heading-underscore bg-oncase-orange"></div>
+
+
+	<div class="container-fluid oncase-margin-top">
+		<div class="row-fluid">
+
+			<div ng-repeat="client in cliParCtrl.clients | orderBy:'-priority'" class="col-sm-12 col-md-3 oncase-margin-bottom" >
+
+					<div class="oncase-desaturated-container oncase-clipar-logo-wrapper md-whiteframe-z1 bg-oncase-white oncase-content-paper" >
+						<div class="oncase-table oncase-width-100">
+							<div class="oncase-absolute-center oncase-section-image-single text-center oncase-clipar-logo oncase-width-100">
+								<img class="oncase-desaturated-img" ng-src="{{client.logo}}" width="180" />
+							</div>
+						</div>
+						<div class="oncase-clipar-action text-center oncase-light-gray no-outline">
+							<i ng-click="openBottomSheet($event, client)" class="fa fa-angle-up oncase-medium-icon no-outline"></i>
+						</div>
+					</div>
+
+			</div>
+
+		</div>
+	</div>
+</div>
+
+<div class="row oncase-content-margin oncase-margin-top oncase-margin-bottom">&nbsp;</div>
+<div class="row oncase-content-margin oncase-margin-top oncase-margin-bottom">&nbsp;</div>
+<div class="row oncase-content-margin oncase-margin-top oncase-margin-bottom">&nbsp;</div>
+<div class="row oncase-content-margin oncase-margin-top oncase-margin-bottom">&nbsp;</div>

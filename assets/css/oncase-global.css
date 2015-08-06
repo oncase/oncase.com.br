@@ -40,6 +40,14 @@ a.white-link:active{
     margin:0;
 }
 
+
+.no-outline:focus {
+    outline:0;
+}
+.oncase-width-100{
+    width:100%;
+}
+
 .oncase-fixed-session-text{
     margin-top: -200px;
     margin-bottom: 60px;
@@ -440,6 +448,9 @@ ul.oncase-promo-text{
 i.oncase-big-icon{
     font-size: 128px;
 }
+i.oncase-medium-icon{
+    font-size: 32px;
+}
 
 .oncase-section-image-double svg{
     margin-top:10px;
@@ -464,7 +475,12 @@ button.md-raised.oncase-button:hover{
 }
 
 
-
+.oncase-clipar-action{
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 10px;
+}
 
 /* ==============================================
     Inherited from home
@@ -613,8 +629,16 @@ button.md-raised.oncase-button:hover{
 
 
 
+.oncase-clipar-logo-wrapper{
+    height:240px;
+    outline:none;
+}
 
-
+.oncase-clipar-logo{
+    display:table-cell;
+    height:240px;
+    vertical-align:middle;
+}
 
 
 /* ==============================================
@@ -634,6 +658,9 @@ button.md-raised.oncase-button:hover{
     }
     .oncase-table {
         display:table;
+    }
+
+    .oncase-table-fix{
         margin-left: -16px;
     }
 
