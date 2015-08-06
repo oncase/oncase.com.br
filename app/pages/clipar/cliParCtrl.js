@@ -13,7 +13,7 @@
 	    };
 
 		$scope.openBottomSheet = function($event, client) {
-			var element = $event.srcElement.parentElement.parentElement;
+			var element = $event.target.parentElement.parentElement;
 			$mdBottomSheet.show({
 			  template: '<md-bottom-sheet><h1>'+client.name+'</h1><p>'+client.areas+'</p><p><a target="_blank" class="no-outline" href="'+client.site+'">'+client.site+'</a></p></md-bottom-sheet>',
 			  targetEvent: $event,
