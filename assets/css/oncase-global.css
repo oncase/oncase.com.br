@@ -306,6 +306,30 @@ md-tabs.md-default-theme .md-tab.md-focused {
 /* global items
  */
 
+.oncase-desaturated-img{
+    filter: saturate(0);
+    -webkit-filter: saturate(0);
+    -moz-filter: saturate(0);
+    -o-filter: saturate(0);
+    -ms-filter: saturate(0);
+
+
+    -webkit-transition: all ease-in 200ms;
+    -moz-transition: all ease-in 200ms;
+    -o-transition: all ease-in 200ms;
+    transition: all ease-in 200ms;
+}
+
+ .oncase-desaturated-container:hover .oncase-desaturated-img{
+    filter: saturate(100%);
+    -webkit-filter: saturate(100%);
+    -moz-filter: saturate(100%);
+    -o-filter: saturate(100%);
+    -ms-filter: saturate(100%);
+}
+
+
+
 .oncase-big-button {
     padding:5px 30px;
 
@@ -393,7 +417,7 @@ span.md-code{
     padding: 2px 6px;
     border-radius: 2px;
     font-family: monospace;
-    font-size: .9em;
+    font-size: .8em;
     background-color: rgba(255,0,0,0.04);
 }
 
@@ -401,6 +425,11 @@ p.oncase-promo-text{
     font-size:18px;
     color:#444;
     clear:both;
+}
+
+ul.oncase-promo-text{
+    font-size:18px;
+    color:#444;
 }
 
 .oncase-section-image-single svg{
@@ -592,13 +621,16 @@ button.md-raised.oncase-button:hover{
     From about
    ============================================== */
 
-    .historico{
-        background-image: url(../img/bom-jesus.jpg);
+   .oncase-side-img-container{
         display: table-cell;
-        background-size: cover;
         height: 100%;
         vertical-align: top;
         float: none;
+   }
+
+    .historico{
+        background-image: url(../img/bom-jesus.jpg);
+        background-size: cover;
     }
     .oncase-table {
         display:table;
@@ -637,6 +669,17 @@ button.md-raised.oncase-button:hover{
                 opacity: .6;
                 color: #fff;
 
+    }
+
+    .oncase-vertical-middle i.oncase-big-icon {
+        margin: auto;
+        position: absolute;
+        top: 0;
+        left: 0;
+        bottom: 0;
+        right: 0;
+        width: 128px;
+        height: 128px;
     }
 
     .oncase-svg-128    { height:128px; margin:0;}
@@ -713,6 +756,9 @@ button.md-raised.oncase-button:hover{
 @media(max-width:767px) and(orientation:portrait){
     .oncase-white-section-fonts h1.oncase-section-heading{
         font-size:2.2em;
+    }
+    .oncase-fixed-session-text{
+        font-size:36px;
     }
     .oncase-section-image-triple svg,
     .oncase-section-image-single svg{
