@@ -133,6 +133,83 @@
 				areas : "Implantação de BI para gestão acadêmica e controle financeiro",
 				site : "http://www.fps.edu.br",
 				priority : 85000
+			},
+			{
+				name : "Sebrae",
+				logo : "../../../assets/img/clients/logo-sebrae.png",
+				areas : "Implantação de BI",
+				site : "http://www.sebrae.com.br",
+				priority : 84000
+			},
+			{
+				name : "Habitat para a Humanidade",
+				logo : "../../../assets/img/clients/logo-habitat.png",
+				areas : "Implantação de BI",
+				site : "http://www.habitatbrasil.org.br",
+				priority : 83000
+			},
+			{
+				name : "Burger King NE",
+				logo : "../../../assets/img/clients/logo-bgne.png",
+				areas : "Implantação de BI",
+				site : "http://www.burgerking.com.br",
+				priority : 82000
+			},
+			{
+				name : "UFPE",
+				logo : "../../../assets/img/clients/logo-ufpe.png",
+				areas : "Desenvolvimento de pesquisa com dados indígenas",
+				site : "http://www.ufpe.br",
+				priority : 81000
+			},
+			{
+				name : "Queiroz Galvao",
+				logo : "../../../assets/img/clients/logo-queiroz-galvao.png",
+				areas : "Implantação de ERP",
+				site : "http://www.queirozgalvao.com.br",
+				priority : 80000
+			},
+			{
+				name : "Marisa",
+				logo : "../../../assets/img/clients/logo-marisa.png",
+				areas : "Implantação de produto Analítico para avaliação de crédito",
+				site : "http://www.queirozgalvao.com.br",
+				priority : 79000
+			},
+			{
+				name : "Banco da Amazônia",
+				logo : "../../../assets/img/clients/logo-basa.png",
+				areas : "Implantação de BI e Suporte ao Produto",
+				site : "http://www.queirozgalvao.com.br",
+				priority : 78000,
+			},
+			{
+				name : "Pitú",
+				logo : "../../../assets/img/clients/logo-pitu.png",
+				areas : "Implantação de BI e Suporte ao Produto",
+				site : "http://www.pitu.com.br",
+				priority : 78000
+			},
+			{
+				name : "UNIEURO",
+				logo : "../../../assets/img/clients/logo-unieuro.png",
+				areas : "Implantação de BI e Suporte ao Produto",
+				site : "http://www.unieuro.edu.br/",
+				priority : 77000
+			},
+			{
+				name : "Catho",
+				logo : "../../../assets/img/clients/logo-catho.png",
+				areas : "Implantação de BI e Suporte ao Produto",
+				site : "http://www.catho.com.br/",
+				priority : 76000
+			},
+			{
+				name : "Romarco Construtora",
+				logo : "../../../assets/img/clients/logo-romarco.png",
+				areas : "Implantação de BI e App de apoio",
+				site : "www.romarcoconstrutora.com.br",
+				priority : 75000
 			}
 		];
 
