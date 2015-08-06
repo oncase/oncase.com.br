@@ -36,6 +36,10 @@
 
   	];
 
+      this.goTo = function(idx){
+        $scope.$parent.selectedIndex = idx;
+        return $scope.$parent.selectedIndex;
+      };
 
       $scope.test = function(){
         console.log(1);
