@@ -2,8 +2,10 @@
 
   angular.module('homeModule',['ui.bootstrap']).
 
-  controller('homeCtrl',['$scope','jumboBackgroundService','content',
-    function($scope,jumboBackgroundService,content){
+  controller('homeCtrl',['$scope','jumboBackgroundService','content','$window',
+    function($scope,jumboBackgroundService,content, $window){
+
+      var videosPaneExpanded = false;
 
     jumboBackgroundService.setSmall(false);
     jumboBackgroundService.setVisible();
@@ -43,6 +45,18 @@
 
       $scope.test = function(){
         console.log(1);
+      };
+
+      this.openYoutubeChannel = function(){
+        window.open("https://youtube.com/oncasebr?sub_confirmation=1");
+      }
+
+      this.isVideosPaneExpanded = function(){
+        return videosPaneExpanded;
+      };
+
+      this.showVideosPane = function(){
+        videosPaneExpanded = !videosPaneExpanded;
       };
     
   }]);

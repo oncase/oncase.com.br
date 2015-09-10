@@ -474,6 +474,103 @@ md-list.oncase-anouncement md-list-item i{
 
 <div ng-include="'app/shared/partials/services-flow.html'"></div>
 
+<div class="oncase-separator "></div>	
+
+<div id="oncase-tv" class="oncase-white-section-fonts  oncase-tv-logo oncase-large-heading">
+
+</div>
+<div class="oncase-tv-text oncase-white-section-fonts">
+
+      <div class="md-whiteframe-z1 oncase-content-paper oncase-content-margin ng-scope">
+      	<div class="oncase-content-margin oncase-p-margin-fix oncase-padding-top">
+        	<h2 class="oncase-section-heading oncase-gray text-center ">Nosso canal de vídeos</h2>
+			<p class="oncase-promo-text text-center oncase-white">
+				<strong>Semanalmente</strong>, toda terça-feira, lançaremos novo conteúdo sobre Pentaho, Business Analytics e tudo mais de tecnologia que estiver envolvido.
+				<br />
+				Nosso objetivo é tentar passar tanto conteúdo interessante que você virará audiência cativa.
+			</p>
+
+
+			<div class="row oncase-content-margin">
+
+				<div ng-click="homeCtrl.openYoutubeChannel()" class="cursor-pointer col-sm-12 col-md-4 col-md-offset-2 ">
+						<div class="oncase-absolute-center oncase-section-image-single text-center ">
+							<i class="fa fa-youtube oncase-big-icon oncase-secondary-red"></i>
+						</div>
+						<h2 class="oncase-section-heading oncase-gray text-center " >Insreva-se</h2>
+						<p class=" oncase-promo-text text-center">
+							Inscreva-se em nosso canal para receber atualizações sempre que tiver novo conteúdo.
+						</p>
+				</div>
+
+
+				<div ng-glick="homeCtrl.showVideosPane()" class="cursor-pointer col-sm-12 col-md-4">
+						<div class="oncase-absolute-center oncase-section-image-single text-center ">
+							<i class="fa fa-film oncase-big-icon oncase-secondary-blue"></i>
+						</div>
+						<h2 class="oncase-section-heading oncase-gray text-center" >Acompanhe aqui</h2>
+						<p class=" oncase-promo-text text-center">
+							Veja aqui mesmo no site os vídeos adicionados mais recentemente. Basta 
+						</p>
+				</div>
+
+
+		    </div>
+
+      	</div>
+		<div class=" oncase-heading-logo bg-oncase-very-light-gray md-whiteframe-z1 text-center">
+			<div class="oncase-content-margin">
+			 
+
+			          <md-button ng-click="homeCtrl.showVideosPane()">
+			          	<div layout="row">
+				            <p flex class="oncase-small-margin">Últimos v&iacute;deos </p>
+					        <md-icon class="fa fa-chevron-{{homeCtrl.isVideosPaneExpanded() ? 'up' : 'down'}}"></md-icon>
+				    	</div>
+			          </md-button>
+			</div>
+		</div>  
+		<div ng-show="homeCtrl.isVideosPaneExpanded()" class="oncase-videos-pane bg-oncase-gray md-whiteframe-z1 text-center">
+
+			 
+
+
+
+<div class="oncase-videos-list">
+  <md-grid-list
+        md-cols-sm="1" md-cols-md="2" md-cols-gt-md="3"
+        md-row-height-gt-md="16:9" md-row-height="16:9"
+        md-gutter="12px" md-gutter-gt-sm="8px" >
+
+
+    <md-grid-tile>
+		<iframe width="100%" height="100%" src="https://www.youtube.com/embed/-9nYpG1Eow0" frameborder="0" allowfullscreen></iframe>
+    </md-grid-tile>
+
+    <md-grid-tile>
+		<iframe width="100%" height="100%" src="https://www.youtube.com/embed/W3dVjcJ7vrs" frameborder="0" allowfullscreen></iframe>
+    </md-grid-tile>
+
+    <md-grid-tile>
+		<iframe width="100%" height="100%" src="https://www.youtube.com/embed/lrvxM3vA4jg" frameborder="0" allowfullscreen></iframe>
+    </md-grid-tile>
+
+  </md-grid-list>
+</div>
+
+
+
+
+
+
+		</div>      	
+	  </div>
+
+	<div class="oncase-separator "></div>	
+
+
+</div>
+<!--<iframe width="560" height="315" src="https://www.youtube.com/embed/-9nYpG1Eow0" frameborder="0" allowfullscreen></iframe>-->
 
 <div ng-include="'app/shared/partials/awards.html'"></div>
 <br />&nbsp;

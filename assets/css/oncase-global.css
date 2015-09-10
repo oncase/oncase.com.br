@@ -18,6 +18,8 @@ html {
 .text-right { text-align: right ;}
 .text-center { text-align: center ;}
 
+.cursor-pointer {cursor:pointer;} 
+
 md-toolbar.md-default-theme.md-accent{
     color:#fff;
 }
@@ -249,6 +251,13 @@ md-tabs.md-default-theme .md-tab.md-focused {
     padding-bottom:40px;
 }
 
+.oncase-padding-left {
+    padding-left:40px;
+}
+.oncase-padding-right {
+    padding-right:40px;
+}
+
 .oncase-margin-bottom-fix{
     margin-bottom:140px;
 }
@@ -406,6 +415,7 @@ span.oncase-border-bottom{
 .bg-oncase-orange{background-color:#fb6816;}
 .bg-oncase-gray{background-color:#333;}
 .bg-oncase-light-gray{background-color:#ccc;}
+.bg-oncase-very-light-gray{background-color:#eee;}
 .bg-oncase-white{background-color:#fff;}
 
 
@@ -719,6 +729,55 @@ img.oncase-desaturated-img{
 .oncase-clipar-logo-wrapper h1{
     line-height: .8em;
 }
+
+
+
+/* ============= oncase tv ======================  */
+
+    .oncase-tv-logo{
+        background-image:url(../img/oncase-tv-heading.png);
+        background-position:center center;
+        background-repeat:no-repeat;
+        background-size:auto 100%;
+        background-color:#255489;
+    }
+
+    .youtube-logo{
+        background-image:url(../img/youtube-logo.png);
+        background-position:center center;
+        background-repeat:no-repeat;
+        background-size:auto 100%;
+    }
+
+    .oncase-large-heading{
+        height:200px;
+    }
+    .oncase-heading-logo{
+        height:64px;
+        line-height: 64px;
+    }
+
+    .oncase-tv-text{
+        background-color:#255489;
+    }
+    .oncase-p-margin-fix{
+        border:solid 1px transparent;
+    }
+    .oncase-small-margin{
+        margin:5px;
+    }
+
+    button.md-button md-icon.fa {
+        margin-top: 14px;
+    }
+
+    .oncase-videos-list{
+        padding:20px;
+    }
+
+
+/* ============ /oncase tv ======================  */
+
 
 /* ==============================================
 	Medium devices specifics - sync with BS3.0
