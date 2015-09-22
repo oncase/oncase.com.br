@@ -2,7 +2,17 @@
 
   angular.module('servicesModule',[]).
 
-  controller('servicesCtrl',['jumboBackgroundService','content','$scope',function(jumboBackgroundService,content,$scope){
+  controller('servicesCtrl',['jumboBackgroundService','content','$scope','$rootScope',
+  	function(jumboBackgroundService,content,$scope, $rootScope){
+
+
+      /* Meta tags per page
+       */
+      $rootScope.metaTitleSuffix = " - Serviços";
+      $rootScope.metaDescription = "Conheça todos os nossos serviços. Somos experts em Business Analytics, BigData and Data Visualization e orgulhosos Pentaho Premium Partners.";
+
+      
+
 	  	jumboBackgroundService.setSmall(true);
 	    jumboBackgroundService.setVisible();
 

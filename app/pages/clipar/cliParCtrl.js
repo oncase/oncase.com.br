@@ -2,10 +2,20 @@
 
   angular.module('cliParModule',[]).
 
-  controller('cliParCtrl',['jumboBackgroundService','content','$scope','$mdBottomSheet',
-  	function(jumboBackgroundService,content,$scope,$mdBottomSheet){
-  	jumboBackgroundService.setSmall(true);
-    jumboBackgroundService.setVisible();
+  controller('cliParCtrl',['jumboBackgroundService','content','$scope','$mdBottomSheet','$rootScope',
+  	function(jumboBackgroundService,content,$scope,$mdBottomSheet, $rootScope){
+
+
+
+		/* Meta tags per page
+		*/
+      $rootScope.metaTitleSuffix = " - Cleites e Parceiros";
+      $rootScope.metaDescription = "Quem são nossos clientes. Somos experts em Business Analytics, BigData and Data Visualization e orgulhosos Pentaho Premium Partners.";
+
+      
+
+	  	jumboBackgroundService.setSmall(true);
+	    jumboBackgroundService.setVisible();
 
 	    this.goTo = function(idx){
 	    	$scope.$parent.selectedIndex = idx;

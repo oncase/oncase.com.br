@@ -1,8 +1,8 @@
 (function(){
 
 	angular.module('headerModule').
-	factory('menuService',['$location','$window','$timeout','jumboBackgroundService',
-		function($location,$window,$timeout,jumboBackgroundService){
+	factory('menuService',['$location','$window','$timeout','jumboBackgroundService','$rootScope',
+		function($location,$window,$timeout,jumboBackgroundService, $rootScope){
 
 		var _selectedIndex = 0;
 
@@ -32,6 +32,7 @@
 		};
 
 		var _triggerLocation = function(url){
+			$rootScope.metaPath = url;
 			$location.url(url);
 			jumboBackgroundService.setHidden();
 			jumboBackgroundService.setSmall(_getJumboSmallForUrl(url));

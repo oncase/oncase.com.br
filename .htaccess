@@ -1,4 +1,5 @@
     RewriteEngine On
+    RequestHeader set X-Prerender-Token "NpJiLMzrVOx5nqM9g8x4"
     RewriteCond %{REQUEST_FILENAME} !-f
     RewriteCond %{REQUEST_FILENAME} !-d
     RewriteCond %{REQUEST_URI} !index

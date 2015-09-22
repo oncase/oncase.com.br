@@ -1,7 +1,23 @@
 <!DOCTYPE html>
 <html ng-app="oncase">
   <head>
-    <title>Oncase</title>
+
+    <title>Oncase{{metaTitleSuffix}}</title>
+    <meta name="description" content="{{metaDescription}}">
+    <link rel="author" href="http://plus.google.com/+OncaseBr" />
+    <meta property="og:title" content="Oncase{{metaTitleSuffix}}"/>
+    <meta property="og:type" content="article"/>
+    <meta property="og:image" content="http://oncase.com.br/assets/img/oncase-logo-squared-primary.png"/>
+    <meta property="og:url" content="http://oncase.com.br{{metaPath}}"/>
+    <meta property="og:description" content="{{metaDescription}}"/>
+    <meta property="fb:admins" content="oncasesolucoes"/>
+    <meta name="twitter:card" content="summary">
+    <meta name="twitter:url" content="http://oncase.com.br{{metaPath}}">
+    <meta name="twitter:title" content="Oncase{{metaTitleSuffix}}">
+    <meta name="twitter:description" content="{{metaDescription}}">
+    <meta name="twitter:image" content="http://oncase.com.br/assets/img/oncase-logo-squared-primary.png">
+
+
     <meta charset="utf-8" />
     <meta name="viewport" content="initial-scale = 1.00,maximum-scale = 1.00" />
     <meta name="fragment" content="!">

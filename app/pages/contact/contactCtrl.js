@@ -2,8 +2,17 @@
 
   angular.module('contactModule',['ngMap']).
 
-  controller('ContactCtrl',['jumboBackgroundService','$scope','$window','$document','content','sendMailService','$mdToast',
-  	function(jumboBackgroundService,$scope,$window,$document,content,sendMailService,$mdToast){
+  controller('ContactCtrl',['jumboBackgroundService','$scope','$window','$document','content','sendMailService','$mdToast','$rootScope',
+  	function(jumboBackgroundService,$scope,$window,$document,content,sendMailService,$mdToast, $rootScope){
+
+
+      /* Meta tags per page
+       */
+      $rootScope.metaTitleSuffix = " - Contato";
+      $rootScope.metaDescription = "Entre em contato conosco. Somos experts em Business Analytics, BigData and Data Visualization e orgulhosos Pentaho Premium Partners.";
+
+      
+
 
   	var ContactCtrl = this;
   	var google = $window.google;
