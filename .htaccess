@@ -1,14 +1,40 @@
-    RewriteEngine On
-
-    RequestHeader set X-Prerender-Token "NpJiLMzrVOx5nqM9g8x4"
-    RewriteCond %{HTTP_USER_AGENT} baiduspider|facebookexternalhit|twitterbot|rogerbot|linkedinbot|embedly|quora\ link\ preview|showyoubot|outbrain|pinterest|slackbot|vkShare|W3C_Validator [NC,OR]
-    RewriteCond %{QUERY_STRING} _escaped_fragment_
+#    RewriteEngine On
+#
+#    RequestHeader set X-Prerender-Token "NpJiLMzrVOx5nqM9g8x4"
+#    RewriteCond %{HTTP_USER_AGENT} baiduspider|facebookexternalhit|twitterbot|rogerbot|linkedinbot|embedly|quora\ link\ preview|showyoubot|outbrain|pinterest|slackbot|vkShare|W3C_Validator [NC,OR]
+#    RewriteCond %{QUERY_STRING} _escaped_fragment_
     
-    # Only proxy the request to Prerender if it's a request for HTML
-    RewriteRule ^(?!.*?(\.js|\.css|\.xml|\.less|\.png|\.jpg|\.jpeg|\.gif|\.pdf|\.doc|\.txt|\.ico|\.rss|\.zip|\.mp3|\.rar|\.exe|\.wmv|\.doc|\.avi|\.ppt|\.mpg|\.mpeg|\.tif|\.wav|\.mov|\.psd|\.ai|\.xls|\.mp4|\.m4a|\.swf|\.dat|\.dmg|\.iso|\.flv|\.m4v|\.torrent|\.ttf|\.woff))(.*) http://service.prerender.io/http://example.com/$2 [P,L]
+#    # Only proxy the request to Prerender if it's a request for HTML
+#    RewriteRule ^(?!.*?(\.js|\.css|\.xml|\.less|\.png|\.jpg|\.jpeg|\.gif|\.pdf|\.doc|\.txt|\.ico|\.rss|\.zip|\.mp3|\.rar|\.exe|\.wmv|\.doc|\.avi|\.ppt|\.mpg|\.mpeg|\.tif|\.wav|\.mov|\.psd|\.ai|\.xls|\.mp4|\.m4a|\.swf|\.dat|\.dmg|\.iso|\.flv|\.m4v|\.torrent|\.ttf|\.woff))(.*) http://service.prerender.io/http://example.com/$2 [P,L]
 
-    RewriteCond %{REQUEST_FILENAME} !-f
-    RewriteCond %{REQUEST_FILENAME} !-d
-    RewriteCond %{REQUEST_URI} !index
-    RewriteRule (.*) index.html [L]
+#    RewriteCond %{REQUEST_FILENAME} !-f
+#    RewriteCond %{REQUEST_FILENAME} !-d
+#    RewriteCond %{REQUEST_URI} !index
+#    RewriteRule (.*) index.html [L]
 
+  RewriteEngine On
+# If requested resource exists as a file or directory
+  # (REQUEST_FILENAME is only relative in virtualhost context, so not usable)
+    RewriteCond %{DOCUMENT_ROOT}%{REQUEST_URI} -f [OR]
+    RewriteCond %{DOCUMENT_ROOT}%{REQUEST_URI} -d
+    # Go to it as is
+    RewriteRule ^ - [L]
+
+  # If non existent
+    # If path ends with / and is not just a single /, redirect to without the trailing /
+      RewriteCond %{REQUEST_URI} ^.*/$
+      RewriteCond %{REQUEST_URI} !^/$
+      RewriteRule ^(.*)/$ $1 [R,QSA,L]      
+
+  # Handle Prerender.io
+    RequestHeader set X-Prerender-Token "NpJiLMzrVOx5nqM9g8x4"
+
+    RewriteCond %{HTTP_USER_AGENT} baiduspider|facebookexternalhit|twitterbot|rogerbot|linkedinbot|embedly|quora\ link\ preview|showyoubot|outbrain|pinterest [NC,OR]
+    RewriteCond %{QUERY_STRING} _escaped_fragment_
+
+    # Proxy the request
+    RewriteRule ^(.*)$ http://service.prerender.io/http://%{HTTP_HOST}$1 [P,L]
+
+  # If non existent
+    # Accept everything on index.html
+    RewriteRule ^ /index.html
