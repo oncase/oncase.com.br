@@ -2,8 +2,8 @@
 
   angular.module('servicesModule',[]).
 
-  controller('servicesCtrl',['jumboBackgroundService','content','$scope','$rootScope',
-  	function(jumboBackgroundService,content,$scope, $rootScope){
+  controller('servicesCtrl',['jumboBackgroundService','content','$scope','$rootScope','$window',
+  	function(jumboBackgroundService,content,$scope, $rootScope,$window){
 
 
       /* Meta tags per page
@@ -20,6 +20,8 @@
 	    	$scope.$parent.selectedIndex = idx;
 	    	return $scope.$parent.selectedIndex;
 	    };
+
+	    $window.prerenderReady = true;
 
   }]);
 

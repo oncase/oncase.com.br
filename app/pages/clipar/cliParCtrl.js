@@ -2,8 +2,8 @@
 
   angular.module('cliParModule',[]).
 
-  controller('cliParCtrl',['jumboBackgroundService','content','$scope','$mdBottomSheet','$rootScope',
-  	function(jumboBackgroundService,content,$scope,$mdBottomSheet, $rootScope){
+  controller('cliParCtrl',['jumboBackgroundService','content','$scope','$mdBottomSheet','$rootScope','$window',
+  	function(jumboBackgroundService,content,$scope,$mdBottomSheet, $rootScope,$window){
 
 
 
@@ -215,6 +215,8 @@
 				priority : 75000
 			}
 		];
+
+		$window.prerenderReady = true;
 
   }]);
 

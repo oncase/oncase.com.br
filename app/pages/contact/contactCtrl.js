@@ -119,6 +119,8 @@
     	
     };
 
+    $window.prerenderReady = true;
+
 
 
 

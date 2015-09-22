@@ -2,8 +2,8 @@
 
   angular.module('aboutModule',[]).
 
-  controller('aboutCtrl',['$scope','jumboBackgroundService','content','$rootScope',
-    function($scope,jumboBackgroundService,content, $rootScope){
+  controller('aboutCtrl',['$scope','jumboBackgroundService','content','$rootScope','$window',
+    function($scope,jumboBackgroundService,content, $rootScope,$window){
 
       /* Meta tags per page
        */
@@ -21,6 +21,7 @@
     	$scope.$parent.selectedIndex = idx;
     	return $scope.$parent.selectedIndex;
     };
+    $window.prerenderReady = true;
 
   }]);
 

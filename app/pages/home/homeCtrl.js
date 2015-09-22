@@ -65,6 +65,9 @@
       this.showVideosPane = function(){
         videosPaneExpanded = !videosPaneExpanded;
       };
+
+      $window.prerenderReady = true;
+
     
   }]);
 

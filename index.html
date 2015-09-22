@@ -38,9 +38,9 @@
     
     <base href="/">
 
-
+    <script> window.prerenderReady = false; </script>
   </head>
-
+  
   <body ng-class="bodyClasses">
     <div class="jumbo-background" page-transition ng-class="{ active : HeaderCtrl.jumboBackgroundVisible(), 'jumbo-background-small' : HeaderCtrl.isJumboSmall() }"></div>
     <oncase-header></oncase-header>
