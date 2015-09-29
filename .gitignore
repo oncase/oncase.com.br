@@ -1,3 +1,5 @@
 node_modules/
 
 *._t_
+
+npm-debug.log
