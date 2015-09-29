@@ -22,3 +22,5 @@ $ npm start
 ```
 
 Your server will run on `http://localhost:8080` and will serve static files from your `oncase.com.br/` folder.
+
+#Angular x SEO
