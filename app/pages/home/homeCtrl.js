@@ -1,9 +1,16 @@
 (function(){
 
-  angular.module('homeModule',['ui.bootstrap']).
+  angular.module('homeModule',['ui.bootstrap' ]).
 
-  controller('homeCtrl',['$scope','jumboBackgroundService','content','$window',
-    function($scope,jumboBackgroundService,content, $window){
+  controller('homeCtrl',['$scope','jumboBackgroundService','content','$window','$rootScope',
+    function($scope,jumboBackgroundService,content, $window, $rootScope){
+
+      /* Meta tags per page
+       */
+      $rootScope.metaTitleSuffix = "";
+      $rootScope.metaDescription = "Somos experts em Business Analytics, BigData and Data Visualization e orgulhosos Pentaho Premium Partners.";
+
+
 
       var videosPaneExpanded = false;
 
@@ -58,6 +65,9 @@
       this.showVideosPane = function(){
         videosPaneExpanded = !videosPaneExpanded;
       };
+
+      $window.prerenderReady = true;
+
     
   }]);
 
