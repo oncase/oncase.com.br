@@ -1,29 +1,63 @@
 (function(){
 
 	angular.module('headerModule').
-	factory('menuService',['$location','$window','$timeout','jumboBackgroundService','$rootScope',
-		function($location,$window,$timeout,jumboBackgroundService, $rootScope){
+	factory('menuService',['$location','$window','$timeout','jumboBackgroundService','$rootScope','$route',
+		function($location,$window,$timeout,jumboBackgroundService, $rootScope, $route){
 
-		var _selectedIndex = 0;
+		var _selectedIndex = 0, 
+		_indexMap = {},
+		_currentLang = "__",
+		__routeLangParamName = ":lang";
 
-		var _indexMap = {
-			"/" : 						{index : 0, jumboSmall: false},
-			"/about" : 					{index : 1, jumboSmall: true},
-			"/services" : 				{index : 2, jumboSmall: true},
-			"/products" : 				{index : 3, jumboSmall: true},
-			"/clients-and-partners" : 	{index : 4, jumboSmall: true},
-			"/contact" : 				{index : 5, jumboSmall: true},
+		_indexMap["__"] = {
+				"/" : 						{index : 0, jumboSmall: false},
+				"/about" : 					{index : 1, jumboSmall: true},
+				"/services" : 				{index : 2, jumboSmall: true},
+				"/products" : 				{index : 3, jumboSmall: true},
+				"/clients-and-partners" : 	{index : 4, jumboSmall: true},
+				"/contact" : 				{index : 5, jumboSmall: true},
+		};
+		_indexMap["en"] = {
+				"/en" : 					{index : 0, jumboSmall: false},
+				"/en/about" : 				{index : 1, jumboSmall: true},
+				"/en/services" : 			{index : 2, jumboSmall: true},
+				"/en/products" : 			{index : 3, jumboSmall: true},
+				"/en/clients-and-partners" :{index : 4, jumboSmall: true},
+				"/en/contact" : 			{index : 5, jumboSmall: true},
+		};
+		_indexMap["pt"] = {
+				"/pt" : 					{index : 0, jumboSmall: false},
+				"/pt/about" : 				{index : 1, jumboSmall: true},
+				"/pt/services" : 			{index : 2, jumboSmall: true},
+				"/pt/products" : 			{index : 3, jumboSmall: true},
+				"/pt/clients-and-partners" :{index : 4, jumboSmall: true},
+				"/pt/contact" : 			{index : 5, jumboSmall: true},
+		};
+		
+
+		var _getCurrentLang = function(){
+			return _currentLang;
+		};
+
+		var _setCurrentLang = function(lang){
+			_currentLang = lang;
+			console.log("Language set to: "+_currentLang);
 		};
 
 		var _getRouteForIndex = function(idx){
-			return idx < Object.keys(_indexMap).length 
-					? Object.keys(_indexMap)[idx]
-					: Object.keys(_indexMap)[0] ;
+			console.log("RETRIEVING ROUTE FOR INDEX: "+idx);
+			console.log("CurrentLang: "+_getCurrentLang());
+			var route = idx < Object.keys(_indexMap[_getCurrentLang()]).length 
+					? Object.keys(_indexMap[_getCurrentLang()])[idx]
+					: Object.keys(_indexMap[_getCurrentLang()])[0] ;
+
+			console.log("Route: "+route);
+			return route;
 		};
 
 		var _getJumboSmallForUrl = function(url){
-			return undefined != _indexMap[url] 
-					? _indexMap[url].jumboSmall
+			return undefined != _indexMap[_getCurrentLang()][url] 
+					? _indexMap[_getCurrentLang()][url].jumboSmall
 					: true;
 		};
 
@@ -43,14 +77,29 @@
 		}
 
 		var _getIndexForRoute = function(route){
-			return _indexMap[route] === undefined ? 0 : _indexMap[route].index;
+			return _indexMap[_getCurrentLang()][route] === undefined 
+					? 0 
+					: _indexMap[_getCurrentLang()][route].index;
+		}
+
+		var _getParsedRoutePath = function(route){
+			return route.originalPath.replace(__routeLangParamName,route["pathParams"]["lang"]);
+		}
+
+		var _getCurrentRoutForLang = function(lang){
+			var newRoute = $route.current.originalPath.replace(__routeLangParamName,lang);
+			return newRoute;
 		}
 
 		return {
 			getRouteForIndex : _getRouteForIndex,
 			navigateToIndex : _navigateToIndex,
 			getIndexForRoute : _getIndexForRoute,
-			getJumboSmallForUrl : _getJumboSmallForUrl
+			getJumboSmallForUrl : _getJumboSmallForUrl,
+			getCurrentLang : _getCurrentLang,
+			setCurrentLang : _setCurrentLang,
+			getParsedRoutePath : _getParsedRoutePath,
+			getCurrentRoutForLang : _getCurrentRoutForLang
 		};
 
 	}]);

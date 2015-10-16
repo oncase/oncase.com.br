@@ -237,15 +237,23 @@
 
 <div class="footer-section z1 oncase-blue bg-oncase-light-gray">
   <div class="row oncase-content-margin" >
-    <div class="col-xs-12  text-left" >
+      <div class="col-sm-12 col-md-9  text-left" >
           <ul class="oncase-links">
-            <li class="inline-block"><a class="oncase-blue" ng-class="{active : selectedIndex===0}" href="/" ng-click="selectedIndex=0;HeaderCtrl.tabClicked(selectedIndex)">Home</a></li>
-            <li class="inline-block"><a class="oncase-blue" ng-class="{active : selectedIndex===1}" href="/about" ng-click="selectedIndex=1;HeaderCtrl.tabClicked(selectedIndex)">About</a></li>
-            <li class="inline-block"><a class="oncase-blue" ng-class="{active : selectedIndex===2}" href="/services" ng-click="selectedIndex=2;HeaderCtrl.tabClicked(selectedIndex)">Services</a></li>
-            <li class="inline-block"><a class="oncase-blue" ng-class="{active : selectedIndex===3}" href="/products" ng-click="selectedIndex=3;HeaderCtrl.tabClicked(selectedIndex)">Products</a></li>
-            <li class="inline-block"><a class="oncase-blue" ng-class="{active : selectedIndex===4}" href="/clients-and-partners" ng-click="selectedIndex=4;HeaderCtrl.tabClicked(selectedIndex)">Clients and Partners</a></li>
-            <li class="inline-block"><a class="oncase-blue" ng-class="{active : selectedIndex===5}" href="/contact" ng-click="selectedIndex=5;HeaderCtrl.tabClicked(selectedIndex)">Contact</a></li>
+            <li class="inline-block"><a class="oncase-blue" ng-class="{active : selectedIndex===0}" href="/{{HeaderCtrl.getCurrentLang()}}/" ng-click="selectedIndex=0;HeaderCtrl.tabClicked(selectedIndex)">Home</a></li>
+            <li class="inline-block"><a class="oncase-blue" ng-class="{active : selectedIndex===1}" href="/{{HeaderCtrl.getCurrentLang()}}/about" ng-click="selectedIndex=1;HeaderCtrl.tabClicked(selectedIndex)">About</a></li>
+            <li class="inline-block"><a class="oncase-blue" ng-class="{active : selectedIndex===2}" href="/{{HeaderCtrl.getCurrentLang()}}/services" ng-click="selectedIndex=2;HeaderCtrl.tabClicked(selectedIndex)">Services</a></li>
+            <li class="inline-block"><a class="oncase-blue" ng-class="{active : selectedIndex===3}" href="/{{HeaderCtrl.getCurrentLang()}}/products" ng-click="selectedIndex=3;HeaderCtrl.tabClicked(selectedIndex)">Products</a></li>
+            <li class="inline-block"><a class="oncase-blue" ng-class="{active : selectedIndex===4}" href="/{{HeaderCtrl.getCurrentLang()}}/clients-and-partners" ng-click="selectedIndex=4;HeaderCtrl.tabClicked(selectedIndex)">Clients and Partners</a></li>
+            <li class="inline-block"><a class="oncase-blue" ng-class="{active : selectedIndex===5}" href="/{{HeaderCtrl.getCurrentLang()}}/contact" ng-click="selectedIndex=5;HeaderCtrl.tabClicked(selectedIndex)">Contact</a></li>
           <ul>
+      </div>
+      <div class="col-sm-12 col-md-3 text-right" >
+        <ul class="oncase-links">
+          <li class="inline-block"> <a href="{{HeaderCtrl.getCurrentRoutForLang('pt')}}" class="oncase-lang-item no-outline" ng-class="{ active : HeaderCtrl.getCurrentLang()==='pt' }">Portuguese</a> </li>
+          <li class="inline-block"> <a href="{{HeaderCtrl.getCurrentRoutForLang('en')}}" class="oncase-lang-item no-outline" ng-class="{ active : HeaderCtrl.getCurrentLang()==='en' }">English</a> </li>
+        </ul>
+          
+          
       </div>
   </div>
 </div>
