@@ -834,6 +834,17 @@ img.oncase-desaturated-img{
    ============================================== */
 @media(max-width:1199px){
 
+    header.oncase-small-header .oncase-lang-sel-wrapper{
+        display:inline;
+    }
+
+    header .oncase-lang-sel-wrapper{
+        margin-top: 23px;
+        margin-right: 40px;
+    }
+
+
+
     img.oncase-desaturated-img{
         width:180px;
     }
