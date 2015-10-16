@@ -2,8 +2,8 @@
 
   angular.module('homeModule',['ui.bootstrap' ]).
 
-  controller('homeCtrl',['$scope','jumboBackgroundService','content','$window','$rootScope',
-    function($scope,jumboBackgroundService,content, $window, $rootScope){
+  controller('homeCtrl',['$scope','jumboBackgroundService','content','$window','$rootScope','menuService',
+    function($scope,jumboBackgroundService,content, $window, $rootScope, menuService){
 
       /* Meta tags per page
        */
@@ -21,23 +21,27 @@
     $scope.showAwardsSeeMoreButton = true;
     $scope.showServicesFlowMoreButton = true;
 
+    function getMsgs(){
+      return msgs[menuService.getCurrentLang()];
+    }
+
   	$scope.slides = [
       {
-        smallText : "Somos orgulhosos", 
-        bigText : "Premium Partner",
+        smallText : getMsgs().home.CAROUSEL_WEARE_PROUD, 
+        bigText : getMsgs().home.CAROUSEL_PREMIUM_PARTNERS,
         imgPath:'assets/img/pentaho-premium-partner.svg',
         isSvg : true
       },
       {
-        smallText : "Nosso neg\u00F3cio \u00E9", 
-        bigText : "Intelig\u00EAncia",
+        smallText : getMsgs().home.CAROUSEL_OUR_BUSINESS_IS, 
+        bigText : getMsgs().home.CAROUSEL_INTELLIGENCE,
         icon : "equalizer",
         isIcon : true,
         iconColor : "orange"
       },
       {
-        smallText : "Somos especialistas", 
-        bigText : "em Cloud",
+        smallText : getMsgs().home.CAROUSEL_WEARE, 
+        bigText : getMsgs().home.CAROUSEL_CLOUD_SPECIALISTS,
         icon : "cloud",
         isIcon : true,
         iconColor : "orange"

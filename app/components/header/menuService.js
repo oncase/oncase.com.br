@@ -1,8 +1,8 @@
 (function(){
 
 	angular.module('headerModule').
-	factory('menuService',['$location','$window','$timeout','jumboBackgroundService','$rootScope','$route',
-		function($location,$window,$timeout,jumboBackgroundService, $rootScope, $route){
+	factory('menuService',['$location','$window','$timeout','jumboBackgroundService','$rootScope','$route','$translate',
+		function($location,$window,$timeout,jumboBackgroundService, $rootScope, $route, $translate){
 
 		var _selectedIndex = 0, 
 		_indexMap = {},
@@ -41,6 +41,8 @@
 
 		var _setCurrentLang = function(lang){
 			_currentLang = lang;
+			$translate.use(lang);
+			
 			console.log("Language set to: "+_currentLang);
 		};
 
