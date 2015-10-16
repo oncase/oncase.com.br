@@ -9,8 +9,8 @@
 
   <div class="oncase-lang-sel-wrapper">
     <i class="material-icons">language</i>
-    <a href="{{HeaderCtrl.getCurrentRoutForLang('pt')}}" class="oncase-lang-item no-outline" target="_self" ng-class="{ active : HeaderCtrl.getCurrentLang()==='pt' }">Portugu&ecirc;s</a>
-    <a href="{{HeaderCtrl.getCurrentRoutForLang('en')}}" class="oncase-lang-item no-outline" target="_self" ng-class="{ active : HeaderCtrl.getCurrentLang()==='en' }">English</a>
+    <a href="{{HeaderCtrl.getCurrentRoutForLang('pt')}}" class="oncase-lang-item no-outline oncase-lang-pt" target="_self" ng-class="{ active : HeaderCtrl.getCurrentLang()==='pt' }"></a>
+    <a href="{{HeaderCtrl.getCurrentRoutForLang('en')}}" class="oncase-lang-item no-outline oncase-lang-en" target="_self" ng-class="{ active : HeaderCtrl.getCurrentLang()==='en' }"></a>
   </div>
   <md-tabs md-selected="selectedIndex" class="hidden-md hidden-sm hidden-xs oncase-header-ripple-tgt" md-scompotretch-tabs="never" md-center-tabs md-no-ink md-align-tabs="bottom" >
       <md-tab md-on-select="HeaderCtrl.tabClicked(selectedIndex)" label="{{ 'header.MENU_HOME' | translate }}" data-identifier="actualTab"></md-tab>

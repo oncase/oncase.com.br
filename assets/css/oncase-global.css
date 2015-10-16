@@ -69,6 +69,13 @@ header .oncase-lang-sel-wrapper{
 
 }
 
+a.oncase-lang-en::after{
+    content:"English";
+}
+a.oncase-lang-pt::after{
+    content:"Português";
+}
+
 header .oncase-lang-sel-wrapper i.material-icons {
 
     font-size: 20px;
@@ -901,6 +908,15 @@ img.oncase-desaturated-img{
 @media(max-width:767px){
     .oncase-content-margin {
         margin: 0px 10px;
+    }
+
+    
+
+    a.oncase-lang-en::after{
+        content:"EN";
+    }
+    a.oncase-lang-pt::after{
+        content:"PT";
     }
 }
 
