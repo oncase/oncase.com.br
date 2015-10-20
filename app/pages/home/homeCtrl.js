@@ -8,7 +8,7 @@
       /* Meta tags per page
        */
       $rootScope.metaTitleSuffix = "";
-      $rootScope.metaDescription = "Somos experts em Business Analytics, BigData and Data Visualization e orgulhosos Pentaho Premium Partners.";
+      $rootScope.metaDescription = msgs[menuService.getCurrentLang()].header.META_HOME;
 
 
 

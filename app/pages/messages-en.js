@@ -8,7 +8,14 @@ msgs["en"] = {
 		"MENU_SERVICES" : "Services",
 		"MENU_PRODUCTS" : "Products",
 		"MENU_CLIPAR" : "Clients&Partners",
-		"MENU_CONTACT" : "Contact"
+		"MENU_CONTACT" : "Contact",
+
+		"META_HOME" : "Somos experts em Business Analytics, BigData and Data Visualization e orgulhosos Pentaho Premium Partners." ,
+		"META_ABOUT" : "Conheça um pouco mais sobre nós. Somos experts em Business Analytics, BigData and Data Visualization e orgulhosos Pentaho Premium Partners.",
+		"META_SERVICES" : "Conheça todos os nossos serviços. Somos experts em Business Analytics, BigData and Data Visualization e orgulhosos Pentaho Premium Partners.",
+		"META_PRODUCTS" : "Veja os produtos que oferecemos. Somos experts em Business Analytics, BigData and Data Visualization e orgulhosos Pentaho Premium Partners.",
+		"META_CLIPAR" : "Quem são nossos clientes. Somos experts em Business Analytics, BigData and Data Visualization e orgulhosos Pentaho Premium Partners.",
+		"META_CONTACT" : "Entre em contato conosco. Somos experts em Business Analytics, BigData and Data Visualization e orgulhosos Pentaho Premium Partners."
 	},
 
 	home : {

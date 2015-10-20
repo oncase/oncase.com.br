@@ -2,14 +2,14 @@
 
   angular.module('contactModule',['ngMap']).
 
-  controller('ContactCtrl',['jumboBackgroundService','$scope','$window','$document','content','sendMailService','$mdToast','$rootScope',
-  	function(jumboBackgroundService,$scope,$window,$document,content,sendMailService,$mdToast, $rootScope){
+  controller('ContactCtrl',['jumboBackgroundService','$scope','$window','$document','content','sendMailService','$mdToast','$rootScope','menuService',
+  	function(jumboBackgroundService,$scope,$window,$document,content,sendMailService,$mdToast, $rootScope, menuService){
 
 
       /* Meta tags per page
        */
-      $rootScope.metaTitleSuffix = " - Contato";
-      $rootScope.metaDescription = "Entre em contato conosco. Somos experts em Business Analytics, BigData and Data Visualization e orgulhosos Pentaho Premium Partners.";
+      $rootScope.metaTitleSuffix = " - "+msgs[menuService.getCurrentLang()].header.MENU_CONTACT;
+      $rootScope.metaDescription = msgs[menuService.getCurrentLang()].header.META_CONTACT;
 
       
 

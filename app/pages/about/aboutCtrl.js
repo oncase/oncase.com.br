@@ -2,13 +2,13 @@
 
   angular.module('aboutModule',[]).
 
-  controller('aboutCtrl',['$scope','jumboBackgroundService','content','$rootScope','$window',
-    function($scope,jumboBackgroundService,content, $rootScope,$window){
+  controller('aboutCtrl',['$scope','jumboBackgroundService','content','$rootScope','$window','menuService',
+    function($scope,jumboBackgroundService,content, $rootScope,$window, menuService){
 
       /* Meta tags per page
        */
-      $rootScope.metaTitleSuffix = " - Quem Somos";
-      $rootScope.metaDescription = "Conheça um pouco mais sobre nós. Somos experts em Business Analytics, BigData and Data Visualization e orgulhosos Pentaho Premium Partners.";
+      $rootScope.metaTitleSuffix = " - "+msgs[menuService.getCurrentLang()].header.MENU_ABOUT;
+      $rootScope.metaDescription = msgs[menuService.getCurrentLang()].header.META_ABOUT;
 
       
 

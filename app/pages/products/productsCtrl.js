@@ -2,13 +2,13 @@
 
   angular.module('productsModule',[]).
 
-  controller('productsCtrl',['jumboBackgroundService','content','$scope','$rootScope','$window',
-  	function(jumboBackgroundService,content,$scope, $rootScope,$window){
+  controller('productsCtrl',['jumboBackgroundService','content','$scope','$rootScope','$window','menuService',
+  	function(jumboBackgroundService,content,$scope, $rootScope,$window, menuService){
 
       /* Meta tags per page
        */
-      $rootScope.metaTitleSuffix = " - Produtos";
-      $rootScope.metaDescription = "Veja os produtos que oferecemos. Somos experts em Business Analytics, BigData and Data Visualization e orgulhosos Pentaho Premium Partners.";
+      $rootScope.metaTitleSuffix = " - "+msgs[menuService.getCurrentLang()].header.MENU_PRODUCTS;
+      $rootScope.metaDescription = msgs[menuService.getCurrentLang()].header.META_PRODUCTS;
 
       
 

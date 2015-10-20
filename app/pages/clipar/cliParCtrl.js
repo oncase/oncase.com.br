@@ -9,8 +9,8 @@
 
 		/* Meta tags per page
 		*/
-      $rootScope.metaTitleSuffix = " - Clientes e Parceiros";
-      $rootScope.metaDescription = "Quem são nossos clientes. Somos experts em Business Analytics, BigData and Data Visualization e orgulhosos Pentaho Premium Partners.";
+      $rootScope.metaTitleSuffix = " - "+msgs[menuService.getCurrentLang()].header.MENU_CLIPAR;
+      $rootScope.metaDescription = msgs[menuService.getCurrentLang()].header.META_CLIPAR;
 
       
 
