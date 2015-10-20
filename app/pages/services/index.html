@@ -1,20 +1,20 @@
 <section class="oncase-section-jumbotron oncase-content-margin oncase-section-jumbotron-internals">   
-	<div class="oncase-breadcrumbs oncase-white">Servi&ccedil;os</div>
+	<div class="oncase-breadcrumbs oncase-white">{{ 'header.MENU_SERVICES' | translate }}</div>
 </section>
 
 
 <section class="oncase-content-margin oncase-content-paper md-whiteframe-z1 oncase-padding-bottom oncase-white-section-fonts oncase-padding-top">
 	<div class="oncase-content-margin">
-		<h2 class="oncase-section-heading oncase-gray text-center" >Oferecemos o que</h2>
-		<h1 class="oncase-section-heading oncase-blue text-center">Você precisa</h1>
+		<h2 class="oncase-section-heading oncase-gray text-center" >{{'services.WE_OFFER_L1' | translate}}</h2>
+		<h1 class="oncase-section-heading oncase-blue text-center">{{'services.WE_OFFER_L2' | translate}}</h1>
 		<div class="oncase-section-heading-underscore bg-oncase-orange"></div>
 
-		<p class=" oncase-promo-text text-center">
-			Temos uma carta completa de serviços para inserir a sua empresa por completo no mundo de Business Intelligence, Data Analytics e Big Data.
+		<p class=" oncase-promo-text text-center" translate>
+			{{'services.WE_OFFER_TXT1'}}
 		</p>
 
-		<p class=" oncase-promo-text text-center">
-			Oferecemos desde consultoria e suporte até treinamentos e desenvolvimento de produtos inovadores.
+		<p class=" oncase-promo-text text-center" translate>
+			{{'services.WE_OFFER_TXT2'}}
 		</p>
 
     </div>
@@ -24,7 +24,7 @@
 
 
 <div class="oncase-fixed-background oncase-fixed-session oncase-material-analytics-bg"></div>
-<h1 class="text-center oncase-white oncase-bright-1 oncase-fixed-session-text">Consultoria</h1>
+<h1 class="text-center oncase-white oncase-bright-1 oncase-fixed-session-text">{{'services.CONSULTANCY' | translate}}</h1>
 
 <section class="oncase-content-margin oncase-content-paper md-whiteframe-z1 oncase-padding-bottom oncase-white-section-fonts oncase-padding-top">
 	<div class="row oncase-content-margin">
@@ -33,9 +33,9 @@
 				<div class="oncase-absolute-center oncase-section-image-single text-center ">
 					<i class="fa fa-line-chart oncase-big-icon oncase-secondary-green"></i>
 				</div>
-				<h2 class="oncase-section-heading oncase-gray text-center " >Arquitetura Analytics</h2>
-				<p class=" oncase-promo-text text-center">
-					De ponta a ponta. Estamos prontos para auxiliá-lo desde a extração e processamento em fontes BigData, até exploração <em>on-demand</em> em bancos analíticos e também na mineração do conhecimento.
+				<h2 class="oncase-section-heading oncase-gray text-center " >{{'services.CONSULTANCY_ANALYTICS' | translate}}</h2>
+				<p class=" oncase-promo-text text-center" translate>
+					{{'services.CONSULTANCY_ANALYTICS_TXT'}}
 				</p>
 		</div>
 
@@ -44,9 +44,9 @@
 				<div class="oncase-absolute-center oncase-section-image-single text-center ">
 					<i class="fa fa-cloud oncase-big-icon oncase-secondary-blue"></i>
 				</div>
-				<h2 class="oncase-section-heading oncase-gray text-center" >Cloud Computing</h2>
-				<p class=" oncase-promo-text text-center">
-					Sua infra não suporta mais os seus projetos? Nossa equipe tem o expertise certo para auxiliá-lo na migração dos seus artefatos. Faça conosco a avaliação dos custos e características de um projeto na nuvem.
+				<h2 class="oncase-section-heading oncase-gray text-center" >{{'services.CONSULTANCY_CLOUD' | translate}}</h2>
+				<p class=" oncase-promo-text text-center" translate>
+					{{'services.CONSULTANCY_CLOUD_TXT'}}
 				</p>
 		</div>
 
@@ -55,9 +55,9 @@
 				<div class="oncase-absolute-center oncase-section-image-single text-center ">
 					<i class="fa fa-hand-pointer-o oncase-big-icon oncase-secondary-red"></i>
 				</div>
-				<h2 class="oncase-section-heading oncase-gray text-center" >User Experience</h2>
-				<p class=" oncase-promo-text text-center">
-					A satisfação do usuário final é um dos fatores determinantes para o sucesso de um projeto de Business Analytics. Nossa equipe tem altíssimo expertise em <em>front-ending & UX</em> e pode ajudá-los nessa conquista.
+				<h2 class="oncase-section-heading oncase-gray text-center" >{{'services.CONSULTANCY_UX' | translate}}</h2>
+				<p class=" oncase-promo-text text-center" translate>
+					{{'services.CONSULTANCY_UX_TXT'}}
 				</p>
 		</div>
 
@@ -73,17 +73,17 @@
 	<div class="row">
 		<div class="col-xs-10 col-xs-offset-1 col-sm-8 col-sm-offset-2">
 
-			<p class=" oncase-promo-text text-center">
-				Na Oncase, somos ávidos por novas tecnologias e por isso, estamos sempre em contato com tudo o que há de mais novo em termos de bancos de dados especialistas, plataformas de processamento de dados em massa, padrões de projeto real-time, componentes de visualização de dados, algorítmos e bibliotecas de Data Mining.
+			<p class=" oncase-promo-text text-center" translate>
+				{{'services.CONSULTANCY_ENDTXT1'}}
 			</p>
-			<p class=" oncase-promo-text text-center">
-				Entre em contato conosco e agende uma visita. Ficaríamos felizes em ir até você ou em recebê-lo em nosso escritório.
+			<p class=" oncase-promo-text text-center" translate>
+				{{'services.CONSULTANCY_ENDTXT2'}}
 			</p>
 		</div>
 	</div>
 	<div class="oncase-separator"></div>
 	<div class="text-center ">
-        <md-button class="md-raised md-warn oncase-button no-margin" ng-click="HeaderCtrl.tabClicked(servicesCtrl.goTo(5))">Entre em contato</md-button>
+        <md-button class="md-raised md-warn oncase-button no-margin" ng-click="HeaderCtrl.tabClicked(servicesCtrl.goTo(5))">{{'services.CONSULTANCY_CONTACTUS' | translate}}</md-button>
     </div>
 
 
@@ -91,7 +91,7 @@
 </section>
 
 <div class="oncase-fixed-background oncase-fixed-session oncase-material-analytics-bg"></div>
-<h1 class="text-center oncase-white oncase-bright-1 oncase-fixed-session-text">Treinamentos</h1>
+<h1 class="text-center oncase-white oncase-bright-1 oncase-fixed-session-text">{{'services.TRAINING' | translate}}</h1>
 
 <section class="oncase-content-margin oncase-content-paper md-whiteframe-z1 oncase-padding-bottom oncase-white-section-fonts oncase-padding-top">
 	<div class="row oncase-content-margin">
@@ -100,9 +100,9 @@
 				<div class="oncase-absolute-center oncase-section-image-single text-center ">
 					<div class="oncase-svg-128" ng-include="'../../../assets/img/pentaho-circle.svg'" width="150" height="150" ></div>
 				</div>
-				<h2 class="oncase-section-heading oncase-gray text-center " >Oficiais Pentaho</h2>
-				<p class=" oncase-promo-text text-center">
-					Como parceiros Pentaho, somos também <em>Authorised Training Providers</em>. Isso significa que o treinamento que ministramos tem conteúdo e certificado produzidos pela própria Pentaho e o curso é ministrado por profissionais certificados.
+				<h2 class="oncase-section-heading oncase-gray text-center " >{{'services.TRAINING_OFFICIAL' | translate}}</h2>
+				<p class=" oncase-promo-text text-center" translate>
+					{{'services.TRAINING_OFFICIAL_TXT' }}
 				</p>
 		</div>
 
@@ -111,9 +111,9 @@
 				<div class="oncase-absolute-center oncase-section-image-single text-center ">
 					<i class="fa fa-certificate oncase-big-icon oncase-secondary-yellow"></i>
 				</div>
-				<h2 class="oncase-section-heading oncase-gray text-center" >Certificação</h2>
-				<p class=" oncase-promo-text text-center">
-					Possuímos também treinamento e orientação voltados aos profissionais que desejam percorrer o caminho da Certificação Pentaho. Constituída de duas provas - Platform e ETL -, o conteúdo requer além de conhecimentos gerais, experiência. 
+				<h2 class="oncase-section-heading oncase-gray text-center" >{{'services.TRAINING_CERTIFICATION' | translate}}</h2>
+				<p class=" oncase-promo-text text-center" translate>
+					{{'services.TRAINING_CERTIFICATION_TXT' }}
 				</p>
 		</div>
 
@@ -122,9 +122,9 @@
 				<div class="oncase-absolute-center oncase-section-image-single text-center ">
 					<i class="fa fa-users oncase-big-icon oncase-secondary-blue"></i>
 				</div>
-				<h2 class="oncase-section-heading oncase-gray text-center" >In-company</h2>
-				<p class=" oncase-promo-text text-center">
-					Se você deseja montar internamente uma linha de produção de BI com Pentaho, nós podemos capacitar a sua equipe. É praxe da Oncase também, sugerir essa passagem de conhecimento ao final de todo projeto de consultoria que fazemos.
+				<h2 class="oncase-section-heading oncase-gray text-center" >{{'services.TRAINING_INCOMPANY' | translate}}</h2>
+				<p class=" oncase-promo-text text-center" translate>
+					{{'services.TRAINING_INCOMPANY_TXT' }}
 				</p>
 		</div>
 
@@ -136,11 +136,11 @@
 	<div class="oncase-separator"></div>
 	<div class="row">
 		<div class="col-xs-10 col-xs-offset-1 col-sm-8 col-sm-offset-2">
-			<p class=" oncase-promo-text text-center">
-				Estamos montando um portal de treinamentos onde vocês vão poder consultar a agenda, bem como o conteúdo disponibilizado em cada um dos treinamentos que nós oferecemos.
+			<p class=" oncase-promo-text text-center" translate>
+				{{'services.TRAINING_ENDTXT1' }}
 			</p>
-			<p class=" oncase-promo-text text-center">
-				Enquanto isso, fique à vontade para nos ligar, entrar em contato através da nossa página de contato ou simplesmente enviar e-mail para: <span class="md-code">treinamento@oncase.com.br</span>.
+			<p class=" oncase-promo-text text-center" translate>
+				{{'services.TRAINING_ENDTXT2' }}
 			</p>
 
 		</div>
@@ -149,14 +149,14 @@
 
 	<div class="oncase-separator"></div>
 	<div class="text-center ">
-        <md-button class="md-raised md-warn oncase-button no-margin" ng-click="HeaderCtrl.tabClicked(servicesCtrl.goTo(5))">Entre em contato</md-button>
+        <md-button class="md-raised md-warn oncase-button no-margin" ng-click="HeaderCtrl.tabClicked(servicesCtrl.goTo(5))">{{'services.TRAINING_CONTACTUS' | translate}}</md-button>
     </div>
 
 	<div class="oncase-separator"></div>
 </section>
 
 <div class="oncase-fixed-background oncase-fixed-session oncase-material-analytics-bg"></div>
-<h1 class="text-center oncase-white oncase-bright-1 oncase-fixed-session-text">Suporte</h1>
+<h1 class="text-center oncase-white oncase-bright-1 oncase-fixed-session-text">{{'services.SUPPORT' | translate}}</h1>
 
 <section class="oncase-content-margin oncase-content-paper md-whiteframe-z1 oncase-padding-bottom oncase-white-section-fonts oncase-padding-top">
 	<div class="row oncase-content-margin">
@@ -165,9 +165,9 @@
 				<div class="oncase-absolute-center oncase-section-image-single text-center ">
 					<div class="oncase-svg-128" ng-include="'../../../assets/img/pentaho-circle.svg'" width="150" height="150" ></div>
 				</div>
-				<h2 class="oncase-section-heading oncase-gray text-center " >Oficial Pentaho</h2>
-				<p class=" oncase-promo-text text-center">
-					Trabalhar com Pentaho é muito bom, você consegue produzir valor já com a versão Community. Entretanto, à medida em que a importância do seu projeto cresce, eleva-se também a responsabilidade sobre cada implementação. Além de outras inúmeras vantagens, a versão Enterprise oferece suporte oficial no Brasil através da Oncase e de outros parceiros.
+				<h2 class="oncase-section-heading oncase-gray text-center " >{{'services.SUPPORT_OFFICIAL' | translate}}</h2>
+				<p class=" oncase-promo-text text-center" translate>
+					{{'services.SUPPORT_OFFICIAL_TXT' }}
 				</p>
 		</div>
 
@@ -176,9 +176,9 @@
 				<div class="oncase-absolute-center oncase-section-image-single text-center ">
 					<i class="fa fa-code oncase-big-icon oncase-gray"></i>
 				</div>
-				<h2 class="oncase-section-heading oncase-gray text-center" >Desenvolvedor</h2>
-				<p class=" oncase-promo-text text-center">
-					Que nossa equipe é muito qualificada, você já sabe. O que talvez você ainda não saiba é que todos somos apaixonados em passar o conhecimento que temos, acreditamos que quanto mais profissionais dominem o conhecimento, melhor será o ecossistema de Analytics com Pentaho. Se você tem uma equipe e projetos de Business Analytics, ficaremos felizes em auxiliá-los no que formos capazes.
+				<h2 class="oncase-section-heading oncase-gray text-center" >{{'services.SUPPORT_DEV' | translate}}</h2>
+				<p class=" oncase-promo-text text-center" translate>
+					{{'services.SUPPORT_DEV_TXT' }}
 				</p>
 		</div>
 
@@ -187,9 +187,9 @@
 				<div class="oncase-absolute-center oncase-section-image-single text-center ">
 					<i class="fa fa-graduation-cap oncase-big-icon oncase-secondary-green"></i>
 				</div>
-				<h2 class="oncase-section-heading oncase-gray text-center" >Mentoring</h2>
-				<p class=" oncase-promo-text text-center">
-					É comum, empresas que contratam projetos de Business Analytics, quererem dominar as ferramentas e os conceitos ali por trás implementados. Nós da Oncase oferecemos o acompanhamento que sua equipe precisa para dominar toda a cadeia de produção de projetos de Analytics. Desde integração de dados até Mineração de dados e Otimizações.
+				<h2 class="oncase-section-heading oncase-gray text-center" >{{'services.SUPPORT_MENTORING' | translate}}</h2>
+				<p class=" oncase-promo-text text-center" translate>
+					{{'services.SUPPORT_MENTORING_TXT' }}
 				</p>
 		</div>
 
@@ -201,12 +201,12 @@
 	<div class="oncase-separator"></div>
 	<div class="row">
 		<div class="col-xs-10 col-xs-offset-1 col-sm-8 col-sm-offset-2">
-			<p class=" oncase-promo-text text-center">
-				Oferecemos o <em>SLA</em> que lhe deixará tranquilo. Todo nosso gerenciamento e comunicação de suporte se dão através da plataforma <strong>Zendesk</strong>, no endereço <a target="_blank" href="http://oncase.zendesk.com">oncase.zendesk.com</a>.
+			<p class=" oncase-promo-text text-center" translate>
+				{{'services.SUPPORT_ENDTXT1' }}
 
 			</p>
-			<p class=" oncase-promo-text text-center">
-				Fale conosco e contrate já o suporte que se adeque ao seu bolso e às necessidades da sua equipe.
+			<p class=" oncase-promo-text text-center" translate>
+				{{'services.SUPPORT_ENDTXT2' }}
 			</p>
 
 		</div>
@@ -215,7 +215,7 @@
 
 	<div class="oncase-separator"></div>
 	<div class="text-center ">
-        <md-button class="md-raised md-warn oncase-button no-margin" ng-click="HeaderCtrl.tabClicked(servicesCtrl.goTo(5))">Entre em contato</md-button>
+        <md-button class="md-raised md-warn oncase-button no-margin" ng-click="HeaderCtrl.tabClicked(servicesCtrl.goTo(5))">{{'services.SUPPORT_CONTACTUS' | translate}}</md-button>
     </div>
 
 	<div class="oncase-separator"></div>
@@ -223,7 +223,7 @@
 
 
 <div class="oncase-fixed-background oncase-fixed-session oncase-material-analytics-bg"></div>
-<h1 class="text-center oncase-white oncase-bright-1 oncase-fixed-session-text">Inovações</h1>
+<h1 class="text-center oncase-white oncase-bright-1 oncase-fixed-session-text">{{'services.INNOVATION' | translate}}</h1>
 
 <section class="oncase-content-margin oncase-content-paper md-whiteframe-z1 oncase-padding-bottom oncase-white-section-fonts oncase-padding-top">
 	<div class="row oncase-content-margin">
@@ -232,9 +232,9 @@
 				<div class="oncase-absolute-center oncase-section-image-single text-center ">
 					<i class="fa fa-mobile oncase-big-icon oncase-secondary-light-green"></i>
 				</div>
-				<h2 class="oncase-section-heading oncase-gray text-center " >Apps de apoio</h2>
-				<p class=" oncase-promo-text text-center">
-					É comum, em projetos de Analytics, a necessidade em se desenvolver aplicações de apoio, seja para complementar cadastros, informar metas ou acompanhar decisões de forma padronizada em dispositivos móveis. Nós temos um núcleo de profissionais habilitados a entregar o aplicativo necessário para que seu projeto rode a 100% da capacidade.
+				<h2 class="oncase-section-heading oncase-gray text-center " >{{'services.INNOVATION_APPS' | translate}}</h2>
+				<p class=" oncase-promo-text text-center" translate>
+					{{'services.INNOVATION_APPS_TXT'}}
 				</p>
 		</div>
 
@@ -243,9 +243,9 @@
 				<div class="oncase-absolute-center oncase-section-image-single text-center ">
 					<i class="fa fa-plug oncase-big-icon oncase-secondary-pink"></i>
 				</div>
-				<h2 class="oncase-section-heading oncase-gray text-center" >Plugins</h2>
-				<p class=" oncase-promo-text text-center">
-					Como arquitetos certificados Pentaho, sabemos como extrair o máximo da plataforma, estendendo todas as funcionalidades possíveis, seja do seu BA-Server, seja do seu Pentaho Data Integration. Desenvolvemos plugins Sparkl ou <em>low-level</em>, além de <em>steps</em> e <em>job-entries</em> para o seu Kettle. 
+				<h2 class="oncase-section-heading oncase-gray text-center" >{{'services.INNOVATION_PLUGINS' | translate}}</h2>
+				<p class=" oncase-promo-text text-center" translate>
+					{{'services.INNOVATION_PLUGINS_TXT'}}
 				</p>
 		</div>
 
@@ -254,9 +254,9 @@
 				<div class="oncase-absolute-center oncase-section-image-single text-center ">
 					<i class="fa fa-flask oncase-big-icon oncase-secondary-deep-purple"></i>
 				</div>
-				<h2 class="oncase-section-heading oncase-gray text-center" >Produtos Analíticos</h2>
-				<p class=" oncase-promo-text text-center">
-					Nós montamos, dentro da Oncase, uma célula de inovações. Isso mesmo. Possuímos um núcleo inteiro com profissionais pesquisadores que experimentam no dia-a-dia iniciativas analíticas e estão prontos para lançar a qualquer minuto seu próximo produto analítico. Essa busca constante visa o preparo para oferecer ao mercado a agilidade nas novas tecnologias que surgem constantemente.
+				<h2 class="oncase-section-heading oncase-gray text-center" >{{'services.INNOVATION_ANALYTICAL' | translate}}</h2>
+				<p class=" oncase-promo-text text-center" translate>
+					{{'services.INNOVATION_ANALYTICAL_TXT'}}
 				</p>
 		</div>
 
@@ -271,14 +271,14 @@
 			<div class="oncase-absolute-center oncase-section-image-single text-center ">
 				<img src="../../../assets/img/labtransp.png" height="150" />
 			</div>
-			<p class=" oncase-promo-text text-center">
-				Conheça o LabTransp, ou Laboratório de Transparência Pública, apoiado pela Oncase e coordenado por membros do nosso time.
+			<p class=" oncase-promo-text text-center" translate>
+				{{'services.INNOVATION_ENDTXT1'}}
 			</p>
-			<p class=" oncase-promo-text text-center">
-				O Laboratório de Transparência Pública (LABTRANSP) é um projeto de iniciativa do Núcleo de Estudos e Pesquisas em Finanças, do Centro de Ciências Sociais Aplicadas, da Universidade Federal da Paraíba. O foco do LABTRANSP é promover a cultura de dados abertos, de caráter público, dos entes governamentais de todos os poderes, fortalecendo assim a interação entre a sociedade e administração pública.
+			<p class=" oncase-promo-text text-center" translate>
+				{{'services.INNOVATION_ENDTXT2'}}
 			</p>
-			<p class=" oncase-promo-text text-center">
-				<a target="_blank" href="http://transparencia.pub">Laboratório de Transparência Pública</a>
+			<p class=" oncase-promo-text text-center" translate>
+				{{'services.INNOVATION_ENDBUTTON'}}
 			</p>
 
 		</div>

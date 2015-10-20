@@ -1,16 +1,14 @@
 
 
-<div class="container-fluid oncase-content-margin-flex" >
+<div class="container-fluid oncase-content-margin-flex" ng-controller="PartialController as parCtrl">
 
 	<div class="col-lg-height col-sm-12 col-md-6 col-lg-3">
 
 	  <div class=" oncase-flexcard " mouse-over-class="md-whiteframe-z1" >
 	  	<div class="oncase-flexcard-img" ng-include="'/assets/img/elephant.svg'"></div>
-	  	<!-- <h2>Big Data Integration</h2> -->
-		<h2>Integração com Big Data</h2>
+		<h2>{{ 'servicesFlow.BIG_DATA_INTEGRATION' | translate }}</h2>
 	  	<div class="oncase-header-underscore bg-oncase-blue"></div>
-	  	<!-- <div class="oncase-wrapped-text-3l">Integrate, Clean and Enhance your data consuming it from virtualy any source.</div> -->
-		<div class="oncase-wrapped-text-3l">Integre, Limpe e Amplie seus dados, consumindo-os de virtualmente qualquer fonte.</div>
+	  	<div class="oncase-wrapped-text-3l">{{ 'servicesFlow.BIG_DATA_INTEGRATION_TXT' | translate }}</div>
 	  </div>
 
 
@@ -19,10 +17,9 @@
 
 	  <div class=" oncase-flexcard " mouse-over-class="md-whiteframe-z1" >
 		<div class="oncase-flexcard-img" ng-include="'/assets/img/charts.svg'"></div>
-		<h2>Business Intelligence</h2>
+		<h2 translate>servicesFlow.BUSINESS_INTELLIGENCE</h2>
 	  	<div class="oncase-header-underscore bg-oncase-blue"></div>
-		<!-- <div class="oncase-wrapped-text-3l">Explore, get alerted and and visualize your information on any demand and depth</div> -->
-		<div class="oncase-wrapped-text-3l">Explore, receba alertas e visualize suas informações sob qualquer demanda ou profundidade.</div>
+		<div class="oncase-wrapped-text-3l" translate>servicesFlow.BUSINESS_INTELLIGENCE_TXT</div>
 	  </div>
 
 	</div>
@@ -30,11 +27,9 @@
 
 	  <div class=" oncase-flexcard " mouse-over-class="md-whiteframe-z1" >
 		<div class="oncase-flexcard-img" ng-include="'/assets/img/analytics-card.svg'"></div>
-		<!-- <h2>Data Analytics</h2> -->
-		<h2>Análise de Dados</h2>
+		<h2>{{ 'servicesFlow.ANALYTICS' | translate }}</h2>
 	  	<div class="oncase-header-underscore bg-oncase-blue"></div>
-		<!-- <div class="oncase-wrapped-text-3l">Understand the knowledge within your information and antecipate risks</div> -->
-		<div class="oncase-wrapped-text-3l">Adquira o conhecimento por trás da informação e antecipe os riscos.</div>
+		<div class="oncase-wrapped-text-3l">{{ 'servicesFlow.ANALYTICS_TXT' | translate }}</div>
 	  </div>
 
 	</div>
@@ -42,11 +37,9 @@
 
 	  <div class=" oncase-flexcard " mouse-over-class="md-whiteframe-z1" >
 		<div class="oncase-flexcard-img" ng-include="'/assets/img/optimization.svg'"></div>
-		<!-- <h2>Optimization</h2> -->
-		<h2>Otimização</h2>
+		<h2>{{ 'servicesFlow.OPTIMIZATION' | translate }}</h2>
 	  	<div class="oncase-header-underscore bg-oncase-blue"></div>
-		<!-- <div class="oncase-wrapped-text-3l">Tune your organization to its full potential</div> -->
-		<div class="oncase-wrapped-text-3l">Ajuste sua organização para atingir o potencial máximo.</div>
+		<div class="oncase-wrapped-text-3l">{{ 'servicesFlow.OPTIMIZATION_TXT' | translate }}</div>
 	  </div>
 
 	</div>
@@ -55,5 +48,5 @@
 </div>
 
 <div layout="row" layout-align="center center" ng-show="showServicesFlowMoreButton">
-	  <md-button class="md-raised oncase-big-button md-primary oncase-button" ng-click="HeaderCtrl.tabClicked(homeCtrl.goTo(2))">Veja nossa linha de serviços</md-button>
+	  <md-button class="md-raised oncase-big-button md-primary oncase-button" ng-click="HeaderCtrl.tabClicked(homeCtrl.goTo(2))">{{ 'servicesFlow.SEE_MORE' | translate }}</md-button>
 </div>

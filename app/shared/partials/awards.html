@@ -1,48 +1,43 @@
-<section class="oncase-white-section oncase-white-section-fonts bg-oncase-white">
+<section class="oncase-white-section oncase-white-section-fonts bg-oncase-white" ng-controller="PartialController as parCtrl">
 	<div class="oncase-content-margin">
 
-		<h2 class="oncase-section-heading oncase-gray text-center" >Um pouco do nosso</h2>
-		<h1 class="oncase-section-heading oncase-blue text-center">Reconhecimento</h1>
+		<h2 class="oncase-section-heading oncase-gray text-center" >{{ 'awards.RECOGNITION_L1' | translate }}</h2>
+		<h1 class="oncase-section-heading oncase-blue text-center">{{ 'awards.RECOGNITION_L2' | translate }}</h1>
 		<div class="oncase-section-heading-underscore bg-oncase-orange"></div>
 		<p class="oncase-promo-text text-center">
-			A Oncase tem em sua veia, a busca constante pela entrega de qualidade nos seus serviços e produtos oferecidos.
-			<br />Como consequência direta disso, acumulamos alguns reconhecimentos perseguidos, que ilustram a seriedade do nosso trabalho.
+			{{ 'awards.RECOGNITION_TXT1' | translate }}
+			<br />
+			{{ 'awards.RECOGNITION_TXT2' | translate }}
 		</p>
 
 
 		<div class="oncase-separator"></div>
-		<h3 class="oncase-section-heading oncase-blue text-center">Premium Partner</h2>
+		<h3 class="oncase-section-heading oncase-blue text-center">{{ 'awards.PREMIUM_PARTNER' | translate }}</h2>
 		<div ng-include="'assets/img/pentaho-premium-partner.svg'" class="oncase-absolute-center oncase-section-image-single"></div>
 		<p class="oncase-promo-text text-center">
-			Primeira e única empresa a receber o selo de premium partner na américa latina.
-			<br />Uma empresa torna-se Premium Partner no momento em que a Pentaho reconhece a sua importância e influência no mercado
+			{{ 'awards.PREMIUM_PARTNER_TXT1' | translate }}
+			<br />
+			{{ 'awards.PREMIUM_PARTNER_TXT2' | translate }}
 		</p>
 
-		<!-- This is not necessary
-
-
-		<div class="oncase-separator "></div>
-		<h3 class="oncase-section-heading oncase-blue">Partner of the Year</h2>
-		-->
 		<div class="col-sm-12 col-md-offset-3 col-md-3 oncase-absolute-center oncase-section-image-double" ng-include="'assets/img/poty-2013.svg'" ></div>
 		<div class="col-sm-12                 col-md-3 oncase-absolute-center oncase-section-image-double" ng-include="'assets/img/poty-2014.svg'" ></div>
 		<p class="oncase-promo-text text-center">
-			Anualmente, em convenções da Empresa, a Pentaho premia os parceiros mais relevantes e a Oncase já levou a premiação por dois anos consecutivos.
+			{{ 'awards.PARTNER_YEAR_TXT' | translate }}
 		</p>
 
 		<div class="oncase-separator"></div>
-		<h3 class="oncase-section-heading oncase-blue text-center">Certifications</h2>
+		<h3 class="oncase-section-heading oncase-blue text-center">{{ 'awards.CERTIFICATIONS' | translate }}</h2>
 		<div class="col-md-12  col-md-4 oncase-absolute-center oncase-section-image-triple" ng-include="'assets/img/cmmi-dev.svg'" ></div>
 		<div class="col-md-12  col-md-4 oncase-absolute-center oncase-section-image-triple" ng-include="'assets/img/cmmi-svc.svg'" ></div>
 		<div class="col-md-12  col-md-4 oncase-absolute-center oncase-section-image-triple" ng-include="'assets/img/mps-br.svg'" ></div>
 		<p class="oncase-promo-text  text-center">
-			Nos últimos anos, em busca de tornar pública nossa maneira de trabalhar, submetemo-nos constantemente a processos que credenciassem a Oncase no mercado. 
-			O resultado desse esforço está estampado em três certificações adquiridas e mantidas.
+			{{ 'awards.CERTIFICATIONS_TXT' | translate }}
 		</p>
 
 		<div class="oncase-separator"></div>
 		<div ng-show="showAwardsSeeMoreButton" layout="row" layout-align="center center">
-			  <md-button class="md-raised oncase-big-button md-primary oncase-button" ng-click="HeaderCtrl.tabClicked(homeCtrl.goTo(1))">Conheça mais</md-button>
+			  <md-button class="md-raised oncase-big-button md-primary oncase-button" ng-click="HeaderCtrl.tabClicked(homeCtrl.goTo(1))">{{ 'awards.SEE_MORE' | translate }}</md-button>
 		</div>
 	</div>
 

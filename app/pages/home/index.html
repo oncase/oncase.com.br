@@ -483,11 +483,9 @@ md-list.oncase-anouncement md-list-item i{
 
       <div class="md-whiteframe-z1 oncase-content-paper oncase-content-margin ng-scope oncase-margin-top-zero" >
       	<div class="oncase-content-margin oncase-p-margin-fix oncase-padding-top oncase-margin-top-zero" >
-        	<h2 class="oncase-section-heading oncase-gray text-center ">Nosso canal de vídeos</h2>
+        	<h2 class="oncase-section-heading oncase-gray text-center ">{{ 'home.tv.OUR_VIDEO_CHANNEL' | translate }}</h2>
 			<p class="oncase-promo-text text-center oncase-white">
-				<strong>Semanalmente</strong>, toda terça-feira, lançaremos novo conteúdo sobre Pentaho, Business Analytics e tudo mais de tecnologia que estiver envolvido.
-				<br />
-				Nosso objetivo é tentar passar tanto conteúdo interessante que você virará audiência cativa.
+				{{ 'home.tv.DESCRIPTION' | translate }}
 			</p>
 
 
@@ -497,9 +495,9 @@ md-list.oncase-anouncement md-list-item i{
 						<div class="oncase-absolute-center oncase-section-image-single text-center ">
 							<i class="fa fa-youtube oncase-big-icon oncase-secondary-red"></i>
 						</div>
-						<h2 class="oncase-section-heading oncase-gray text-center " >Inscreva-se</h2>
+						<h2 class="oncase-section-heading oncase-gray text-center " >{{ 'home.tv.SUBSCRIBE' | translate }}</h2>
 						<p class=" oncase-promo-text text-center">
-							Inscreva-se em nosso canal para receber atualizações sempre que tiver novo conteúdo.
+							{{ 'home.tv.SUBSCRIBE_TXT' | translate }}
 						</p>
 				</div>
 
@@ -508,9 +506,9 @@ md-list.oncase-anouncement md-list-item i{
 						<div class="oncase-absolute-center oncase-section-image-single text-center ">
 							<i class="fa fa-film oncase-big-icon oncase-secondary-blue"></i>
 						</div>
-						<h2 class="oncase-section-heading oncase-gray text-center" >Acompanhe aqui</h2>
+						<h2 class="oncase-section-heading oncase-gray text-center" >{{ 'home.tv.FOLLOW_HERE' | translate }}</h2>
 						<p class=" oncase-promo-text text-center">
-							Veja aqui mesmo no site os vídeos adicionados mais recentemente. Basta 
+							{{ 'home.tv.FOLLOW_HERE_TXT' | translate }}  
 						</p>
 				</div>
 
@@ -524,7 +522,7 @@ md-list.oncase-anouncement md-list-item i{
 
 			          <md-button ng-click="homeCtrl.showVideosPane()">
 			          	<div layout="row">
-				            <p flex class="oncase-small-margin">Últimos v&iacute;deos </p>
+				            <p flex class="oncase-small-margin">{{ 'home.tv.RECENT_VIDEOS' | translate }}   </p>
 					        <md-icon class="fa fa-chevron-{{homeCtrl.isVideosPaneExpanded() ? 'up' : 'down'}}"></md-icon>
 				    	</div>
 			          </md-button>

@@ -205,29 +205,29 @@
       
       <div class="row oncase-content-margin oncase-footer-grid" >
         <div class="col-xs-12 col-sm-4 col-md-3 text-left" >
-          <h2 class="oncase-section-heading-thin text-left"><span>Quem somos</span></h2>
+          <h2 class="oncase-section-heading-thin text-left"><span>  {{ 'footer.ABOUT_HEADING' | translate }}  </span></h2>
           <ul class="oncase-links"><li>
-            Ajudamos você a entender melhor os dados de sua empresa, transformando-os em informação útil para a tomada de decisão, reduzindo perdas, minimizando custos, aumentando receitas e otimizando o seu bem mais precioso: O seu tempo
+            {{ 'footer.ABOUT_TXT' | translate }}
           </li></ul>
         </div>
         <div class="col-xs-12 col-lg-offset-1 col-sm-4 col-md-2 text-left" >
-          <h2 class="oncase-section-heading-thin text-left"><span >Outros Canais</span></h2>
+          <h2 class="oncase-section-heading-thin text-left"><span >{{ 'footer.OTHER_CHANNELS' | translate }}</span></h2>
           <ul class="oncase-links">
-            <li><a class="white-link" href="http://carreers.onca.se/" target="blank">Carreers</a></li>
-            <li><a class="white-link" href="http://sandbox.onca.se/" target="blank">Oncase Sandbox</a></li>
-            <li><a class="white-link" href="http://www.transparencia.pub/" target="blank">Labtransp</a></li>
-            <li><a class="white-link" href="http://pentahobrasil.com.br/" target="blank">Pentaho Brasil</a></li>
+            <li><a class="white-link" href="http://carreers.onca.se/" target="blank">{{ 'footer.OTHER_CARREERS' | translate }}</a></li>
+            <li><a class="white-link" href="http://sandbox.onca.se/" target="blank">{{ 'footer.OTHER_SANDBOX' | translate }}</a></li>
+            <li><a class="white-link" href="http://www.transparencia.pub/" target="blank">{{ 'footer.OTHER_LABTRANSP' | translate }}</a></li>
+            <li><a class="white-link" href="http://pentahobrasil.com.br/" target="blank">{{ 'footer.OTHER_PENTAHO_BRASIL' | translate }}</a></li>
           <ul>
         </div>
         <div class="col-xs-12 col-lg-offset-1 col-sm-4 col-md-3 text-left" >
-          <h2 class="oncase-section-heading-thin text-left"><span >Fale conosco</span></h2>
+          <h2 class="oncase-section-heading-thin text-left"><span >{{ 'footer.CONTACT_US' | translate }} </span></h2>
           <ul class="oncase-links">
-            <li>Recife, PE - +55-81-3077-8558</li>
-            <li>Rio de Janeiro, RJ - +55-21-4063-7785</li>
-            <li>São Paulo, SP - +55-11-4063-6247</li>
+            <li>{{ 'footer.RECIFE_PHONE' | translate }}</li>
+            <li>{{ 'footer.RIO_PHONE' | translate }}</li>
+            <li>{{ 'footer.SAOPAULO_PHONE' | translate }}</li>
           </ul>
             
-            <md-button class="md-raised md-warn oncase-button no-margin" ng-click="selectedIndex=5;HeaderCtrl.tabClicked(selectedIndex)">Contato</md-button>
+            <md-button class="md-raised md-warn oncase-button no-margin" ng-click="selectedIndex=5;HeaderCtrl.tabClicked(selectedIndex)">{{ 'footer.CONTACT_BUTTON_TEXT' | translate }}</md-button>
           
         </div>
 
@@ -239,12 +239,12 @@
   <div class="row oncase-content-margin" >
       <div class="col-sm-12 col-md-9  text-left" >
           <ul class="oncase-links">
-            <li class="inline-block"><a class="oncase-blue" ng-class="{active : selectedIndex===0}" href="/{{HeaderCtrl.getCurrentLang()}}/" ng-click="selectedIndex=0;HeaderCtrl.tabClicked(selectedIndex)">Home</a></li>
-            <li class="inline-block"><a class="oncase-blue" ng-class="{active : selectedIndex===1}" href="/{{HeaderCtrl.getCurrentLang()}}/about" ng-click="selectedIndex=1;HeaderCtrl.tabClicked(selectedIndex)">About</a></li>
-            <li class="inline-block"><a class="oncase-blue" ng-class="{active : selectedIndex===2}" href="/{{HeaderCtrl.getCurrentLang()}}/services" ng-click="selectedIndex=2;HeaderCtrl.tabClicked(selectedIndex)">Services</a></li>
-            <li class="inline-block"><a class="oncase-blue" ng-class="{active : selectedIndex===3}" href="/{{HeaderCtrl.getCurrentLang()}}/products" ng-click="selectedIndex=3;HeaderCtrl.tabClicked(selectedIndex)">Products</a></li>
-            <li class="inline-block"><a class="oncase-blue" ng-class="{active : selectedIndex===4}" href="/{{HeaderCtrl.getCurrentLang()}}/clients-and-partners" ng-click="selectedIndex=4;HeaderCtrl.tabClicked(selectedIndex)">Clients and Partners</a></li>
-            <li class="inline-block"><a class="oncase-blue" ng-class="{active : selectedIndex===5}" href="/{{HeaderCtrl.getCurrentLang()}}/contact" ng-click="selectedIndex=5;HeaderCtrl.tabClicked(selectedIndex)">Contact</a></li>
+            <li class="inline-block"><a class="oncase-blue" ng-class="{active : selectedIndex===0}" href="/{{HeaderCtrl.getCurrentLang()}}/" ng-click="selectedIndex=0;HeaderCtrl.tabClicked(selectedIndex)">{{ 'header.MENU_HOME' | translate }}</a></li>
+            <li class="inline-block"><a class="oncase-blue" ng-class="{active : selectedIndex===1}" href="/{{HeaderCtrl.getCurrentLang()}}/about" ng-click="selectedIndex=1;HeaderCtrl.tabClicked(selectedIndex)">{{ 'header.MENU_ABOUT' | translate }}</a></li>
+            <li class="inline-block"><a class="oncase-blue" ng-class="{active : selectedIndex===2}" href="/{{HeaderCtrl.getCurrentLang()}}/services" ng-click="selectedIndex=2;HeaderCtrl.tabClicked(selectedIndex)">{{ 'header.MENU_SERVICES' | translate }}</a></li>
+            <li class="inline-block"><a class="oncase-blue" ng-class="{active : selectedIndex===3}" href="/{{HeaderCtrl.getCurrentLang()}}/products" ng-click="selectedIndex=3;HeaderCtrl.tabClicked(selectedIndex)">{{ 'header.MENU_PRODUCTS' | translate }}</a></li>
+            <li class="inline-block"><a class="oncase-blue" ng-class="{active : selectedIndex===4}" href="/{{HeaderCtrl.getCurrentLang()}}/clients-and-partners" ng-click="selectedIndex=4;HeaderCtrl.tabClicked(selectedIndex)">{{ 'header.MENU_CLIPAR' | translate }}</a></li>
+            <li class="inline-block"><a class="oncase-blue" ng-class="{active : selectedIndex===5}" href="/{{HeaderCtrl.getCurrentLang()}}/contact" ng-click="selectedIndex=5;HeaderCtrl.tabClicked(selectedIndex)">{{ 'header.MENU_CONTACT' | translate }}</a></li>
           <ul>
       </div>
       <div class="col-sm-12 col-md-3 text-right" >
@@ -259,7 +259,7 @@
 </div>
 <div class="footer-section z2 oncase-white bg-oncase-gray">
   <div class="row oncase-content-margin" >
-    <div class="col-xs-12 col-sm-6 text-left footer-social-text-line" >Website desenvolvido pela Oncase</div>
+    <div class="col-xs-12 col-sm-6 text-left footer-social-text-line" >{{ 'footer.DEVELOPED_BY_ONCASE' | translate }}</div>
     <div class="col-xs-12 col-sm-6 text-right" >
 
       <div class="footer-social-wrapper">
@@ -269,7 +269,7 @@
             <i class="fa fa-circle fa-stack-2x oncase-white"></i>
             <i class="fa fa-facebook fa-stack-1x oncase-gray" ></i>
             <md-tooltip md-direction="top">
-              Like us on Facebook
+              {{ 'footer.FACEBOOK_TOOLTIP' | translate }}
             </md-tooltip>
           </span>
         </a>
@@ -279,7 +279,7 @@
             <i class="fa fa-circle fa-stack-2x oncase-white"></i>
             <i class="fa fa-twitter fa-stack-1x oncase-gray" ></i>
             <md-tooltip md-direction="top">
-              Follow us on Twitter
+              {{ 'footer.TWITTER_TOOLTIP' | translate }}
             </md-tooltip>
           </span>
         </a>
@@ -289,7 +289,7 @@
             <i class="fa fa-circle fa-stack-2x oncase-white"></i>
             <i class="fa fa-youtube fa-stack-1x oncase-gray" ></i>
             <md-tooltip md-direction="top">
-              Watch us on Youtube
+              {{ 'footer.YOUTUBE_TOOLTIP' | translate }}
             </md-tooltip>
           </span>
         </a>
@@ -299,7 +299,7 @@
             <i class="fa fa-circle fa-stack-2x oncase-white" ></i>
             <i class="fa fa-wordpress fa-stack-1x oncase-gray" ></i>
             <md-tooltip md-direction="top">
-              Read our blog
+              {{ 'footer.BLOG_TOOLTIP' | translate }}
             </md-tooltip>
           </span>
         </a>
@@ -309,7 +309,7 @@
             <i class="fa fa-circle fa-stack-2x oncase-white"></i>
             <i class="fa fa-linkedin fa-stack-1x oncase-gray" ></i>
             <md-tooltip md-direction="top">
-              Follow us on Linkedin
+              {{ 'footer.LINKEDIN_TOOLTIP' | translate }}
             </md-tooltip>
           </span>
         </a>
@@ -319,7 +319,7 @@
             <i class="fa fa-circle fa-stack-2x oncase-white"></i>
             <i class="fa fa-github fa-stack-1x oncase-gray" ></i>
             <md-tooltip md-direction="top">
-              Fork us on GitHub
+              {{ 'footer.GITHUB_TOOLTIP' | translate }}
             </md-tooltip>
           </span>
         </a>

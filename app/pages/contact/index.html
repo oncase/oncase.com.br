@@ -55,12 +55,12 @@
 
 </style>
 <section class="oncase-section-jumbotron oncase-content-margin oncase-section-jumbotron-internals">
-    <div class="oncase-breadcrumbs oncase-white">Contato</div>
+    <div class="oncase-breadcrumbs oncase-white">{{ 'header.MENU_CONTACT' | translate }}</div>
 </section>
 <section class="oncase-content-margin oncase-content-paper md-whiteframe-z1 oncase-padding-bottom">
     <md-toolbar class="md-accent oncase-margin-bottom">
         <div class="md-toolbar-tools">
-            <h2 class="md-flex">Formulário de contato</h2>
+            <h2 class="md-flex">{{ 'contact.CONTACT_FORM_TITLE' | translate }}</h2>
         </div>
     </md-toolbar>
     <form name="contactForm" id="contactForm">
@@ -68,14 +68,14 @@
 	        <div class="row oncase-content-margin input-icons">
 	            <div class="col-sm-12 col-md-6">
 	                <md-input-container class="md-icon-float" >
-	                    <label>Name (obrigatório)</label>
+	                    <label>{{ 'contact.NAME_LABEL' | translate }}</label>
 	                    <md-icon md-svg-src="../../assets/img/ic_person_24px.svg" class="name input-icon"></md-icon>
 	                    <input ng-model="ContactCtrl.user.name" type="text" ng-required="true">
 	                </md-input-container>
 	            </div>
 	            <div class="col-sm-12 col-md-6">
 	                <md-input-container class="md-icon-float">
-	                    <label>Email (obrigatório) </label>
+	                    <label>{{ 'contact.EMAIL_LABEL' | translate }} </label>
 	                    <md-icon md-svg-src="../../assets/img/ic_email_24px.svg" class="email input-icon"></md-icon>
 	                    <input ng-model="ContactCtrl.user.email" type="email" ng-required="true">
 	                </md-input-container>
@@ -84,7 +84,7 @@
 	        <div class="row oncase-content-margin">
 	            <div class="col-sm-12">
 	                <md-input-container class="md-icon-float">
-	                    <label>Telefone</label>
+	                    <label>{{ 'contact.PHONE_LABEL' | translate }}</label>
 	                    <md-icon class="input-icon" md-svg-src="../../assets/img/ic_phone_24px.svg"></md-icon>
 	                    <input ng-model="ContactCtrl.user.tel" type="text" >
 	                </md-input-container>
@@ -94,7 +94,7 @@
 	            <div class="col-sm-12">
 	                <md-input-container class="md-icon-float">
 	                    <md-icon class="input-icon" md-svg-src="../../assets/img/ic_message_black_24px.svg"></md-icon>
-	                    <label>Mensagem (obrigatório)</label>
+	                    <label>{{ 'contact.TEXTAREA' | translate }}</label>
 	                    <textarea ng-model="ContactCtrl.user.msg"  md-maxlength="1024" ng-required="true"></textarea>
 	                </md-input-container>
 	            </div>
@@ -112,28 +112,26 @@
 	<div class="oncase-content-margin row">
             <div class="col-sm-12 col-md-6">
 
-				<h2 class="oncase-section-heading oncase-gray text-left " >Recife</h2>
-				<p class="oncase-promo-text text-left">
-					Rua do Bom Jesus, 163 - 2 andar
-					<br />Recife-PE CEP 50.030-170
-					<br />Fone: +55-81-3077-8558
+				<h2 class="oncase-section-heading oncase-gray text-left " >{{ 'contact.RECIFE' | translate }}</h2>
+				<p class="oncase-promo-text text-left" translate>
+					{{ 'contact.RECIFE_TXT' }}
 				</p>
 
-				<h2 class="oncase-section-heading oncase-gray text-left " >Rio de Janeiro</h2>
-				<p class="oncase-promo-text text-left">
-					Fone: +55-21-4063-7785
+				<h2 class="oncase-section-heading oncase-gray text-left " >{{ 'contact.RIO' | translate }}</h2>
+				<p class="oncase-promo-text text-left" translate>
+					{{ 'contact.RIO_TXT'  }}
 				</p>
 
 
-				<h2 class="oncase-section-heading oncase-gray text-left " >São Paulo</h2>
-				<p class="oncase-promo-text text-left">
-					Fone: +55-11-4063-6247
+				<h2 class="oncase-section-heading oncase-gray text-left " >{{ 'contact.SP' | translate }}</h2>
+				<p class="oncase-promo-text text-left" translate>
+					{{ 'contact.SP_TXT'  }}
 				</p>
 			</div>
             <div class="col-sm-12 col-md-6">
-				<h2 class="oncase-section-heading oncase-gray text-left " >Trabalhe conosco</h2>
-				<p class="oncase-promo-text">
-					Enquanto não preparamos nosso hotsite de carreiras, envie seu currículo para <span class="md-code">contato@oncase.com.br</span> com o assunto <i>"Vaga Pentaho"</i>
+				<h2 class="oncase-section-heading oncase-gray text-left " >{{ 'contact.WORK_WITH_US' | translate }}</h2>
+				<p class="oncase-promo-text" translate>
+					{{ 'contact.WORK_WITH_US_TXT' }}
 				</p>
 			</div>
 	</div>
@@ -143,7 +141,7 @@
 	<map center="-13.6864209,-49.2565201" zoom="4" default-style="false" scrollwheel="false" styles='[{"featureType":"landscape","stylers":[{"saturation":-100},{"lightness":65},{"visibility":"on"}]},{"featureType":"poi","stylers":[{"saturation":-100},{"lightness":51},{"visibility":"simplified"}]},{"featureType":"road.highway","stylers":[{"saturation":-100},{"visibility":"simplified"}]},{"featureType":"road.arterial","stylers":[{"saturation":-100},{"lightness":30},{"visibility":"on"}]},{"featureType":"road.local","stylers":[{"saturation":-100},{"lightness":40},{"visibility":"on"}]},{"featureType":"transit","stylers":[{"saturation":-100},{"visibility":"simplified"}]},{"featureType":"administrative.province","stylers":[{"visibility":"off"}]},{"featureType":"water","elementType":"labels","stylers":[{"visibility":"on"},{"lightness":-25},{"saturation":-100}]},{"featureType":"water","elementType":"geometry","stylers":[{"hue":"#ffff00"},{"lightness":-25},{"saturation":-97}]}]'>
 	    <info-window id="1" position="-8.0622218,-34.8715385" visible="true">
 	      <div ng-non-bindable="">
-	        Matriz - Recife-PE
+	        {{ 'contact.MAP_HQ_INFOBOX' | translate }}
 	      </div>
 	    </info-window>
 	</map>
