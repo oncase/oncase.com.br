@@ -36,36 +36,36 @@ msgs["en"] = {
 		
 		tv : {
 			"OUR_VIDEO_CHANNEL" : "Our Youtube channel",
-			"DESCRIPTION" : "Every tuesday there's new content about Pentaho, Business Analytics and every other technology we're involved with. Our objective with this is to try to spread as much knowledge as as we can so you're going to be back every week.",
+			"DESCRIPTION" : "Every tuesday there's new content about Pentaho, Business Analytics and every other technology we're involved with. Our objective is to try to spread as much knowledge as we can to make sure you come back every week.",
 			"SUBSCRIBE" : "Subscribe",
 			"SUBSCRIBE_TXT" : "Subscribe to our channel to recieve updates everytime there's new content.",
 			"FOLLOW_HERE" : "Follow here",
-			"FOLLOW_HERE_TXT" : "Watch here on our website the newest videos.",
+			"FOLLOW_HERE_TXT" : "Watch right here, on our website, the newest videos.",
 			"RECENT_VIDEOS" : "Recent videos"
 		}
 	},
 
 	servicesFlow : {
 		"BIG_DATA_INTEGRATION" : "Big Data",
-		"BIG_DATA_INTEGRATION_TXT" : "Integrate, Clean and Enhance your data consuming it from virtualy any source.",
+		"BIG_DATA_INTEGRATION_TXT" : "Integrate, Clean and Enhance your data, consuming it from virtualy any source.",
 		"BUSINESS_INTELLIGENCE" : "Business Intelligence",
-		"BUSINESS_INTELLIGENCE_TXT" : "Explore, get alerted and and visualize your information on any demand and depth.",
+		"BUSINESS_INTELLIGENCE_TXT" : "Explore, get alerted and visualize your information on demand and in any depth.",
 		"ANALYTICS" : "Analytics",
 		"ANALYTICS_TXT" : "Understand the knowledge within your information and antecipate risks.",
 		"OPTIMIZATION" : "Optimization",
-		"OPTIMIZATION_TXT" : "Tune your organization to its full potential.",
-		"SEE_MORE" : "See more"
+		"OPTIMIZATION_TXT" : "Tune your organization to achieve its full potential.",
+		"SEE_MORE" : "See our services page"
 	},
 
 	awards : {
 		"RECOGNITION_L1" : "A bit of",
 		"RECOGNITION_L2" : "Recognition",
 		"RECOGNITION_TXT1" : "We have in our core, the constant wish to deliver high quality services and products to our customers.",
-		"RECOGNITION_TXT2" : "As a direct consequence of this, we've accumulated some awards and certifications that somehow illustrate how serius we are in our jobs",
+		"RECOGNITION_TXT2" : "As a direct consequence of this, we've accumulated some awards and certifications that somehow illustrate how serious we are in our jobs.",
 		"PREMIUM_PARTNER" : "Premium Partner",
-		"PREMIUM_PARTNER_TXT1" : "We were the first and only LATAM company to be recognized Premium Partner by Pentaho.",
+		"PREMIUM_PARTNER_TXT1" : "We were the first and only LATAM company to be recognized as Premium Partners by Pentaho.",
 		"PREMIUM_PARTNER_TXT2" : "A company becomes premium partner when Pentaho recognizes its importance and influence in the market.",
-		"PARTNER_YEAR_TXT" : "Yearly in Pentaho Partners Summits, Pentaho awards its more relevant partners. Oncase won this prize for two consecutive years",
+		"PARTNER_YEAR_TXT" : "Yearly in Pentaho Partners Summits, Pentaho awards its most relevant partners. Oncase won this prize for two consecutive years",
 		"CERTIFICATIONS" : "Certifications",
 		"CERTIFICATIONS_TXT" : "In the last few years, seeking for publicly exposing the way we work, we've been submitting our company through evaluation processes that would certificate us to the market. The results of these efforts were materialized in three certifications awarded and kept.",
 		"SEE_MORE" : "See more"
@@ -75,23 +75,23 @@ msgs["en"] = {
 		"HEADING_MORE" : "More",
 		"HEADING_ABOUT_US" : "About us",
 		"HEADING_RECIPE" : "Recipe for succes",
-		"HEADING_RECIPE_UPPERTEXT" : "We sum up your team to divide problems, lower risks and multiply results!",
-		"HEADING_RECIPE_LOWERTEXT" : "We help you to better understand tha data your company need by turning it into useful information that will support decision taking, reducing costs, increrasing income and optimizing the most precious asset: your time. This is our business.",
+		"HEADING_RECIPE_UPPERTEXT" : "We join up with your team to divide problems, lower risks and multiply results!",
+		"HEADING_RECIPE_LOWERTEXT" : "We help you to better understand tha data your company need by turning it into useful information that will support decision making, reducing costs, increasing income and optimizing your most precious asset: time. This is our business.",
 		"HEADING_TARGET" : "On the target",
-		"HEADING_TARGET_UPPERTEXT" : "This is our biggest objective, to make possible that our customers can manage their businesses with the best information on the tip of their fingers, always available on their mobile devices at anytime (information high availability) anywhere (mobility)",
+		"HEADING_TARGET_UPPERTEXT" : "This is our biggest objective: to enable our customers to manage their businesses with the best information on the tip of their fingers, always available on their mobile devices at anytime (information high availability) anywhere (mobility)",
 		"HEADING_TARGET_LOWERTEXT" : "Don't waste time. Contact us and we're going to revolutionize your information, your business and we're going to impress your customers.",
 		"HEADING_CONTACT_BUTTON" : "Contact us",
 		"WHAT_WE_DO_HEADING" : "What we do?",
-		"WHAT_WE_DO_FIRST_PG" : "We're specialized in Business Analytics, Business Intelligence and Big Data, with big emphasis on Pentaho's Community and Enterprise editions.",
-		"WHAT_WE_DO_SECOND_PG" : "We can support you on each part of the information cycle, from extractions, transformation of structured and unstructured data, processing, mining and enriching each bit, integating with the newest techologies in data storage, till providing detailed and fast analysis using reports, alerts, dashboards.",
+		"WHAT_WE_DO_FIRST_PG" : "We're specialized in Business Analytics, Business Intelligence and Big Data, with emphasis on Pentaho's Community and Enterprise editions.",
+		"WHAT_WE_DO_SECOND_PG" : "We can support you on each part of the information cycle, from extractions, transformation of structured and unstructured data, processing, mining and enriching each bit, integating with the newest techologies in data storage, to providing detailed and fast analysis using reports, alerts, dashboards.",
 		
-		"WHAT_WE_DO_THIRD_PG" : "Our customers are able to experience an exceptional <em>time to market</em>. This allows them to measure their investiment in a short time frame.",
+		"WHAT_WE_DO_THIRD_PG" : "Our customers are able to experience an exceptional time to market. This allows them to measure their investiment in a short time frame.",
 		"MISSION" : "Mission",
 		"MISSION_TXT" : "To support our clients on information discovery that is essential to their businesses, improving their level of management and results.",
 		"VISION" : "Vision",
 		"VISION_TXT" : "To be a consultancy company with excelence, reference in the global market with innovative and quality solutions.", 
 		"BUSINESS" : "Business",
-		"BUSINESS_TXT" : "Compartilhar conhecimento através de prestação de serviço especializado em Business Intelligence, Business Analytics, Spacial Analytics , Big Data e Data Integration.",
+		"BUSINESS_TXT" : "Share knowledge through providing business intelligence, business analytics, spatial analytics, Big Data and data integration specialized services.",
 		"VALUES" : "Values",
 		"VALUES_TXT" : "		Innovation"+
 						"<br />	Quality"+
@@ -104,10 +104,10 @@ msgs["en"] = {
 
 		"PICTURE_SUBTITLE" : "Bom Jesus St, Recife",
 		"SHORT_HISTORY_1ST" : "A",
-		"SHORT_HISTORY_2ND" : "Brief historic",
+		"SHORT_HISTORY_2ND" : "Brief history",
 		"SHORT_HISTORY_TXT" : 	
 						'<p class="oncase-promo-text text-left "> '+
-						'	The Oncase IT Solutions is in market for over 8 years, positioning itself as a consultancy specialized in business intelligence and business management through the use of market leaders tools. '+
+						'	The Oncase IT Solutions is on the market for over 8 years, positioning itself as a consultancy specialized in business intelligence and business management through the use of market leaders tools. '+
 						'</p> '+
 						'<p class="oncase-promo-text text-left "> '+
 						'	We have our own software factory structure using agile methods of software engineering to support our solutions and improve our development of customized systems. '+
@@ -165,13 +165,13 @@ msgs["en"] = {
 		"CONSULTANCY" : "Consultancy",
 
 		"CONSULTANCY_ANALYTICS" : "Analytics Architecture",
-		"CONSULTANCY_ANALYTICS_TXT" : "End to end. We are ready to assist you from the extraction and processing BigData sources to exploration <em> on-demand </ em> in analytical banks and also in mining knowledge.",
+		"CONSULTANCY_ANALYTICS_TXT" : "End to end. We are ready to assist you from the extraction and processing of BigData sources to on-demand exploration of analytical banks and also in mining knowledge.",
 
 		"CONSULTANCY_CLOUD" : "Cloud Computing",
-		"CONSULTANCY_CLOUD_TXT" : "Your infrastructure no longer supports your projects? Our team has the right expertise to assist in the migration of its artifacts. Make us an assessment of the costs and characteristics of a project in the cloud.",
+		"CONSULTANCY_CLOUD_TXT" : "Your infrastructure no longer supports your projects? Our team has the right expertise to assist in the migration of its artifacts. Make an assessment of the costs and characteristics of a cloud project with us.",
 
 		"CONSULTANCY_UX" : "User Experience",
-		"CONSULTANCY_UX_TXT" : "The end-user satisfaction is one of the determining factors for the success of a business analytics project. Our team has very high expertise in <em> front-ending & UX </ em> and can help them in this achievement.",
+		"CONSULTANCY_UX_TXT" : "The end-user satisfaction is one of the determining factors for the success of a business analytics project. Our team has a very high expertise in front-ending & UX and can help them achieve this.",
 
 		"CONSULTANCY_ENDTXT1" : "In Oncase, we are hungry for new technologies and so we are always in touch with all that is newest in terms of specialist databases, bulk data processing platforms, real-time design patterns, data visualization components, algorithms and data mining libraries.",
 		"CONSULTANCY_ENDTXT2" : "Please contact us and schedule a visit. We are happy to come to you or to welcome you in our office.",
@@ -180,46 +180,46 @@ msgs["en"] = {
 		"TRAINING" : "Training",
 
 		"TRAINING_OFFICIAL" : "Pentaho official",
-		"TRAINING_OFFICIAL_TXT" : "As partners Pentaho, we are also <em> Authorised Training Providers </ em>. This means that the training we minister has content and certificate produced by the very Pentaho and the course is taught by certified professionals.",
+		"TRAINING_OFFICIAL_TXT" : "As Pentaho partners, we are also Authorised Training Providers. This means that the training we minister has content and certificate produced by Pentaho itself and the course is taught by certified professionals.",
 
 		"TRAINING_CERTIFICATION" : "Certification",
-		"TRAINING_CERTIFICATION_TXT" : "We also have training and guidance targeted to professionals who want to walk the path of Pentaho Certification. Consists of two tests - Platform and ETL - content requires in addition to general knowledge, experience. ",
+		"TRAINING_CERTIFICATION_TXT" : "We also have training and guidance targeted to professionals who want to walk the path of Pentaho Certification. Consisting of two exams - Platform and ETL - the content requires experience, in addition to general knowledge.",
 
 		"TRAINING_INCOMPANY" : "In-company",
-		"TRAINING_INCOMPANY_TXT" : "If you want internally mounting a BI production line with Pentaho, we can empower your team. It is the usual Oncase also suggest this transition of knowledge at the end of every consulting project we do.",
+		"TRAINING_INCOMPANY_TXT" : "If you want to build a BI production line internally with Pentaho, we can enable your team. It is also usual for Oncase  to suggest this transmission of knowledge at the end of every consulting project we do.",
 
-		"TRAINING_ENDTXT1" : "We are setting up a training portal where you will be able to consult the agenda and content available in each of the training we offer.",
+		"TRAINING_ENDTXT1" : "We are setting up a training portal where you will be able to consult the syllabus and content available for each of the trainings we offer.",
 		"TRAINING_ENDTXT2" : 'Meanwhile, feel free to call us, get in touch via our contact page or simply email to: <span class="md-code">treinamento@oncase.com.br</span>.',
 		"TRAINING_CONTACTUS" : "Contact us",
 
 		"SUPPORT" : "Support",
 
 		"SUPPORT_OFFICIAL" : "Pentaho Official",
-		"SUPPORT_OFFICIAL_TXT" : "Work with Pentaho is very good, you can produce value already with the Community version. However, to the extent that the importance of your project grows, also raises It is the responsibility of each implementation. In addition to numerous other advantages, the Enterprise version offers official support in Brazil through Oncase and other partners.",
+		"SUPPORT_OFFICIAL_TXT" : "Working with Pentaho is very good, you can already produce much with the Community Edition. However, as the importance of your project grows, so does the responsibility of each implementation. In addition to numerous other advantages, the Enterprise Edition offers official support in Brazil through Oncase and other partners.",
 
 		"SUPPORT_DEV" : "Develloper",
-		"SUPPORT_DEV_TXT" : "Our team is very qualified, you already know. What you may not know yet is that all of us are passionate about passing the knowledge we have, we believe that the more professional master knowledge, the better the ecosystem Analytics with Pentaho. If you have a team and business analytics projects, we will be happy to assist you as we are able.",
+		"SUPPORT_DEV_TXT" : "Our team is very qualified, as you already know. What you may not know yet is that all of us are passionate about passing the knowledge we have, we believe that the more professionals mastering the knowledge, the better the Pentaho Analytics ecosystem. If you have a team and business analytics projects, we will be happy to assist you as best as we can.",
 
 		"SUPPORT_MENTORING" : "Mentoring",
-		"SUPPORT_MENTORING_TXT" : "Often, companies that hire Business Analytics projects, want to master the tools and concepts behind implemented there. We offer the Oncase monitoring your team needs to master the entire production chain Analytics projects. From data integration to Data Mining and Optimization.",
+		"SUPPORT_MENTORING_TXT" : "Often, companies that hire Business Analytics projects, want to master the tools and concepts behind what is implemented there. Oncase offers the monitoring your team needs to master the entire production chain of your analytics projects. From data integration to Data Mining and Optimization.",
 
-		"SUPPORT_ENDTXT1" : 'We offer the <em>SLA</ em> that lets you peaceful. All our management and support of communication take place through the platform <strong> Zendesk </ strong> at the address <a target="_blank" href="http://oncase.zendesk.com">oncase.zendesk.com</a>.',
+		"SUPPORT_ENDTXT1" : 'We offer the SLA that lets you stay at peace. All our management and support of communication takes place through the platform <strong>Zendesk</strong> at the address <a target="_blank" href="http://oncase.zendesk.com">oncase.zendesk.com</a>.',
 		"SUPPORT_ENDTXT2" : "Contact us and hire right now the support that fits your pocket and the needs of your team.",
 		"SUPPORT_CONTACTUS" : "Contact us",
 
 		"INNOVATION" : "Innovations",
 
 		"INNOVATION_APPS" : "Support Apps",
-		"INNOVATION_APPS_TXT" : "It is common in Analytics projects, the need to develop support applications, either to supplement entries, targets or inform decisions follow a standardized way on mobile devices. We have a professional core able to deliver the necessary application for your project to turn the 100% capacity.",
+		"INNOVATION_APPS_TXT" : "It is common, in Analytics projects, to have need to develop a support application, either to supplement entries, inform goals or support decision making in a standardized way on mobile devices. We have professionals capable of delivering the necessary apps to help your project run at 100%.",
 
 		"INNOVATION_PLUGINS" : "Plugins",
-		"INNOVATION_PLUGINS_TXT" : "As Pentaho certified architects, we know how to extract the maximum of the platform, extending all possible features, from BA-Server, or Pentaho Data Integration. We develop Sparkl plugins or <em>low-level</ em>, and <em>steps</ em> and <em>job-entries</ em> for your Kettle. ",
+		"INNOVATION_PLUGINS_TXT" : "As Pentaho certified architects, we know how to extract the maximum of the platform, extending all possible features, from BA-Server, or Pentaho Data Integration. We develop Sparkl plugins or low-level, in addition to steps and job-entries for your Kettle. ",
 
 		"INNOVATION_ANALYTICAL" : "Analytical Products",
-		"INNOVATION_ANALYTICAL_TXT" : "We rode within the Oncase an innovation cell. That's it. We have an entire core with professional researchers who experience the day-to-day analytical initiatives and are ready to launch any minute your next analytical product. This constant search aimed at preparing to offer the market agility in new technologies that are constantly emerging.",
+		"INNOVATION_ANALYTICAL_TXT" : "We built, within Oncase, an innovation cell. That's right. We have an entire division made of researchers who are experimenting daily with analytics initiatives and are ready to launch their next product at any minute. This constant pursuit aims to prepare ourselves to rapidly offer new technologies to the market.",
 
-		"INNOVATION_ENDTXT1" : "Meet the LabTrans, or Public Transparency Laboratory, supported by Oncase and coordinated by our team members.",
-		"INNOVATION_ENDTXT2" : "The Public Transparency Laboratory (LabTrans) is an initiative of Project Studies and Research in Finance from the Centre for Applied Social Sciences, of the Federal University of Paraíba. The focus of LABTRANSP is to promote the culture of open data, public character of governmental entities with full powers, thus strengthening the interaction between society and public administration.",
+		"INNOVATION_ENDTXT1" : "Meet the LabTransp, or Public Transparency Laboratory, supported by Oncase and coordinated by members of our team.",
+		"INNOVATION_ENDTXT2" : "The Public Transparency Laboratory (LabTransp) is an initiative of the Finance Research and Studies Division from the Centre for Applied Social Sciences, of the Federal University of Paraíba. The goal of LABTRANSP is to promote the culture of open data inside governmental entities, thus strengthening the interaction between society and public administration.",
 		"INNOVATION_ENDBUTTON" : '<a target="_blank" href="http://transparencia.pub">Public Transparency Laboratory</a>',
 
 	},
@@ -227,11 +227,11 @@ msgs["en"] = {
 	products : {
 		"WEOFFER_SOLUTIONSTXT1" : "We Offer",
 		"WEOFFER_SOLUTIONSTXT2" : "Solutions",
-		"PRODUCTS_INTROTXT" : "Along several projects that participated from the beginning of our activities in 2007, we devote ourselves to the creation of some products that we believe meet specific market needs. We list it in addition to these market solutions, platforms and manufacturers with whom we work and we are partners.",
+		"PRODUCTS_INTROTXT" : "Throughout the several projects that we participated since the beginning of our activities in 2007, we have devoted ourselves to the creation of products that, we believe, meet specific market needs. We list here, in addition to these market solutions, platforms and manufacturers with whom we worked and are partners.",
 
 		"BI_CONTROLTXT1" : "BI for",
 		"BI_CONTROLTXT2" : "Controllership",
-		"BI_CONTROL_INTROTEXT" : "We've done several projects for the controllership around the market. This gave us the knowledge for to structure a product that the market needs, covering, among others: structuring DREs with support app, viewing results in OLAP tool - and you can drill down to the lowest levels of the information chain - preview management information in custom panels and sending alerts for monitoring of partial and consolidated indicators.",
+		"BI_CONTROL_INTROTEXT" : "We've done several controllership projects throughout the market. This gave us the knowledge to structure a product that the market needs, covering, among others: structuring DREs with support app, viewing results in a OLAP tool - allowing you to drill down to the lowest levels of the information chain -, viewing management information in custom panels and sending alerts for monitoring of partial and consolidated indicators.",
 
 
 		"SUPPLYCHAINTXT1" : "Product for",
@@ -241,25 +241,25 @@ msgs["en"] = {
 								'		We have the solution you need to integrate all the information of your distribution chain.  '+
 								'	</p>'+
 								'	<p class="oncase-promo-text text-left ">'+
-								'		Our product is capable of supplying a parametric way for the integration of data from different sources, and provides modules and KPIs ready for:'+
+								'		Our product is capable of supplying a parametric way for the integration of data from different sources, and it also provides modules and KPIs for:'+
 								'	</p>'+
 								'	<ul class="oncase-promo-text">'+
 								'		<li>Quality of integrated information</li>'+
 								'		<li>Rupture index</li>'+
 								'		<li>Inventory planning</li>'+
 								'		<li>Sellin x Sellout x Planning</li>'+
-								'		<li>Shopping research with mobile support app</li>'+
+								'		<li>Shop research with the mobile support app</li>'+
 								'	</ul>',
 
 		"SCHEDULE_PRESENTATION" : "Ask for a presentation",
 
 
 		"TECH" : "Technology",
-		"TEXH_TEXT" : "In addition to our own solutions, we offer consulting and support for product suppliers with whom we partner.",
+		"TEXH_TEXT" : "In addition to our own solutions, we offer consulting and support for product from suppliers with whom we are partners.",
 
 
-		"PENTAHO_TEXT" : "Our flagship. Tool we use in all our projects, as well as a complete Business Analytics platform is the key tool in the developer's toolbox of Big Data, Business Analytics and Data Mining.",
-		"MONGODB_TEXT" : "We are proud partners of MongoDB, a provider of a very powerful system for BigData persistence with amazing features for scalability and high availability. ",
+		"PENTAHO_TEXT" : "Our flagship. The tool we use in all our projects. Besides being a complete Business Analytics platform it is the key tool in the developer's toolbox of Big Data, Business Analytics and Data Mining.",
+		"MONGODB_TEXT" : "We are proud partners of MongoDB, a provider of a very powerful system for BigData persistence with amazing features for scalability and high availability.",
 		"VERTICA_TEXT" : "Today we no longer think in making Business Intelligence and Analytics for the end user without thinking of a specialized database. The HP Vertica offers an affordable solution to all businesses with unmatched quality and speed.",
 	},
 
@@ -269,7 +269,7 @@ msgs["en"] = {
 
 		"TRANSPARENCY"  :  "Transparency",
 		"TRANSPARENCY_P1"  :  "The success of our customers is our success. The honesty with which we try to cope in our relationship with customers and partners, gives us the tranquility we can seek continuous improvement in our processes and in the provision of our services. ",
-		"TRANSPARENCY_P2"  :  "We are very proud of the services we provide to each of our clients. Many companies have come and where we walk we try to leave the door open for future opportunities.", 
+		"TRANSPARENCY_P2"  :  "We are very proud of the services we provide to each of our clients. Many companies have come and wherever we walk we try to leave the door open for future opportunities.", 
 
 		"SOMEOFCLIENTS_L1"  :  "Some of our",
 		"SOMEOFCLIENTS_L2"  :  "Customers",
@@ -278,7 +278,7 @@ msgs["en"] = {
 		"PRECIOUS_PARTNERS_L2"  :  "Partners",
 		"PRECIOUS_PARTNERS_TEXT"  :  "We are proud partners and maintain relationships essential for the efficient execution of our services.",
 
-		"PARTNER_PENTAHO"  :  "Our flagship. Tool we use in all our projects, as well as a complete Business Analytics platform is the key instrument in the Big developer's toolbox Data, Business Analytics and Data Miner.",
+		"PARTNER_PENTAHO"  :  "Our flagship. The tool we use in all our projects. Besides being a complete Business Analytics platform it is the key tool in the developer's toolbox of Big Data, Business Analytics and Data Miner.",
 		"PARTNER_MONGODB"  :  "We are proud partners of MongoDB, a provider of a very powerful system for BigData persistence with amazing features for scalability and high availability. ",
 		"PARTNER_DELPHOS"  :  "We have a healthy partnership with Delphos. Together, we exchange knowledge and experience to execute our projects in the area of expertise of Delphos.",
 
@@ -482,7 +482,7 @@ msgs["en"] = {
 		"SP" : "São Paulo" ,
 		"SP_TXT" : "Phone: +55-11-4063-6247" ,
 		"WORK_WITH_US" : "Work with us" ,
-		"WORK_WITH_US_TXT" : 'While we don\'t finnish our carreers website, send us your your cv to <span class="md-code">contato@oncase.com.br</span> with the subject <i>"Pentaho Position"</i>'  ,
+		"WORK_WITH_US_TXT" : 'While we don\'t finish our carreer\'s website, send us your your cv to <span class="md-code">contato@oncase.com.br</span> with the subject <i>"Pentaho Position"</i>'  ,
 		"MAP_HQ_INFOBOX" : "Headquarters - Recife-PE" ,
 
 	} 
