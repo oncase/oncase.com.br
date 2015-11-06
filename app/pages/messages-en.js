@@ -35,8 +35,8 @@ msgs["en"] = {
 
 		
 		tv : {
-			"OUR_VIDEO_CHANNEL" : "Our youtube channel",
-			"DESCRIPTION" : "Every tuesday there's new content about Pentaho, Business Analytics e tudo mais de tecnologia que estiver envolvido. Nosso objetivo é tentar passar tanto conteúdo interessante que você virará audiência cativa.",
+			"OUR_VIDEO_CHANNEL" : "Our Youtube channel",
+			"DESCRIPTION" : "Every tuesday there's new content about Pentaho, Business Analytics and every other technology we're involved with. Our objective with this is to try to spread as much knowledge as as we can so you're going to be back every week.",
 			"SUBSCRIBE" : "Subscribe",
 			"SUBSCRIBE_TXT" : "Subscribe to our channel to recieve updates everytime there's new content.",
 			"FOLLOW_HERE" : "Follow here",
@@ -60,47 +60,47 @@ msgs["en"] = {
 	awards : {
 		"RECOGNITION_L1" : "A bit of",
 		"RECOGNITION_L2" : "Recognition",
-		"RECOGNITION_TXT1" : "Oncase has in vein, the constant search for delivery quality in their services offered.",
-		"RECOGNITION_TXT2" : "As a direct result, we have accumulated some persecuted recognition, illustrating the seriousness of our work.",
+		"RECOGNITION_TXT1" : "We have in our core, the constant wish to deliver high quality services and products to our customers.",
+		"RECOGNITION_TXT2" : "As a direct consequence of this, we've accumulated some awards and certifications that somehow illustrate how serius we are in our jobs",
 		"PREMIUM_PARTNER" : "Premium Partner",
-		"PREMIUM_PARTNER_TXT1" : "First and only company to recieve the Premium Partner label on Latin America.",
-		"PREMIUM_PARTNER_TXT2" : "A company becomes Premium Partner at the moment that Pentaho regconize its importance and influency in the market.",
-		"PARTNER_YEAR_TXT" : "Anually, in business conventions, Pentaho rewards the most relevant partners and Oncase already took the award for two consecutive years.",
+		"PREMIUM_PARTNER_TXT1" : "We were the first and only LATAM company to be recognized Premium Partner by Pentaho.",
+		"PREMIUM_PARTNER_TXT2" : "A company becomes premium partner when Pentaho recognizes its importance and influence in the market.",
+		"PARTNER_YEAR_TXT" : "Yearly in Pentaho Partners Summits, Pentaho awards its more relevant partners. Oncase won this prize for two consecutive years",
 		"CERTIFICATIONS" : "Certifications",
-		"CERTIFICATIONS_TXT" : "In recent years, seeking to make public the way we work, submit ourselves constantly processes that would give credential to Oncase on the market. The result of this effort is stamped into three certificates obtained and maintained.",
+		"CERTIFICATIONS_TXT" : "In the last few years, seeking for publicly exposing the way we work, we've been submitting our company through evaluation processes that would certificate us to the market. The results of these efforts were materialized in three certifications awarded and kept.",
 		"SEE_MORE" : "See more"
 	},
 
 	about : {
 		"HEADING_MORE" : "More",
 		"HEADING_ABOUT_US" : "About us",
-		"HEADING_RECIPE" : "Recipe to success",
-		"HEADING_RECIPE_UPPERTEXT" : "We sum with your team to divide the problems, subtracting risks and multiplying results!",
-		"HEADING_RECIPE_LOWERTEXT" : "We help you better understand the data of your company, transforming them into useful information for decision making, reducing waste, minimizing costs, increasing revenues and optimizing your most precious good: Your time. That's our business.",
-		"HEADING_TARGET" : "In the target",
-		"HEADING_TARGET_UPPERTEXT" : "This is our ultimate goal, to make our customers to run their businesses with the information at the tip of the pencil, or on their mobile devices, anytime (high availability of information), anywhere (mobility).",
-		"HEADING_TARGET_LOWERTEXT" : "Stop wasting time, contact us and we will revolutionize your information, your business, impress your clients.",
+		"HEADING_RECIPE" : "Recipe for succes",
+		"HEADING_RECIPE_UPPERTEXT" : "We sum up your team to divide problems, lower risks and multiply results!",
+		"HEADING_RECIPE_LOWERTEXT" : "We help you to better understand tha data your company need by turning it into useful information that will support decision taking, reducing costs, increrasing income and optimizing the most precious asset: your time. This is our business.",
+		"HEADING_TARGET" : "On the target",
+		"HEADING_TARGET_UPPERTEXT" : "This is our biggest objective, to make possible that our customers can manage their businesses with the best information on the tip of their fingers, always available on their mobile devices at anytime (information high availability) anywhere (mobility)",
+		"HEADING_TARGET_LOWERTEXT" : "Don't waste time. Contact us and we're going to revolutionize your information, your business and we're going to impress your customers.",
 		"HEADING_CONTACT_BUTTON" : "Contact us",
-		"WHAT_WE_DO_HEADING" : "What do we do?",
-		"WHAT_WE_DO_FIRST_PG" : "We are a consulting company specialized in Business Analytics solutions, Business Intelligence and Big Data, with emphasis on the issues of Community and Enterprise <strong> Pentaho Platform </strong>.",
-		"WHAT_WE_DO_SECOND_PG" : "We attend all the information cycle, from the extraction, transformation and load structured and unstructured data, integrating with leading databases of the market, proportionate a more detailed analysis of information, in order to create reports with consistent information and publication and distribution inside the corporation in multiple panels, the dashboard format, using agile development methodologies and technology.",
+		"WHAT_WE_DO_HEADING" : "What we do?",
+		"WHAT_WE_DO_FIRST_PG" : "We're specialized in Business Analytics, Business Intelligence and Big Data, with big emphasis on Pentaho's Community and Enterprise editions.",
+		"WHAT_WE_DO_SECOND_PG" : "We can support you on each part of the information cycle, from extractions, transformation of structured and unstructured data, processing, mining and enriching each bit, integating with the newest techologies in data storage, till providing detailed and fast analysis using reports, alerts, dashboards.",
 		
-		"WHAT_WE_DO_THIRD_PG" : "Our customers are able to have an exceptional <em> time to market </ em>, causing the top management of our customers can measure the result of the investment in a short time. ",
+		"WHAT_WE_DO_THIRD_PG" : "Our customers are able to experience an exceptional <em>time to market</em>. This allows them to measure their investiment in a short time frame.",
 		"MISSION" : "Mission",
-		"MISSION_TXT" : "Support our customers in finding essential information for your business, improving its management and improving their results.",
+		"MISSION_TXT" : "To support our clients on information discovery that is essential to their businesses, improving their level of management and results.",
 		"VISION" : "Vision",
-		"VISION_TXT" : "Be a consulting excellence, reference in the global market with innovative, manufacturing and quality solutions.",
+		"VISION_TXT" : "To be a consultancy company with excelence, reference in the global market with innovative and quality solutions.", 
 		"BUSINESS" : "Business",
-		"BUSINESS_TXT" : "Share knowledge through provision of service specialized in Business Intelligence, Business Analytics, Spacial Analytics, Big Data and Data Integration.",
+		"BUSINESS_TXT" : "Compartilhar conhecimento através de prestação de serviço especializado em Business Intelligence, Business Analytics, Spacial Analytics , Big Data e Data Integration.",
 		"VALUES" : "Values",
-		"VALUES_TXT" : "		Inovation"+
+		"VALUES_TXT" : "		Innovation"+
 						"<br />	Quality"+
 						"<br />	Efficiency"+
 						"<br />	Challenge"+
-						"<br />	Focus in result"+
+						"<br />	Focus on results"+
 						"<br />	Research"+
 						"<br />	Knowledge"+
-						"<br />	Life quality on workspace",
+						"<br />	Life quality on work environment",
 
 		"PICTURE_SUBTITLE" : "Bom Jesus St, Recife",
 		"SHORT_HISTORY_1ST" : "A",
