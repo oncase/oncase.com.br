@@ -268,8 +268,8 @@ msgs["en"] = {
 		"GOOD_RELATION_ESSENTIAL_TXT2"  :  "Fundamental",
 
 		"TRANSPARENCY"  :  "Transparency",
-		"TRANSPARENCY_P1"  :  "The success of our customers is our success. The honesty with which we try to cope in our relationship with customers and partners, gives us the tranquility we can seek continuous improvement in our processes and in the provision of our services. ",
-		"TRANSPARENCY_P2"  :  "We are very proud of the services we provide to each of our clients. Many companies have come and wherever we walk we try to leave the door open for future opportunities.", 
+		"TRANSPARENCY_P1"  :  "The success of our customers is our success. The honesty with which we try to cope in our relationship with customers and partners, gives us the tranquility we need to seek continuous improvement in our processes and in the provision of our services.",
+		"TRANSPARENCY_P2"  :  "We are very proud of the services we provide to each of our clients. Many companies have come and gone, but wherever we go, we try to leave the door open for future opportunities.", 
 
 		"SOMEOFCLIENTS_L1"  :  "Some of our",
 		"SOMEOFCLIENTS_L2"  :  "Customers",
