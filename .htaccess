@@ -1,48 +1,58 @@
    RewriteEngine On
 
-    # 301 --- http://oncase.com.br/?_escaped_fragment_ => http://oncase.com.br/prerender/index.html
-    RewriteCond %{QUERY_STRING} _escaped_fragment_
-    RewriteRule ^$ /prerender/index.html? [L,R=301]
 
-    # 301 --- http://oncase.com.br/about/?_escaped_fragment_ => http://oncase.com.br/prerender/about/index.html
-    RewriteCond %{QUERY_STRING} _escaped_fragment_
-    RewriteRule ^about/?$ /prerender/about/index.html? [L,R=301]
-
-    # 301 --- http://oncase.com.br/services/?_escaped_fragment_ => http://oncase.com.br/prerender/services/index.html
-    RewriteCond %{QUERY_STRING} _escaped_fragment_
-    RewriteRule ^services/?$ /prerender/services/index.html? [L,R=301]
-
-    # 301 --- http://oncase.com.br/products/?_escaped_fragment_ => http://oncase.com.br/prerender/products/index.html
-    RewriteCond %{QUERY_STRING} _escaped_fragment_
-    RewriteRule ^products/?$ /prerender/products/index.html? [L,R=301]
-
-    # 301 --- http://oncase.com.br/clients-and-partners/?_escaped_fragment_ => http://oncase.com.br/prerender/clients-and-partners/index.html
-    RewriteCond %{QUERY_STRING} _escaped_fragment_
-    RewriteRule ^clients-and-partners/?$ /prerender/clients-and-partners/index.html? [L,R=301]
-
-    # 301 --- http://oncase.com.br/contact/?_escaped_fragment_ => http://oncase.com.br/prerender/contact/index.html
-    RewriteCond %{QUERY_STRING} _escaped_fragment_
-    RewriteRule ^contact/?$ /prerender/contact/index.html? [L,R=301]
+    ## Legacy links
+    RewriteCond %{HTTP_USER_AGENT} Googlebot|googlebot|baiduspider|facebookexternalhit|twitterbot|rogerbot|linkedinbot|embedly|quora\ link\ preview|showyoubot|outbrain|pinterest|slackbot|vkShare|W3C_Validator
+    RewriteRule ^$ /prerender/pt/index.html? [L,R=301]
 
     RewriteCond %{HTTP_USER_AGENT} Googlebot|googlebot|baiduspider|facebookexternalhit|twitterbot|rogerbot|linkedinbot|embedly|quora\ link\ preview|showyoubot|outbrain|pinterest|slackbot|vkShare|W3C_Validator
-    RewriteRule ^$ /prerender/index.html? [L,R=301]
+    RewriteRule ^about/?$ /prerender/pt/about/index.html? [L,R=301]
 
     RewriteCond %{HTTP_USER_AGENT} Googlebot|googlebot|baiduspider|facebookexternalhit|twitterbot|rogerbot|linkedinbot|embedly|quora\ link\ preview|showyoubot|outbrain|pinterest|slackbot|vkShare|W3C_Validator
-    RewriteRule ^about/?$ /prerender/about/index.html? [L,R=301]
+    RewriteRule ^services/?$ /prerender/pt/services/index.html? [L,R=301]
 
     RewriteCond %{HTTP_USER_AGENT} Googlebot|googlebot|baiduspider|facebookexternalhit|twitterbot|rogerbot|linkedinbot|embedly|quora\ link\ preview|showyoubot|outbrain|pinterest|slackbot|vkShare|W3C_Validator
-    RewriteRule ^services/?$ /prerender/services/index.html? [L,R=301]
+    RewriteRule ^clients-and-partners/?$ /prerender/pt/clients-and-partners/index.html? [L,R=301]
 
     RewriteCond %{HTTP_USER_AGENT} Googlebot|googlebot|baiduspider|facebookexternalhit|twitterbot|rogerbot|linkedinbot|embedly|quora\ link\ preview|showyoubot|outbrain|pinterest|slackbot|vkShare|W3C_Validator
-    RewriteRule ^$ /prerender/index.html? [L,R=301]
+    RewriteRule ^products/?$ /prerender/pt/products/index.html? [L,R=301]
 
     RewriteCond %{HTTP_USER_AGENT} Googlebot|googlebot|baiduspider|facebookexternalhit|twitterbot|rogerbot|linkedinbot|embedly|quora\ link\ preview|showyoubot|outbrain|pinterest|slackbot|vkShare|W3C_Validator
-    RewriteRule ^products/?$ /prerender/products/index.html? [L,R=301]
+    RewriteRule ^contact/?$ /prerender/pt/contact/index.html? [L,R=301]
+
+
+    ## Portuguese 
+    RewriteCond %{HTTP_USER_AGENT} Googlebot|googlebot|baiduspider|facebookexternalhit|twitterbot|rogerbot|linkedinbot|embedly|quora\ link\ preview|showyoubot|outbrain|pinterest|slackbot|vkShare|W3C_Validator
+    RewriteRule ^pt/about/?$                /prerender/pt/about/index.html? [L,R=301]
 
     RewriteCond %{HTTP_USER_AGENT} Googlebot|googlebot|baiduspider|facebookexternalhit|twitterbot|rogerbot|linkedinbot|embedly|quora\ link\ preview|showyoubot|outbrain|pinterest|slackbot|vkShare|W3C_Validator
-    RewriteRule ^contact/?$ /prerender/contact/index.html? [L,R=301]
+    RewriteRule ^pt/services/?$             /prerender/pt/services/index.html? [L,R=301]
+
+    RewriteCond %{HTTP_USER_AGENT} Googlebot|googlebot|baiduspider|facebookexternalhit|twitterbot|rogerbot|linkedinbot|embedly|quora\ link\ preview|showyoubot|outbrain|pinterest|slackbot|vkShare|W3C_Validator
+    RewriteRule ^pt/clients-and-partners/?$ /prerender/pt/clients-and-partners/index.html? [L,R=301]
+
+    RewriteCond %{HTTP_USER_AGENT} Googlebot|googlebot|baiduspider|facebookexternalhit|twitterbot|rogerbot|linkedinbot|embedly|quora\ link\ preview|showyoubot|outbrain|pinterest|slackbot|vkShare|W3C_Validator
+    RewriteRule ^pt/products/?$             /prerender/pt/products/index.html? [L,R=301]
+
+    RewriteCond %{HTTP_USER_AGENT} Googlebot|googlebot|baiduspider|facebookexternalhit|twitterbot|rogerbot|linkedinbot|embedly|quora\ link\ preview|showyoubot|outbrain|pinterest|slackbot|vkShare|W3C_Validator
+    RewriteRule ^pt/contact/?$              /prerender/pt/contact/index.html? [L,R=301]
 
 
+    ## English 
+    RewriteCond %{HTTP_USER_AGENT} Googlebot|googlebot|baiduspider|facebookexternalhit|twitterbot|rogerbot|linkedinbot|embedly|quora\ link\ preview|showyoubot|outbrain|pinterest|slackbot|vkShare|W3C_Validator
+    RewriteRule ^en/about/?$                /prerender/en/about/index.html? [L,R=301]
+
+    RewriteCond %{HTTP_USER_AGENT} Googlebot|googlebot|baiduspider|facebookexternalhit|twitterbot|rogerbot|linkedinbot|embedly|quora\ link\ preview|showyoubot|outbrain|pinterest|slackbot|vkShare|W3C_Validator
+    RewriteRule ^en/services/?$             /prerender/en/services/index.html? [L,R=301]
+
+    RewriteCond %{HTTP_USER_AGENT} Googlebot|googlebot|baiduspider|facebookexternalhit|twitterbot|rogerbot|linkedinbot|embedly|quora\ link\ preview|showyoubot|outbrain|pinterest|slackbot|vkShare|W3C_Validator
+    RewriteRule ^en/clients-and-partners/?$ /prerender/en/clients-and-partners/index.html? [L,R=301]
+
+    RewriteCond %{HTTP_USER_AGENT} Googlebot|googlebot|baiduspider|facebookexternalhit|twitterbot|rogerbot|linkedinbot|embedly|quora\ link\ preview|showyoubot|outbrain|pinterest|slackbot|vkShare|W3C_Validator
+    RewriteRule ^en/products/?$             /prerender/en/products/index.html? [L,R=301]
+
+    RewriteCond %{HTTP_USER_AGENT} Googlebot|googlebot|baiduspider|facebookexternalhit|twitterbot|rogerbot|linkedinbot|embedly|quora\ link\ preview|showyoubot|outbrain|pinterest|slackbot|vkShare|W3C_Validator
+    RewriteRule ^en/contact/?$              /prerender/en/contact/index.html? [L,R=301]
 
 
     RewriteCond %{REQUEST_FILENAME} !-f
