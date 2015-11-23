@@ -141,6 +141,8 @@ msgs["pt"] = {
 		"OTHER_SANDBOX" : "Oncase Sandbox",
 		"OTHER_LABTRANSP" : "Labtransp",
 		"OTHER_PENTAHO_BRASIL" : "Pentaho Brasil",
+		"OTHER_ONCASE_BLOG" : "Blog",
+		"OTHER_ONCASE_TV" : "OncaseTV",
 		"CONTACT_US" : "Fale conosco",
 		"RECIFE_PHONE" : "Recife, PE - +55-81-3077-8558",
 		"RIO_PHONE" : "Rio de Janeiro, RJ - +55-21-4063-7785",
