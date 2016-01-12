@@ -1,8 +1,12 @@
 <?php
 
-
 error_reporting(E_ALL ^ E_NOTICE ^ E_DEPRECATED ^ E_STRICT);
+header('Access-Control-Allow-Origin: '.$_SERVER['HTTP_ORIGIN']);
 
+if( $_SERVER['HTTP_ORIGIN'] != "http://campus.oncase.com.br" &&
+  $_SERVER['HTTP_ORIGIN'] != "http://campus.onca.se"
+      )
+      exit("0");
 
 set_include_path("." . PATH_SEPARATOR . ($UserDir = dirname($_SERVER['DOCUMENT_ROOT'])) . "/pear/php" . PATH_SEPARATOR . get_include_path());
 
