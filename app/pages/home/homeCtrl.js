@@ -27,20 +27,28 @@
 
   	$scope.slides = [
       {
-        smallText : getMsgs().home.CAROUSEL_WEARE_PROUD, 
+        smallText : getMsgs().campus.CAROUSEL_L1,
+        bigText : getMsgs().campus.CAROUSEL_L2,
+        icon : "school",
+        isIcon : true,
+        iconColor : "orange",
+        link:"http://campus.onca.se"
+      },
+      {
+        smallText : getMsgs().home.CAROUSEL_WEARE_PROUD,
         bigText : getMsgs().home.CAROUSEL_PREMIUM_PARTNERS,
         imgPath:'assets/img/pentaho-premium-partner.svg',
         isSvg : true
       },
       {
-        smallText : getMsgs().home.CAROUSEL_OUR_BUSINESS_IS, 
+        smallText : getMsgs().home.CAROUSEL_OUR_BUSINESS_IS,
         bigText : getMsgs().home.CAROUSEL_INTELLIGENCE,
         icon : "equalizer",
         isIcon : true,
         iconColor : "orange"
       },
       {
-        smallText : getMsgs().home.CAROUSEL_WEARE, 
+        smallText : getMsgs().home.CAROUSEL_WEARE,
         bigText : getMsgs().home.CAROUSEL_CLOUD_SPECIALISTS,
         icon : "cloud",
         isIcon : true,
@@ -70,9 +78,16 @@
         videosPaneExpanded = !videosPaneExpanded;
       };
 
+      this.clickSlide = function(sl){
+        if(typeof sl["link"] === "undefined")
+          return;
+
+        $window.open(sl["link"]);
+      }
+
       $window.prerenderReady = true;
 
-    
+
   }]);
 
 })();

@@ -139,41 +139,41 @@ a.left.carousel-control {
 
 .carousel-inner div.item.active.active-remove div.oncase-jumbo-1st
  {
-	animation: page-out 0.3s both ease-out 200ms; 
-	-webkit-animation: page-out 0.3s both ease-out 200ms; 
-	-ms-animation: page-out 0.3s both ease-out 200ms; 
+	animation: page-out 0.3s both ease-out 200ms;
+	-webkit-animation: page-out 0.3s both ease-out 200ms;
+	-ms-animation: page-out 0.3s both ease-out 200ms;
 
 }.carousel-inner div.item.active.active-remove div.oncase-jumbo-2nd
  {
-	animation: page-out 0.3s both ease-out 100ms; 
-	-webkit-animation: page-out 0.3s both ease-out 100ms; 
-	-ms-animation: page-out 0.3s both ease-out 100ms; 
+	animation: page-out 0.3s both ease-out 100ms;
+	-webkit-animation: page-out 0.3s both ease-out 100ms;
+	-ms-animation: page-out 0.3s both ease-out 100ms;
 
 }.carousel-inner div.item.active.active-remove div.oncase-jumbo-3rd
  {
-	animation: page-out 0.3s both ease-out ; 
-	-webkit-animation: page-out 0.3s both ease-out ; 
-	-ms-animation: page-out 0.3s both ease-out ; 
+	animation: page-out 0.3s both ease-out ;
+	-webkit-animation: page-out 0.3s both ease-out ;
+	-ms-animation: page-out 0.3s both ease-out ;
 
 }
 
 .carousel-inner div.item.active div.oncase-jumbo-1st {
-	animation: page-in 0.5s both ease-out 0.2s; 
-	-webkit-animation: page-in 0.5s both ease-out 0.2s; 
-	-ms-animation: page-in 0.5s both ease-out 0.2s; 
+	animation: page-in 0.5s both ease-out 0.2s;
+	-webkit-animation: page-in 0.5s both ease-out 0.2s;
+	-ms-animation: page-in 0.5s both ease-out 0.2s;
 }
 
 
 .carousel-inner div.item.active div.oncase-jumbo-2nd {
-	animation: page-in 0.5s both ease-out 0.4s; 
-	-webkit-animation: page-in 0.5s both ease-out 0.4s; 
-	-ms-animation: page-in 0.5s both ease-out 0.4s; 
+	animation: page-in 0.5s both ease-out 0.4s;
+	-webkit-animation: page-in 0.5s both ease-out 0.4s;
+	-ms-animation: page-in 0.5s both ease-out 0.4s;
 }
 
 .carousel-inner div.item.active div.oncase-jumbo-3rd {
-	animation: page-in 0.5s both ease-out 0.6s; 
-	-webkit-animation: page-in 0.5s both ease-out 0.6s; 
-	-ms-animation: page-in 0.5s both ease-out 0.6s; 
+	animation: page-in 0.5s both ease-out 0.6s;
+	-webkit-animation: page-in 0.5s both ease-out 0.6s;
+	-ms-animation: page-in 0.5s both ease-out 0.6s;
 }
 
 .carousel-indicators{
@@ -422,11 +422,11 @@ md-list.oncase-anouncement md-list-item i{
 
 </style>
 
-<section class="oncase-home-jumbotron " >  
- 
+<section class="oncase-home-jumbotron " >
+
 	<carousel interval="5000">
-		<slide ng-repeat="slide in slides" active="slide.active">
-			
+		<slide ng-repeat="slide in slides" active="slide.active" ng-click="homeCtrl.clickSlide(slide)">
+
 			<div class="jumbo-image jumbo-absolute-center oncase-jumbo-1st">
 				<div ng-if="slide.isSvg" ng-include="slide.imgPath" class="jumbo-absolute-center"></div>
 				<i ng-if="slide.isIcon" class="material-icons blue-shaddow">{{ slide.icon }}</i>
@@ -474,7 +474,9 @@ md-list.oncase-anouncement md-list-item i{
 
 <div ng-include="'app/shared/partials/services-flow.html'"></div>
 
-<div class="oncase-separator "></div>	
+<div class="oncase-separator "></div>
+
+<div ng-include="'app/shared/partials/oncase-campus.html'"></div>
 
 <div id="oncase-tv" class="oncase-white-section-fonts  oncase-tv-logo oncase-large-heading">
 
@@ -508,7 +510,7 @@ md-list.oncase-anouncement md-list-item i{
 						</div>
 						<h2 class="oncase-section-heading oncase-gray text-center" >{{ 'home.tv.FOLLOW_HERE' | translate }}</h2>
 						<p class=" oncase-promo-text text-center">
-							{{ 'home.tv.FOLLOW_HERE_TXT' | translate }}  
+							{{ 'home.tv.FOLLOW_HERE_TXT' | translate }}
 						</p>
 				</div>
 
@@ -518,7 +520,7 @@ md-list.oncase-anouncement md-list-item i{
       	</div>
 		<div class=" oncase-heading-logo bg-oncase-very-light-gray md-whiteframe-z1 text-center">
 			<div class="oncase-content-margin">
-			 
+
 
 			          <md-button ng-click="homeCtrl.showVideosPane()">
 			          	<div layout="row">
@@ -527,10 +529,10 @@ md-list.oncase-anouncement md-list-item i{
 				    	</div>
 			          </md-button>
 			</div>
-		</div>  
+		</div>
 		<div ng-show="homeCtrl.isVideosPaneExpanded()" class="oncase-videos-pane bg-oncase-gray md-whiteframe-z1 text-center">
 
-			 
+
 
 
 
@@ -561,10 +563,10 @@ md-list.oncase-anouncement md-list-item i{
 
 
 
-		</div>      	
+		</div>
 	  </div>
 
-	<div class="oncase-separator "></div>	
+	<div class="oncase-separator "></div>
 
 
 </div>

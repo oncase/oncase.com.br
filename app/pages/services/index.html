@@ -1,4 +1,4 @@
-<section class="oncase-section-jumbotron oncase-content-margin oncase-section-jumbotron-internals">   
+<section class="oncase-section-jumbotron oncase-content-margin oncase-section-jumbotron-internals">
 	<div class="oncase-breadcrumbs oncase-white">{{ 'header.MENU_SERVICES' | translate }}</div>
 </section>
 
@@ -133,26 +133,12 @@
 
 	<div class="oncase-separator"></div>
 	<div class="oncase-section-heading-underscore bg-oncase-orange"></div>
-	<div class="oncase-separator"></div>
-	<div class="row">
-		<div class="col-xs-10 col-xs-offset-1 col-sm-8 col-sm-offset-2">
-			<p class=" oncase-promo-text text-center" translate>
-				{{'services.TRAINING_ENDTXT1' }}
-			</p>
-			<p class=" oncase-promo-text text-center" translate>
-				{{'services.TRAINING_ENDTXT2' }}
-			</p>
 
-		</div>
-	</div>
+	<div class="oncase-separator "></div>
+
+	<div ng-include="'app/shared/partials/oncase-campus.html'"></div>
 
 
-	<div class="oncase-separator"></div>
-	<div class="text-center ">
-        <md-button class="md-raised md-warn oncase-button no-margin" ng-click="HeaderCtrl.tabClicked(servicesCtrl.goTo(5))">{{'services.TRAINING_CONTACTUS' | translate}}</md-button>
-    </div>
-
-	<div class="oncase-separator"></div>
 </section>
 
 <div class="oncase-fixed-background oncase-fixed-session oncase-material-analytics-bg"></div>

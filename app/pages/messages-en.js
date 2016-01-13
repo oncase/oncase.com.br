@@ -12,7 +12,7 @@ msgs["en"] = {
 
 		"META_HOME" : "We are experts in Business Analytics, BigData and Data Visualization and proud Pentaho Premium Partners." ,
 		"META_ABOUT" : "Know a bit more about us. We are experts in Business Analytics, BigData and Data Visualization and proud Pentaho Premium Partners.",
-		"META_SERVICES" : "Know all our services. We are experts in Business Analytics, BigData and Data Visualization and proud Pentaho Premium Partners.", 
+		"META_SERVICES" : "Know all our services. We are experts in Business Analytics, BigData and Data Visualization and proud Pentaho Premium Partners.",
 		"META_PRODUCTS" : "See the products we offer.  We are experts in Business Analytics, BigData and Data Visualization and proud Pentaho Premium Partners.",
 		"META_CLIPAR" : "Who are our customers.  We are experts in Business Analytics, BigData and Data Visualization and proud Pentaho Premium Partners.",
 		"META_CONTACT" : "Contact us.  We are experts in Business Analytics, BigData and Data Visualization and proud Pentaho Premium Partners."
@@ -33,7 +33,7 @@ msgs["en"] = {
 		"CAROUSEL_WEARE" : "We're cloud",
 		"CAROUSEL_CLOUD_SPECIALISTS" : "Specialists",
 
-		
+
 		tv : {
 			"OUR_VIDEO_CHANNEL" : "Our Youtube channel",
 			"DESCRIPTION" : "Every tuesday there's new content about Pentaho, Business Analytics and every other technology we're involved with. Our objective is to try to spread as much knowledge as we can to make sure you come back every week.",
@@ -84,12 +84,12 @@ msgs["en"] = {
 		"WHAT_WE_DO_HEADING" : "What we do?",
 		"WHAT_WE_DO_FIRST_PG" : "We're specialized in Business Analytics, Business Intelligence and Big Data, with emphasis on Pentaho's Community and Enterprise editions.",
 		"WHAT_WE_DO_SECOND_PG" : "We can support you on each part of the information cycle, from extractions, transformation of structured and unstructured data, processing, mining and enriching each bit, integating with the newest techologies in data storage, to providing detailed and fast analysis using reports, alerts, dashboards.",
-		
+
 		"WHAT_WE_DO_THIRD_PG" : "Our customers are able to experience an exceptional time to market. This allows them to measure their investiment in a short time frame.",
 		"MISSION" : "Mission",
 		"MISSION_TXT" : "To support our clients on information discovery that is essential to their businesses, improving their level of management and results.",
 		"VISION" : "Vision",
-		"VISION_TXT" : "To be a consultancy company with excelence, reference in the global market with innovative and quality solutions.", 
+		"VISION_TXT" : "To be a consultancy company with excelence, reference in the global market with innovative and quality solutions.",
 		"BUSINESS" : "Business",
 		"BUSINESS_TXT" : "Share knowledge through providing business intelligence, business analytics, spatial analytics, Big Data and data integration specialized services.",
 		"VALUES" : "Values",
@@ -105,7 +105,7 @@ msgs["en"] = {
 		"PICTURE_SUBTITLE" : "Bom Jesus St, Recife",
 		"SHORT_HISTORY_1ST" : "A",
 		"SHORT_HISTORY_2ND" : "Brief history",
-		"SHORT_HISTORY_TXT" : 	
+		"SHORT_HISTORY_TXT" :
 						'<p class="oncase-promo-text text-left "> '+
 						'	The Oncase IT Solutions is on the market for over 8 years, positioning itself as a consultancy specialized in business intelligence and business management through the use of market leaders tools. '+
 						'</p> '+
@@ -269,7 +269,7 @@ msgs["en"] = {
 
 		"TRANSPARENCY"  :  "Transparency",
 		"TRANSPARENCY_P1"  :  "The success of our customers is our success. The honesty with which we try to cope in our relationship with customers and partners, gives us the tranquility we need to seek continuous improvement in our processes and in the provision of our services.",
-		"TRANSPARENCY_P2"  :  "We are very proud of the services we provide to each of our clients. Many companies have come and gone, but wherever we go, we try to leave the door open for future opportunities.", 
+		"TRANSPARENCY_P2"  :  "We are very proud of the services we provide to each of our clients. Many companies have come and gone, but wherever we go, we try to leave the door open for future opportunities.",
 
 		"SOMEOFCLIENTS_L1"  :  "Some of our",
 		"SOMEOFCLIENTS_L2"  :  "Customers",
@@ -485,6 +485,16 @@ msgs["en"] = {
 		"WORK_WITH_US_TXT" : 'While we don\'t finish our carreer\'s website, send us your your cv to <span class="md-code">contato@oncase.com.br</span> with the subject <i>"Pentaho Position"</i>'  ,
 		"MAP_HQ_INFOBOX" : "Headquarters - Recife-PE" ,
 
-	} 
+	} ,
+
+	"campus" : {
+		"BUTTON_VISIT" : "Explore our training portal",
+		"HEADDING_L1" : "ONCASE",
+		"HEADDING_L2" : "CAMPUS",
+		"TEXT" : "See all of our available courses, as well as schedules, content, levels and much more in our trainigs portal <a target='_blank' href='http://campus.onca.se/'>campus.onca.se</a>.",
+		"CAROUSEL_L1" : "Visit our",
+		"CAROUSEL_L2" : "Campus website"
+
+	}
 
 };

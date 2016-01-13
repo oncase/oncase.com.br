@@ -84,7 +84,7 @@ msgs["pt"] = {
 		"WHAT_WE_DO_HEADING" : "O que fazemos?",
 		"WHAT_WE_DO_FIRST_PG" : "Somos uma consultoria especializada em soluções de Business Analytics, Business Intelligence e Big Data, com ênfase nas edições Community e Enterprise da <strong>Plataforma Pentaho</strong>.",
 		"WHAT_WE_DO_SECOND_PG" : "Atendemos todo o ciclo da informação, desde a extração, transformação e carga de dados estruturados e não estruturados, integrando com os principais Bando de Dados do mercado, proporcionado uma análise mais detalhada da informação, visando a criação de relatórios com informações consistentes e a publicação e distribuição dentro da corporação em painéis múltiplos, no formato de dashboards, utilizando metologias de desenvolimento ágeis e tecnologia de ponta.",
-		
+
 		"WHAT_WE_DO_THIRD_PG" : "Os nossos clientes conseguem ter um excepcional <em>time to market</em>, fazendo com que a alta gestão de nossos clientes possam medir o resultado do investimento num espaço de tempo curto. ",
 		"MISSION" : "Missão",
 		"MISSION_TXT" : "Apoiar nossos clientes na descoberta de informações essenciais para o seu negócio,  aprimorando sua gestão e melhorando seus resultados.",
@@ -105,7 +105,7 @@ msgs["pt"] = {
 		"PICTURE_SUBTITLE" : "Rua do Bom Jesus - Recife",
 		"SHORT_HISTORY_1ST" : "Um",
 		"SHORT_HISTORY_2ND" : "Breve histórico",
-		"SHORT_HISTORY_TXT" : 	
+		"SHORT_HISTORY_TXT" :
 						'<p class="oncase-promo-text text-left "> '+
 						'	A Oncase Soluções em TI está no mercado há mais de 8 anos, posicionando-se como  uma consultoria especializada em inteligência de negócios (Business Intelligence) e gestão empresarial através do uso de ferramentas líderes de mercado. '+
 						'</p> '+
@@ -269,7 +269,7 @@ msgs["pt"] = {
 
 		"TRANSPARENCY"  :  "Transparência",
 		"TRANSPARENCY_P1"  :  "O Sucesso dos nossos clientes é o nosso sucesso. A Honestidade com que procuramos lidar em nosso relacionamento com Clientes e Parceiros, nos dá a tranquilidade de podermos buscar a melhora contínua em nossos processos e na prestação dos nossos serviços. ",
-		"TRANSPARENCY_P2"  :  "Somos muito orgulhosos pelos serviços que prestamos a cada um dos nossos clientes. Percorremos muitas empresas e por onde andamos procuramos deixar as portas abertas para futuras oportunidades.", 
+		"TRANSPARENCY_P2"  :  "Somos muito orgulhosos pelos serviços que prestamos a cada um dos nossos clientes. Percorremos muitas empresas e por onde andamos procuramos deixar as portas abertas para futuras oportunidades.",
 
 		"SOMEOFCLIENTS_L1"  :  "Alguns dos nossos",
 		"SOMEOFCLIENTS_L2"  :  "Clientes",
@@ -485,6 +485,15 @@ msgs["pt"] = {
 		"WORK_WITH_US_TXT" : 'Enquanto não preparamos nosso hotsite de carreiras, envie seu currículo para <span class="md-code">contato@oncase.com.br</span> com o assunto <i>"Vaga Pentaho"</i>'  ,
 		"MAP_HQ_INFOBOX" : "Matriz - Recife-PE" ,
 
-	} 
+	}  ,
+
+	"campus" : {
+		"BUTTON_VISIT" : "Explore nosso portal de treinamentos",
+		"HEADDING_L1" : "ONCASE",
+		"HEADDING_L2" : "CAMPUS",
+		"TEXT" : "Veja todos os treinamentos disponíveis, bem como agendas, conteúdo, objetivos e muito mais. Tudo disponível no nosso portal <a target='_blank' href='http://campus.onca.se/'>campus.onca.se</a>." ,
+		"CAROUSEL_L1" : "Visite nosso",
+		"CAROUSEL_L2" : "Site de cursos"
+	}
 
 };
