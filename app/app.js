@@ -12,10 +12,11 @@
         'ngRoute',
         'ngAnimate',
         'oncasePages',
-        'jumboBackgroundService', 
+        'jumboBackgroundService',
         'mouseOverClass',
         'pageTransitionDirective',
-        'pascalprecht.translate'
+        'pascalprecht.translate',
+        'angulartics', 'angulartics.google.tagmanager'
       ]
     )
     .config(function ($mdThemingProvider, $routeProvider, $locationProvider, $translateProvider) {
