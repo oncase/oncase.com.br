@@ -272,7 +272,7 @@ msgs["en"] = {
 		"TRANSPARENCY_P2"  :  "We are very proud of the services we provide to each of our clients. Many companies have come and gone, but wherever we go, we try to leave the door open for future opportunities.",
 
 		"SOMEOFCLIENTS_L1"  :  "Some of our",
-		"SOMEOFCLIENTS_L2"  :  "Customers",
+		"SOMEOFCLIENTS_L2"  :  "Projects",
 
 		"PRECIOUS_PARTNERS_L1"  :  "Precious",
 		"PRECIOUS_PARTNERS_L2"  :  "Partners",
@@ -280,7 +280,7 @@ msgs["en"] = {
 
 		"PARTNER_PENTAHO"  :  "Our flagship. The tool we use in all our projects. Besides being a complete Business Analytics platform it is the key tool in the developer's toolbox of Big Data, Business Analytics and Data Miner.",
 		"PARTNER_MONGODB"  :  "We are proud partners of MongoDB, a provider of a very powerful system for BigData persistence with amazing features for scalability and high availability. ",
-		"PARTNER_DELPHOS"  :  "We have a healthy partnership with Delphos. Together, we exchange knowledge and experience to execute our projects in the area of expertise of Delphos.",
+		"PARTNER_DELPHOS"  :  "We have a solid partnership with Delphos. Together, we exchange knowledge and experience to execute our projects in the area of insurance.",
 
 	},
 
@@ -288,133 +288,133 @@ msgs["en"] = {
 			{
 				name : "Caixa Econômica Federal",
 				logo : "../../../assets/img/clients/logo-caixa.jpg",
-				areas : "Big Data and Data Mining projects",
+				areas : "Big Data and Data Mining projects with Pentaho",
 				site : "http://caixa.gov.br",
 				priority : 100000
 			},
 			{
 				name : "Nagem",
 				logo : "../../../assets/img/clients/logo-nagem.png",
-				areas : "Billing, Financial Services, Dashboards and process improvement",
+				areas : "Billing, Financial Services, Dashboards and process improvement using Pentaho",
 				site : "http://nagem.com.br",
 				priority : 99000
 			},
 			{
 				name : "Delphos",
 				logo : "../../../assets/img/clients/logo-delphos.png",
-				areas : "Project execution and Data Mining",
+				areas : "Project execution and Data Mining with Pentaho",
 				site : "http://www.delphos.com.br",
 				priority : 98000
 			},
 			{
 				name : "Serpro",
 				logo : "../../../assets/img/clients/logo-serpro.png",
-				areas : "Product Support and Consulting",
+				areas : "Pentaho Support and Consulting",
 				site : "http://serpro.gov.br",
 				priority : 97000
 			},
 			{
 				name : "Autoviação 1001",
 				logo : "../../../assets/img/clients/logo-1001.png",
-				areas : "Product and Developer Support",
+				areas : "Pentaho support and Developer Support",
 				site : "http://www.autoviacao1001.com.br",
 				priority : 95000
 			},
 			{
 				name : "Vale",
 				logo : "../../../assets/img/clients/logo-vale.png",
-				areas : "Consulting services",
+				areas : "Consulting services with Pentaho",
 				site : "http://vale.com",
 				priority : 94000
 			},
 			{
 				name : "Visão Mundial",
 				logo : "../../../assets/img/clients/logo-visao-mundial.png",
-				areas : "BI implementation and Product and Developer Support",
-				site : "http://vale.com",
+				areas : "BI implementation with Pentaho, Pentaho Support and Developer Support",
+				site : "https://visaomundial.org.br/",
 				priority : 93000
 			},
 			{
 				name : "Total Combustíveis",
 				logo : "../../../assets/img/clients/logo-total.png",
-				areas : "BI implementation and Product and Developer Support",
+				areas : "BI implementation with Pentaho, Pentaho Support and Developer Support",
 				site : "http://www.totalcombustiveis.com.br",
 				priority : 92000
 			},
 			{
 				name : "Universidade CEUMA",
 				logo : "../../../assets/img/clients/logo-ceuma.png",
-				areas : "BI implementation and Product and Developer Support",
+				areas : "BI implementation with Pentaho, Pentaho Support and Developer Support",
 				site : "http://www.ceuma.br",
 				priority : 91000
 			},
 			{
 				name : "PQS",
 				logo : "../../../assets/img/clients/logo-pqs.png",
-				areas : "BI implementation for Controlling and Product Support",
+				areas : "BI implementation for Controlling with Pentaho and Product Support",
 				site : "http://www.pqspe.com.br",
 				priority : 90000
 			},
 			{
 				name : "Caern",
 				logo : "../../../assets/img/clients/logo-caern.png",
-				areas : "BI implementation, Data Mining and product support",
+				areas : "BI implementation with Pentaho, Data Mining and product support",
 				site : "http://www.caern.rn.gov.br",
 				priority : 89000
 			},
 			{
 				name : "Datamétrica",
 				logo : "../../../assets/img/clients/logo-datametrica.png",
-				areas : "BI implementation, Data Mining and Software House",
+				areas : "BI implementation with Pentaho, Data Mining and Software House",
 				site : "http://www.datametrica.com.br",
 				priority : 88000
 			},
 			{
 				name : "Unimed Recife",
 				logo : "../../../assets/img/clients/logo-unimed-recife.png",
-				areas : "BI implementation and Software House",
+				areas : "BI implementation with Pentaho and Software House",
 				site : "http://www.unimedrecife.com.br",
 				priority : 87000
 			},
 			{
 				name : "Mondelez International",
 				logo : "../../../assets/img/clients/logo-mondelez.png",
-				areas : "Product deployment for Supply Chain, Software Factory and Product Support",
+				areas : "Pentaho deployment for Supply Chain, Software Factory and Pentaho Support",
 				site : "http://www.mondelez.com.br",
 				priority : 86000
 			},
 			{
 				name : "Faculdade Pernambucana de Saúde",
 				logo : "../../../assets/img/clients/logo-fps.png",
-				areas : "BI implementation for academic management and financial control",
+				areas : "BI implementation with Pentaho for academic management and financial control",
 				site : "http://www.fps.edu.br",
 				priority : 85000
 			},
 			{
 				name : "Sebrae",
 				logo : "../../../assets/img/clients/logo-sebrae.png",
-				areas : "BI implementation",
+				areas : "BI implementation with Pentaho",
 				site : "http://www.sebrae.com.br",
 				priority : 84000
 			},
 			{
 				name : "Habitat para a Humanidade",
 				logo : "../../../assets/img/clients/logo-habitat.png",
-				areas : "BI implementation",
+				areas : "BI implementation with Pentaho",
 				site : "http://www.habitatbrasil.org.br",
 				priority : 83000
 			},
 			{
 				name : "Burger King NE",
 				logo : "../../../assets/img/clients/logo-bgne.png",
-				areas : "BI implementation",
+				areas : "BI implementation with Pentaho",
 				site : "http://www.burgerking.com.br",
 				priority : 82000
 			},
 			{
 				name : "UFPE",
 				logo : "../../../assets/img/clients/logo-ufpe.png",
-				areas : "Research development with indigenous data",
+				areas : "Research development with indigenous data and geolocalization with Pentaho",
 				site : "http://www.ufpe.br",
 				priority : 81000
 			},
@@ -428,42 +428,42 @@ msgs["en"] = {
 			{
 				name : "Marisa",
 				logo : "../../../assets/img/clients/logo-marisa.png",
-				areas : "Analytical Product deployment for credit rating",
+				areas : "Pentaho deployment for credit rating",
 				site : "http://www.queirozgalvao.com.br",
 				priority : 79000
 			},
 			{
 				name : "Banco da Amazônia",
 				logo : "../../../assets/img/clients/logo-basa.png",
-				areas : "BI implementation and Product Support",
+				areas : "BI implementation with Pentaho and Product Support",
 				site : "http://www.queirozgalvao.com.br",
 				priority : 78000,
 			},
 			{
 				name : "Pitú",
 				logo : "../../../assets/img/clients/logo-pitu.png",
-				areas : "BI implementation and Product Support",
+				areas : "BI implementation with Pentaho and Product Support",
 				site : "http://www.pitu.com.br",
 				priority : 78000
 			},
 			{
 				name : "UNIEURO",
 				logo : "../../../assets/img/clients/logo-unieuro.png",
-				areas : "BI implementation and Product Support",
+				areas : "BI implementation with Pentaho and Product Support",
 				site : "http://www.unieuro.edu.br/",
 				priority : 77000
 			},
 			{
 				name : "Catho",
 				logo : "../../../assets/img/clients/logo-catho.png",
-				areas : "BI implementation and Product Support",
+				areas : "BI implementation with Pentaho and Product Support",
 				site : "http://www.catho.com.br/",
 				priority : 76000
 			},
 			{
 				name : "Romarco Construtora",
 				logo : "../../../assets/img/clients/logo-romarco.png",
-				areas : "BI implementation and Support App",
+				areas : "BI implementation with Pentaho and Support App",
 				site : "www.romarcoconstrutora.com.br",
 				priority : 75000
 			}

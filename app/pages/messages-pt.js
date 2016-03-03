@@ -272,7 +272,7 @@ msgs["pt"] = {
 		"TRANSPARENCY_P2"  :  "Somos muito orgulhosos pelos serviços que prestamos a cada um dos nossos clientes. Percorremos muitas empresas e por onde andamos procuramos deixar as portas abertas para futuras oportunidades.",
 
 		"SOMEOFCLIENTS_L1"  :  "Alguns dos nossos",
-		"SOMEOFCLIENTS_L2"  :  "Clientes",
+		"SOMEOFCLIENTS_L2"  :  "Projetos",
 
 		"PRECIOUS_PARTNERS_L1"  :  "Preciosos",
 		"PRECIOUS_PARTNERS_L2"  :  "Parceiros",
@@ -280,7 +280,7 @@ msgs["pt"] = {
 
 		"PARTNER_PENTAHO"  :  "Nosso carro chefe. Ferramenta que utilizamos em todos os nossos projetos, além de uma plataforma de Business Analytics completa é o instrumento fundamental na caixa de ferramentas do desenvolvedor de Big Data, Business Analytics e Data Miner.",
 		"PARTNER_MONGODB"  :  "Somos orgulhosos parceiros da MongoDB, fornecedora de um sistema de poderosíssimo para persistência de BigData com características incríveis em escalabilidade e alta disponibilidade. ",
-		"PARTNER_DELPHOS"  :  "Temos uma parceria sadia com a Delphos. Juntos, trocamos conhecimento e experiência para executar nossos projetos na área de expertise da Delphos.",
+		"PARTNER_DELPHOS"  :  "Temos uma parceria solida com a Delphos. Juntos, trocamos conhecimento e experiência para executar nossos projetos na área de seguros.",
 
 	},
 
@@ -288,182 +288,182 @@ msgs["pt"] = {
 			{
 				name : "Caixa Econômica Federal",
 				logo : "../../../assets/img/clients/logo-caixa.jpg",
-				areas : "Projetos de Big Data e Data Mining",
+				areas : "Projetos de Big Data e Data Mining com Pentaho",
 				site : "http://caixa.gov.br",
 				priority : 100000
 			},
 			{
 				name : "Nagem",
 				logo : "../../../assets/img/clients/logo-nagem.png",
-				areas : "Faturamento, Serviços Financeiros, Dashboards e melhoria de processos",
+				areas : "Faturamento, Serviços Financeiros, Dashboards e melhoria de processos com Pentaho",
 				site : "http://nagem.com.br",
 				priority : 99000
 			},
 			{
 				name : "Delphos",
 				logo : "../../../assets/img/clients/logo-delphos.png",
-				areas : "Execução de projetos e Mineração de Dados",
+				areas : "Execução de projetos e Mineração de Dados com Pentaho",
 				site : "http://www.delphos.com.br",
 				priority : 98000
 			},
 			{
 				name : "Serpro",
 				logo : "../../../assets/img/clients/logo-serpro.png",
-				areas : "Suporte ao produto e Consultorias",
+				areas : "Suporte ao Pentaho e Consultorias",
 				site : "http://serpro.gov.br",
 				priority : 97000
 			},
 			{
 				name : "Autoviação 1001",
 				logo : "../../../assets/img/clients/logo-1001.png",
-				areas : "Suporte ao produto e ao Desenvolvedor",
+				areas : "Suporte ao Pentaho e ao Desenvolvedor Pentaho",
 				site : "http://www.autoviacao1001.com.br",
 				priority : 95000
 			},
 			{
 				name : "Vale",
 				logo : "../../../assets/img/clients/logo-vale.png",
-				areas : "Consultoria em serviços",
+				areas : "Consultoria Pentaho",
 				site : "http://vale.com",
 				priority : 94000
 			},
 			{
 				name : "Visão Mundial",
 				logo : "../../../assets/img/clients/logo-visao-mundial.png",
-				areas : "Implantação de BI e suporte a produto e desenvolvedor",
-				site : "http://vale.com",
+				areas : "Implantação de BI com Pentaho e suporte ao produto e desenvolvedor",
+				site : "https://visaomundial.org.br/",
 				priority : 93000
 			},
 			{
 				name : "Total Combustíveis",
 				logo : "../../../assets/img/clients/logo-total.png",
-				areas : "Implantação de BI e suporte a produto e desenvolvedor",
+				areas : "Implantação de BI com Pentaho e suporte ao produto e desenvolvedor",
 				site : "http://www.totalcombustiveis.com.br",
 				priority : 92000
 			},
 			{
 				name : "Universidade CEUMA",
 				logo : "../../../assets/img/clients/logo-ceuma.png",
-				areas : "Implantação de BI e suporte a produto e desenvolvedor",
+				areas : "Implantação de BI com Pentaho e suporte ao produto e desenvolvedor",
 				site : "http://www.ceuma.br",
 				priority : 91000
 			},
 			{
 				name : "PQS",
 				logo : "../../../assets/img/clients/logo-pqs.png",
-				areas : "Implantação de BI para Controladoria e suporte ao produto",
+				areas : "Implantação do Pentaho BI para Controladoria e suporte ao produto",
 				site : "http://www.pqspe.com.br",
 				priority : 90000
 			},
 			{
 				name : "Caern",
 				logo : "../../../assets/img/clients/logo-caern.png",
-				areas : "Implantação de BI, Mineração de Dados e suporte ao produto",
+				areas : "Implantação de BI com Pentaho, Mineração de Dados com Pentaho e suporte ao Pentaho",
 				site : "http://www.caern.rn.gov.br",
 				priority : 89000
 			},
 			{
 				name : "Datamétrica",
 				logo : "../../../assets/img/clients/logo-datametrica.png",
-				areas : "Implantação de BI, Mineração de Dados e Fábrica de Software",
+				areas : "Implantação de BI com Pentaho, Mineração de Dados com Pentaho e Fábrica de Software",
 				site : "http://www.datametrica.com.br",
 				priority : 88000
 			},
 			{
 				name : "Unimed Recife",
 				logo : "../../../assets/img/clients/logo-unimed-recife.png",
-				areas : "Implantação de BI e Fábrica de Software",
+				areas : "Implantação de BI com Pentaho e Fábrica de Software",
 				site : "http://www.unimedrecife.com.br",
 				priority : 87000
 			},
 			{
 				name : "Mondelez International",
 				logo : "../../../assets/img/clients/logo-mondelez.png",
-				areas : "Implantação de produto para Supply Chain, Fábrica de Software e suporte ao produto",
+				areas : "Implantação do Pentaho para Supply Chain, Fábrica de Software e suporte ao Pentaho",
 				site : "http://www.mondelez.com.br",
 				priority : 86000
 			},
 			{
 				name : "Faculdade Pernambucana de Saúde",
 				logo : "../../../assets/img/clients/logo-fps.png",
-				areas : "Implantação de BI para gestão acadêmica e controle financeiro",
+				areas : "Implantação de BI com Pentaho para gestão acadêmica e controle financeiro",
 				site : "http://www.fps.edu.br",
 				priority : 85000
 			},
 			{
 				name : "Sebrae",
 				logo : "../../../assets/img/clients/logo-sebrae.png",
-				areas : "Implantação de BI",
+				areas : "Implantação de BI com Pentaho",
 				site : "http://www.sebrae.com.br",
 				priority : 84000
 			},
 			{
 				name : "Habitat para a Humanidade",
 				logo : "../../../assets/img/clients/logo-habitat.png",
-				areas : "Implantação de BI",
+				areas : "Implantação de BI com Pentaho",
 				site : "http://www.habitatbrasil.org.br",
 				priority : 83000
 			},
 			{
 				name : "Burger King NE",
 				logo : "../../../assets/img/clients/logo-bgne.png",
-				areas : "Implantação de BI",
+				areas : "Implantação de BI com Pentaho",
 				site : "http://www.burgerking.com.br",
 				priority : 82000
 			},
 			{
 				name : "UFPE",
 				logo : "../../../assets/img/clients/logo-ufpe.png",
-				areas : "Desenvolvimento de pesquisa com dados indígenas",
+				areas : "Desenvolvimento de pesquisa com dados indígenas e geolocalização com o Pentaho",
 				site : "http://www.ufpe.br",
 				priority : 81000
 			},
 			{
 				name : "Queiroz Galvao",
 				logo : "../../../assets/img/clients/logo-queiroz-galvao.png",
-				areas : "Implantação de ERP",
+				areas : "Consultoria para implantação de sistemas de gestão",
 				site : "http://www.queirozgalvao.com.br",
 				priority : 80000
 			},
 			{
 				name : "Marisa",
 				logo : "../../../assets/img/clients/logo-marisa.png",
-				areas : "Implantação de produto Analítico para avaliação de crédito",
+				areas : "Implantação do Pentaho para avaliação de crédito",
 				site : "http://www.queirozgalvao.com.br",
 				priority : 79000
 			},
 			{
 				name : "Banco da Amazônia",
 				logo : "../../../assets/img/clients/logo-basa.png",
-				areas : "Implantação de BI e Suporte ao Produto",
+				areas : "Implantação de BI com Pentaho e Suporte ao produto",
 				site : "http://www.queirozgalvao.com.br",
 				priority : 78000,
 			},
 			{
 				name : "Pitú",
 				logo : "../../../assets/img/clients/logo-pitu.png",
-				areas : "Implantação de BI e Suporte ao Produto",
+				areas : "Implantação de BI com Pentaho e Suporte ao Produto",
 				site : "http://www.pitu.com.br",
 				priority : 78000
 			},
 			{
 				name : "UNIEURO",
 				logo : "../../../assets/img/clients/logo-unieuro.png",
-				areas : "Implantação de BI e Suporte ao Produto",
+				areas : "Implantação de BI com Pentaho e Suporte ao Produto",
 				site : "http://www.unieuro.edu.br/",
 				priority : 77000
 			},
 			{
 				name : "Catho",
 				logo : "../../../assets/img/clients/logo-catho.png",
-				areas : "Implantação de BI e Suporte ao Produto",
+				areas : "Implantação de BI com Pentaho e Suporte ao Produto",
 				site : "http://www.catho.com.br/",
 				priority : 76000
 			},
 			{
 				name : "Romarco Construtora",
 				logo : "../../../assets/img/clients/logo-romarco.png",
-				areas : "Implantação de BI e App de apoio",
+				areas : "Implantação de BI com Pentaho e App de apoio",
 				site : "www.romarcoconstrutora.com.br",
 				priority : 75000
 			}
