@@ -429,7 +429,7 @@ msgs["en"] = {
 				name : "Marisa",
 				logo : "../../../assets/img/clients/logo-marisa.png",
 				areas : "Pentaho deployment for credit rating",
-				site : "http://www.queirozgalvao.com.br",
+				site : "http://www.marisa.com.br/",
 				priority : 79000
 			},
 			{

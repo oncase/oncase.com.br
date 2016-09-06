@@ -429,7 +429,7 @@ msgs["pt"] = {
 				name : "Marisa",
 				logo : "../../../assets/img/clients/logo-marisa.png",
 				areas : "Implantação do Pentaho para avaliação de crédito",
-				site : "http://www.queirozgalvao.com.br",
+				site : "http://www.marisa.com.br/",
 				priority : 79000
 			},
 			{
