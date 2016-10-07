@@ -12,10 +12,10 @@
       background-attachment: fixed;
       opacity: .5;
      /*grayscale for background image*/
-      -webkit-filter: grayscale(1) brightness(2.3); 
+      -webkit-filter: grayscale(1) brightness(2.3);
       -webkit-filter: grayscale(100%) brightness(230%);
       -moz-filter: grayscale(100%) brightness(230%);
-      filter: gray; 
+      filter: gray;
       filter: url("data:image/svg+xml;utf8,<svg version='1.1' xmlns='http://www.w3.org/2000/svg' height='0'><filter id='greyscale'><feColorMatrix type='matrix' values='0.3333 0.3333 0.3333 0 0 0.3333 0.3333 0.3333 0 0 0.3333 0.3333 0.3333 0 0 0 0 0 1 0' /></filter></svg>#greyscale");
       filter: grayscale(100%) brightness(230%);
 
@@ -44,7 +44,7 @@
     /*
 		Start of area chart styling
     */
-    
+
     .oncase-dots,
     .oncase-bar{
     	cursor:pointer;
@@ -202,7 +202,7 @@
     	<svg id="area" />
     </div>
     <div class="footer-content">
-      
+
       <div class="row oncase-content-margin oncase-footer-grid" >
         <div class="col-xs-12 col-sm-4 col-md-3 text-left" >
           <h2 class="oncase-section-heading-thin text-left"><span>  {{ 'footer.ABOUT_HEADING' | translate }}  </span></h2>
@@ -222,17 +222,16 @@
         <div class="col-xs-12 col-lg-offset-1 col-sm-4 col-md-3 text-left" >
           <h2 class="oncase-section-heading-thin text-left"><span >{{ 'footer.CONTACT_US' | translate }} </span></h2>
           <ul class="oncase-links">
-            <li>{{ 'footer.RECIFE_PHONE' | translate }}</li>
-            <li>{{ 'footer.RIO_PHONE' | translate }}</li>
+            <li>{{ 'footer.RECIFE_PHONE' | translate }}</li>            
             <li>{{ 'footer.SAOPAULO_PHONE' | translate }}</li>
           </ul>
-            
+
             <md-button class="md-raised md-warn oncase-button no-margin" ng-click="selectedIndex=5;HeaderCtrl.tabClicked(selectedIndex)">{{ 'footer.CONTACT_BUTTON_TEXT' | translate }}</md-button>
-          
+
         </div>
 
 <div class="south-america-map hidden-sm hidden-xs"></div>
-      </div> 
+      </div>
     </div>
 
 <div class="footer-section z1 oncase-blue bg-oncase-light-gray">
@@ -252,8 +251,8 @@
           <li class="inline-block"> <a target="_self" href="{{HeaderCtrl.getCurrentRoutForLang('pt')}}" class="oncase-lang-item no-outline" ng-class="{ active : HeaderCtrl.getCurrentLang()==='pt' }">Portugu&ecirc;s</a> </li>
           <li class="inline-block"> <a target="_self" href="{{HeaderCtrl.getCurrentRoutForLang('en')}}" class="oncase-lang-item no-outline" ng-class="{ active : HeaderCtrl.getCurrentLang()==='en' }">English</a> </li>
         </ul>
-          
-          
+
+
       </div>
   </div>
 </div>
@@ -263,7 +262,7 @@
     <div class="col-xs-12 col-sm-6 text-right" >
 
       <div class="footer-social-wrapper">
-        
+
         <a target="_blank" href="https://fb.com/oncasesolucoes">
           <span class="fa-stack fa-lg socicon">
             <i class="fa fa-circle fa-stack-2x oncase-white"></i>
@@ -330,6 +329,3 @@
     </div>
   </div>
 </div>
-
-
-
