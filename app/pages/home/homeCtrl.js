@@ -32,7 +32,7 @@
         icon : "school",
         isIcon : true,
         iconColor : "orange",
-        link:"http://campus.onca.se"
+        link:"http://treinamentos.oncase.com.br/"
       },
       {
         smallText : getMsgs().home.CAROUSEL_WEARE_PROUD,

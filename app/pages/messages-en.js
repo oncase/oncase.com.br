@@ -477,8 +477,6 @@ msgs["en"] = {
 		"TEXTAREA" : "Message (required)" ,
 		"RECIFE" : "Recife" ,
 		"RECIFE_TXT" : "Rua do Bom Jesus, 163 - 2nd floor <br />Recife-PE CEP 50.030-170 <br />Phone: +55-81-3077-8558" ,
-		"RIO" : "Rio de Janeiro" ,
-		"RIO_TXT" : "Phone: +55-21-4063-7785" ,
 		"SP" : "São Paulo" ,
 		"SP_TXT" : "Phone: +55-11-4063-6247" ,
 		"WORK_WITH_US" : "Work with us" ,
@@ -491,7 +489,7 @@ msgs["en"] = {
 		"BUTTON_VISIT" : "Explore our training portal",
 		"HEADDING_L1" : "ONCASE",
 		"HEADDING_L2" : "CAMPUS",
-		"TEXT" : "See all of our available courses, as well as schedules, content, levels and much more in our trainigs portal <a target='_blank' href='http://campus.onca.se/'>campus.onca.se</a>.",
+		"TEXT" : "See all of our available courses, as well as schedules, content, levels and much more in our trainigs portal <a target='_blank' href='http://treinamentos.oncase.com.br/'>treinamentos.onca.se</a>.",
 		"CAROUSEL_L1" : "Visit our",
 		"CAROUSEL_L2" : "Campus website"
 
