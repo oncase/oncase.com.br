@@ -143,7 +143,7 @@ msgs["pt"] = {
 		"OTHER_PENTAHO_BRASIL" : "Pentaho Brasil",
 		"CONTACT_US" : "Fale conosco",
 		"RECIFE_PHONE" : "Recife, PE - +55-81-3077-8558",
-		"SAOPAULO_PHONE" : "São Paulo, SP - +55-11-4085-0606",
+		"SAOPAULO_PHONE" : "São Paulo, SP - +55-11-4871-4142",
 		"CONTACT_BUTTON_TEXT" : "Contato",
 		"DEVELOPED_BY_ONCASE" : "Website desenvolvido pela Oncase",
 		"FACEBOOK_TOOLTIP" : "Custa nossa página no Facebook",
