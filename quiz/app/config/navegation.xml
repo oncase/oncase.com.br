@@ -1,0 +1,5 @@
+<navegation>
+    <route url="/" controller="PrincipalController" action="index"></route>
+    <route url="/congratulations" controller="PrincipalController" action="congratulations"></route>
+    <route url="/send" controller="PrincipalController" action="send"></route>
+</navegation>

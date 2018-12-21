@@ -1,0 +1,190 @@
+/* header pagina */
+.header-pagina{
+    width: 100%;
+    height: 80px;
+    background: #ffffff;
+    border-bottom: #eeeeee solid 1px;
+    box-shadow: 0px 2px 5px rgba(0,0,0,0.2);
+    position: relative;
+    z-index: 2;
+}
+.header-pagina img{
+    width: 130px;
+    height: auto;
+}
+/* footer pagina*/
+.footer-pagina{
+    width: 100%;
+    height: auto;
+    padding: 10px 0;
+    text-align: center;
+    background: #EDEDED;
+}
+
+/* PAGE INDEX*/
+
+/* banner */
+.banner{
+    width: 100%;
+    min-height:768px;
+    background: url("../img/banner.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    z-index: 1;
+}
+
+/* PAGINA 3*/
+.banner-page-3 {
+    min-height: 0;
+    height: 300px;
+}
+.quiz-banner-page-3{
+    background-size: 40%;
+    background-position: 50% bottom;
+}
+.questionario{
+    padding: 100px 0;
+    position: relative;
+}
+.questionario .row{
+    margin-bottom: 50px;
+}
+.questionario .bloco-numero{
+    min-width: 70px;
+    height: auto;
+}
+.questionario .bloco-numero .numero{
+    width: 40px;
+    height: 40px;
+    background: var(--cor-tema-2);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.questionario .bloco-numero .numero span{
+    font-size: 1.5rem;
+    color: #ffffff;
+}
+.questionario .bloco-descritivo{
+    display: flex;
+    flex-direction: column;
+}
+.questionario .bloco-descritivo .titulo{
+    margin-bottom: 50px;
+}
+.questionario .bloco-descritivo .titulo span{
+    font-size: 1.7rem;
+    font-weight: 500;
+    color: var(--cor-tema-2);
+}
+
+.questionario .bloco-descritivo .alternativa .form-check{
+    margin-top: 0px;
+}
+.questionario .bloco-descritivo .alternativa .form-check label{
+    color: var(--cor-tema-2);
+    font-weight: 400;
+    margin-left: 30px;
+    font-size: 1.1rem;
+}
+
+#row-2,
+#row-3,
+#row-4,
+#row-5,
+#row-6,
+#row-7,
+#row-8,
+#row-9,
+#row-10,
+#row-11,
+#row-12,
+#row-13{
+    display: none;
+}
+
+
+@media (max-width: 768px){
+    .quiz-banner-page-3{
+        background-size: 100%;
+    }
+}
+
+@media (max-width: 480px){
+
+}
+
+
+/* progresso */
+.progresso{
+    width: 0%;
+    height: 10px;
+    background: var(--cor-tema-1);
+    position: fixed;
+    top: 0%;
+    z-index: 99;
+    display: none;
+    justify-content: center;
+    align-items: center;
+    transition: .2s;
+    overflow: hidden;
+}
+.progresso span{
+    font-size: 1.2rem;
+    color: #ffffff;
+    text-transform: uppercase;
+}
+
+/* cta-resultado */
+#row-13 .cta-vermelho{
+    width: 300px;
+}
+
+/* PAGINA 4 */
+.banner-page-4{
+    background: url(../img/banner-congratulations.png) !important;
+    background-repeat: no-repeat !important;
+    background-size: cover !important;
+    background-position: center !important;
+}
+.banner-page-4 .container{
+    position: relative;
+    z-index: 2;
+}
+.banner-page-4 h6{
+    font-size: 3rem;
+    font-weight: 500;
+    color: #fff;
+    margin-bottom: 50px;
+    margin-top: 70px;
+}
+.banner-page-4 p{
+    font-size: 1.5rem;
+    color: white !important;
+}
+.banner-page-4 .btn-cta{
+    width: 300px;
+    margin-bottom: 70px;
+}
+
+@media (max-width: 768px){
+    .banner-page-4{
+        background-size: cover
+    }
+}
+@media  (max-width: 414px){
+    .beneficios{
+        padding: 50px 0 500px !important
+    }
+    .quiz-banner{
+        display: none
+    }
+    .btn-cta{
+        padding: 25px
+    }
+}
+
+
+

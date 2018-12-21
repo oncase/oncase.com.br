@@ -1,0 +1,152 @@
+/* importancao de arquivos css */
+@import url('https://fonts.googleapis.com/css?family=Raleway:200,300,400,500,600,700');
+
+/* ---------------- debug ------------ */
+.red{background: red!important;}
+.blue{background: blue!important;}
+.black{background: black!important;}
+/* ---------------------------------- */
+
+/* root */
+:root{
+    /* FONTES */
+    --fonte-primaria: Raleway;
+    --fonte-secundaria: Raleway;
+
+    /* CORES TEMA */
+    --cor-tema-1: #004b83;
+    --cor-tema-2: #CB6336;
+    --cor-tema-3: #000000;
+    --cor-tema-4: #000000;
+
+    /* DEMAIS CORES */
+    --verde-secundario: #B7CC00;
+    --azul-secundario: #4A90E2;
+    --preto-fosco-5: #595959;
+    --cinza-5: #DADADA;
+    --cinza-7: #7F7F7F;
+    --cinza-border: #E9E9E9;
+    --cinza-backgroud: #F0F0F0;
+    --branco: #ffffff;
+}
+html, body, article, aside, header, footer, form{font-size: 1rem}
+
+/* formatacao formulario */
+select{-webkit-appearance: none !important; border-radius: 0}
+button{border: none; cursor: pointer}
+input{padding: 0 10px}
+
+/* color */
+.cor-tema-1{color: var(--cor-tema-1)}
+.cor-tema-2{color: var(--cor-tema-2)}
+.cor-tema-3{color: var(--cor-tema-3)}
+.cor-tema-4{color: var(--cor-tema-4)}
+.cor-branco{color: var(--branco)}
+
+
+/* otimizador */
+.preencher-vertical{ height: inherit; }
+.w100{width: 100%}
+.h100{height: 100%}
+.absolute{position: absolute}
+.relative{position: relative}
+/* botoes */
+.btn-cta{
+    width: 100%;
+    height: 50px;
+    padding: 7px;
+    font-weight: 300;
+    text-transform: uppercase;
+    font-size: 1rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: 0.2s;
+    cursor: pointer;
+    text-decoration: none;
+    font-weight: 700;
+    border-radius: 5px;
+}
+
+.cta-vermelho{background: var(--cor-tema-1); color:#ffffff}
+.cta-vermelho:hover{text-decoration: none; background:#DF4C44; color:#ffffff}
+
+/* link */
+.link{text-decoration: none}
+.link:hover{text-decoration: none}
+
+/* peliculas */
+.pelicula{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+}
+
+/* background para peliculas */
+.rgba-black-1{background:rgba(0,0,0,.1)}
+.rgba-black-2{background:rgba(0,0,0,.2)}
+.rgba-black-3{background:rgba(0,0,0,.3)}
+.rgba-black-4{background:rgba(0,0,0,.4)}
+.rgba-black-5{background:rgba(0,0,0,.5)}
+.rgba-black-6{background:rgba(0,0,0,.6)}
+.rgba-black-7{background:rgba(0,0,0,.7)}
+.rgba-black-8{background:rgba(0,0,0,.8)}
+.rgba-black-9{background:rgba(0,0,0,.9)}
+.rgba-black{background:rgba(0,0,0,1)}
+
+.rgba-blue-1{ background: rgba(15, 66, 99, .1) }
+.rgba-blue-2{ background: rgba(15, 66, 99, .2) }
+.rgba-blue-3{ background: rgba(15, 66, 99, .3) }
+.rgba-blue-4{ background: rgba(15, 66, 99, .4) }
+.rgba-blue-5{ background: rgba(15, 66, 99, .5) }
+.rgba-blue-6{ background: rgba(15, 66, 99, .6) }
+.rgba-blue-7{ background: rgba(15, 66, 99, .7) }
+.rgba-blue-8{ background: rgba(15, 66, 99, .8) }
+.rgba-blue-9{ background: rgba(15, 66, 99, .9) }
+
+/* sombra */
+.shadow-5{box-shadow: 5px 5px 10px rgba(128, 128, 128, 0.5)}
+
+/* formatacao de texto */
+a,b, u, i, span, h1, h2, h3, h4, h5, h6, strong, small, input, label, select, button{ font-family: var(--fonte-primaria); font-weight: 300; font-size: 1rem }
+.rem-1{font-size: 1rem}
+.rem-1-2{font-size: 1.2rem}
+.rem-1-3{font-size: 1.3rem}
+.rem-1-4{font-size: 1.4rem}
+.rem-1-5{font-size: 1.5rem}
+.rem-1-6{font-size: 1.6rem}
+.rem-1-7{font-size: 1.7rem}
+.rem-1-8{font-size: 1.8rem}
+.rem-1-9{font-size: 1.9rem}
+.rem-2{font-size: 2rem}
+.rem-2-2{font-size: 2.2rem}
+.rem-2-3{font-size: 2.3rem}
+.rem-2-4{font-size: 2.4rem}
+.rem-2-5{font-size: 2.5rem}
+.rem-2-6{font-size: 2.6rem}
+.rem-2-7{font-size: 2.7rem}
+.rem-2-8{font-size: 2.8rem}
+.rem-2-9{font-size: 2.9rem}
+.rem-3{font-size: 3rem}
+.rem-3-2{font-size: 3.2rem}
+.rem-3-3{font-size: 3.3rem}
+.rem-3-4{font-size: 3.4rem}
+.rem-3-5{font-size: 3.5rem}
+.rem-3-6{font-size: 3.6rem}
+.rem-3-7{font-size: 3.7rem}
+.rem-3-8{font-size: 3.8rem}
+.rem-3-9{font-size: 3.9rem}
+.rem-4{font-size: 4rem}
+
+.weight-100{font-weight: 100}
+.weight-200{font-weight: 200}
+.weight-300{font-weight: 300}
+.weight-400{font-weight: 400}
+.weight-500{font-weight: 500}
+.weight-600{font-weight: 600}
+.weight-700{font-weight: 700}
+
+.uppcase{text-transform: uppercase}
+
+
+

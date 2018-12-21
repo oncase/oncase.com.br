@@ -1,0 +1,30 @@
+﻿<?php
+
+abstract class Constant {
+
+    //SEO
+    const TITLE = "Transformação digital";
+    const DESCRIPTION = "Transformação digital";
+    const IMAGE_SHARE = "compartilhamento.png";
+
+    //VIEW
+    const HEAD = "app/view/template/head.php";
+    const HEADER = "app/view/template/header.php";
+    const FOOTER = "app/view/template/footer.php";
+    const FORM_LEAD = "app/view/principal/form-lead.php";
+
+    //RD STATION
+    const RD_TOKEN = "0a88334991d5d297ff28b416002e1875";
+    const RD_TOKEN_PRIVADO = "46a81d60b0d6875d77b750ded2f20d78";
+    const IDENT = "";
+    const UTM_CONTENT = "";
+
+    //SISTEMA
+    const EXEC = "";
+    const DS = DIRECTORY_SEPARATOR;
+    const PATH = "/quiz/";
+    const EMAIL_SUPORTE = "fabio@resulttado.com";
+
+}
+
+?>
